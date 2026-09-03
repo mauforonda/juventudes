@@ -1,0 +1,13 @@
+{
+  "codigo": "I127",
+  "nombre": "Razones para no usar anticonceptivos",
+  "objetivo": "Mostrar las razones declaradas por mujeres jóvenes con necesidad de anticoncepción no cubierta.",
+  "definicion_conceptual": "Porcentaje que menciona cada grupo de razones entre mujeres jóvenes con necesidad no cubierta.",
+  "poblacion_objetivo": "Mujeres de 16 a 28 años con necesidad no cubierta y al menos una razón declarada en la EDSA 2023.",
+  "descripcion_operativa": "Las respuestas se reúnen en oposición, costo, distancia, desconocimiento, salud o efectos y otras razones. Una mujer puede aparecer en más de una razón.",
+  "unidad_medida": "Porcentaje de respuestas múltiples",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tabla mujer.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "razón"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "razon": "Grupo de razones declarado.", "observaciones": "Mujeres de la muestra incluidas.", "numerador": "Población expandida que mencionó la razón.", "denominador": "Población expandida con necesidad no cubierta y alguna razón declarada.", "valor": "Porcentaje estimado que mencionó la razón.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "Se aplica la definición de I126. Las respuestas de MS07_0707_01 y MS07_0707_02 se agrupan por su contenido. Cada grupo se estima por separado sobre el mismo denominador. Se usa el ponderador de mujeres y un CV que considera estrato y UPM."
+}

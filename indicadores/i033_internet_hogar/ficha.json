@@ -1,0 +1,11 @@
+{
+  "codigo": "I033", "nombre": "Internet en el hogar",
+  "objetivo": "Mostrar el acceso a internet en los hogares donde viven jóvenes.",
+  "definicion_conceptual": "Porcentaje de jóvenes que vive en un hogar con internet fijo, móvil o ambos.",
+  "poblacion_objetivo": "Personas de 16 a 28 años cuyo hogar tiene información suficiente sobre conexión a internet en el CPV 2024.",
+  "descripcion_operativa": "Se identifica conexión cuando el hogar declara internet fijo o móvil.",
+  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes en hogares con internet fijo o móvil.", "denominador": "Jóvenes en hogares con información suficiente sobre ambas formas de conexión.", "valor": "Jóvenes con internet en el hogar por cada cien con información suficiente."},
+  "metodo": "V19E_INETFIJO o V19F_INETMOVIL igual a 1 forma el numerador. El denominador incluye esos casos y los hogares que respondieron no en ambas variables."
+}

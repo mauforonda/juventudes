@@ -1,0 +1,11 @@
+{
+  "codigo": "I015", "nombre": "Conclusión de secundaria a los 18 años",
+  "objetivo": "Mostrar la conclusión de secundaria a la edad de 18 años.",
+  "definicion_conceptual": "Porcentaje de personas de 18 años que concluyó secundaria o alcanzó un nivel posterior.",
+  "poblacion_objetivo": "Personas de 18 años con nivel y curso aprobados especificados en el CPV 2024.",
+  "descripcion_operativa": "Se identifica la conclusión del cuarto curso de medio, sexto de secundaria o un nivel educativo posterior.",
+  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "sexo"],
+  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida; siempre 18.", "sexo": "Sexo registrado.", "numerador": "Personas que concluyeron secundaria o alcanzaron un nivel posterior.", "denominador": "Personas con nivel y curso especificados.", "valor": "Personas que concluyeron secundaria por cada cien con información especificada."},
+  "metodo": "El numerador incluye nivel medio con al menos cuatro cursos, secundaria con al menos seis cursos y los niveles técnico medio, técnico superior, licenciatura, maestría y doctorado. Se excluyen nivel o curso sin especificar."
+}

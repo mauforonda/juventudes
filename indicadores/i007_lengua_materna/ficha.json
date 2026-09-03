@@ -1,0 +1,23 @@
+{
+  "codigo": "I007",
+  "nombre": "Lengua materna de la juventud",
+  "objetivo": "Mostrar la diversidad de lenguas aprendidas durante la niñez por la población joven.",
+  "definicion_conceptual": "Distribución de jóvenes según la primera lengua que aprendieron a hablar.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con una respuesta especificada sobre lengua materna en el Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se cuenta cada código de IDIOMA_MAT y se divide entre las respuestas especificadas del mismo municipio, área, edad y sexo.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo", "código de lengua materna"],
+  "campos": {
+    "gestion": "Año de referencia del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio de registro.",
+    "area": "Área urbana o rural de la vivienda.",
+    "edad": "Edad cumplida, entre 16 y 28 años.",
+    "sexo": "Sexo registrado en el censo.",
+    "codigo_lengua_materna": "Código de la lengua materna en el clasificador del CPV 2024. El código 998 identifica a quienes no hablan.",
+    "numerador": "Jóvenes con el código de lengua materna indicado.",
+    "denominador": "Jóvenes con una respuesta especificada sobre lengua materna.",
+    "valor": "Jóvenes con la lengua indicada por cada cien respuestas especificadas."
+  },
+  "metodo": "Se usa la variable derivada IDIOMA_MAT. Se excluye el código 999, que identifica respuestas sin especificar. Los demás códigos, incluido 998 para no habla, se conservan como categorías."
+}

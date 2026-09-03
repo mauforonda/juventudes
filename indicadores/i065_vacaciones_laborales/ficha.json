@@ -1,0 +1,7 @@
+{
+  "codigo": "I065", "nombre": "Vacaciones laborales", "objetivo": "Mostrar cuántos jóvenes asalariados tienen derecho a vacaciones.",
+  "definicion_conceptual": "Porcentaje de jóvenes asalariados con vacaciones como beneficio de su ocupación.", "poblacion_objetivo": "Personas de 16 a 28 años asalariadas que respondieron sobre el beneficio en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada que declara tener vacaciones.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Asalariados de la muestra incluidos.", "numerador": "Población expandida con vacaciones.", "denominador": "Población expandida asalariada con respuesta válida.", "valor": "Porcentaje estimado con vacaciones.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "CONDACT igual a 1 y S2_18 igual a 1 o 7 identifican a asalariados. S2_36B igual a 1 forma el numerador; sus respuestas 1 y 2 forman el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
+}

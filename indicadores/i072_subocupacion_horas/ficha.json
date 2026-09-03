@@ -1,0 +1,7 @@
+{
+  "codigo": "I072", "nombre": "Subocupación por horas", "objetivo": "Mostrar cuántos jóvenes ocupados desean y pueden trabajar más horas.",
+  "definicion_conceptual": "Porcentaje de jóvenes ocupados clasificados como subocupados por insuficiencia de horas.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con clasificación de subocupación en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada clasificada como subocupada por horas.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes ocupados de la muestra incluidos.", "numerador": "Población expandida subocupada por horas.", "denominador": "Población expandida ocupada con clasificación válida.", "valor": "Porcentaje estimado de subocupación por horas.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "CONDACT igual a 1 identifica a ocupados. PSUBOCUP igual a 1 forma el numerador; 0 y 1 forman el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
+}

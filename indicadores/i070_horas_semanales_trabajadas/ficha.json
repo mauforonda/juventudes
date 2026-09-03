@@ -1,0 +1,7 @@
+{
+  "codigo": "I070", "nombre": "Horas semanales trabajadas", "objetivo": "Mostrar la extensión habitual de la jornada semanal de los jóvenes.",
+  "definicion_conceptual": "Media y mediana de horas trabajadas por semana entre jóvenes ocupados.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con horas semanales registradas en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estiman la media y la mediana ponderadas de las horas semanales válidas.", "unidad_medida": "Horas por semana", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "estadístico"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "estadistico": "Media o mediana.", "observaciones": "Jóvenes ocupados de la muestra incluidos.", "valor": "Horas semanales estimadas.", "cv": "Error estándar dividido entre el valor estimado."},
+  "metodo": "CONDACT igual a 1 identifica a ocupados. Se usan valores de TOTHRS entre 1 y 168. La media y mediana usan el factor trimestral. El CV de la media considera estrato y UPM; el de la mediana usa la variación de la distribución acumulada alrededor del punto central."
+}

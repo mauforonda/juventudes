@@ -1,0 +1,7 @@
+{
+  "codigo": "I078", "nombre": "Pobreza por ingreso", "objetivo": "Mostrar cuántos jóvenes viven en hogares pobres por ingreso.",
+  "definicion_conceptual": "Porcentaje de jóvenes cuyo ingreso por persona en el hogar es menor al costo de la canasta básica total.", "poblacion_objetivo": "Personas de 16 a 28 años con clasificación de pobreza en la EH 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada clasificada como pobre por ingreso.", "unidad_medida": "Porcentaje", "fuente": "Encuesta de Hogares 2025. Tabla persona.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida pobre por ingreso.", "denominador": "Población expandida con clasificación válida.", "valor": "Porcentaje estimado en pobreza por ingreso.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "P0 igual a 1 forma el numerador; 0 y 1 forman el denominador. Se usa el factor de expansión y un CV que considera estrato y UPM."
+}

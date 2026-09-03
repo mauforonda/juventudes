@@ -1,0 +1,22 @@
+{
+  "codigo": "I049",
+  "nombre": "Inactividad por responsabilidades de cuidado",
+  "objetivo": "Mostrar cuántos jóvenes fuera del mercado laboral se dedican al hogar o al cuidado de personas.",
+  "definicion_conceptual": "Porcentaje de jóvenes fuera de la fuerza de trabajo cuya actividad principal son las labores del hogar o el cuidado de miembros del hogar.",
+  "poblacion_objetivo": "Personas de 16 a 28 años fuera de la fuerza de trabajo en el CPV 2024.",
+  "descripcion_operativa": "Se divide a quienes declararon labores del hogar o cuidado entre todos los jóvenes fuera de la fuerza de trabajo.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {
+    "gestion": "Año del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes fuera de la fuerza de trabajo dedicados al hogar o al cuidado.",
+    "denominador": "Jóvenes fuera de la fuerza de trabajo.",
+    "valor": "Jóvenes dedicados al hogar o al cuidado por cada cien jóvenes fuera de la fuerza de trabajo."
+  },
+  "metodo": "CONDACT_19 igual a 4 forma el denominador. P48_NOCU igual a 6 forma el numerador."
+}

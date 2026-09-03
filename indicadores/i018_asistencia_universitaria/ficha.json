@@ -1,0 +1,11 @@
+{
+  "codigo": "I018", "nombre": "Asistencia a educación universitaria",
+  "objetivo": "Mostrar la participación juvenil en universidades e instituciones equivalentes.",
+  "definicion_conceptual": "Porcentaje de jóvenes que asiste a universidad, UNIPOL, UNIMIL o una escuela superior de formación de maestros.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con respuesta definida sobre asistencia en el CPV 2024.",
+  "descripcion_operativa": "Se divide el número que asiste a educación universitaria o equivalente entre quienes declararon una categoría de asistencia.",
+  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes que asisten a educación universitaria o equivalente.", "denominador": "Jóvenes con respuesta definida.", "valor": "Jóvenes en educación universitaria por cada cien respuestas definidas."},
+  "metodo": "La categoría 7 de P38_ASISTE forma el numerador. Las categorías 1 a 8 forman el denominador."
+}

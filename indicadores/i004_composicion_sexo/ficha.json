@@ -1,0 +1,22 @@
+{
+  "codigo": "I004",
+  "nombre": "Composición por sexo",
+  "objetivo": "Mostrar la composición por sexo de la población joven.",
+  "definicion_conceptual": "Porcentaje de mujeres y hombres dentro de la población joven.",
+  "poblacion_objetivo": "Personas de 16 a 28 años registradas en el Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se divide el número de mujeres u hombres jóvenes entre el total de jóvenes del mismo municipio, área y edad.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {
+    "gestion": "Año de referencia del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio de registro.",
+    "area": "Área urbana o rural de la vivienda.",
+    "edad": "Edad cumplida, entre 16 y 28 años.",
+    "sexo": "Sexo registrado en el censo.",
+    "numerador": "Número de jóvenes del sexo indicado.",
+    "denominador": "Número de jóvenes del mismo municipio, área y edad.",
+    "valor": "Jóvenes del sexo indicado por cada cien jóvenes."
+  },
+  "metodo": "Se cuenta a las mujeres y hombres jóvenes y se divide cada conteo entre la población joven del mismo municipio, área y edad."
+}

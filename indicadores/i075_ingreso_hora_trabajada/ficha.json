@@ -1,0 +1,7 @@
+{
+  "codigo": "I075", "nombre": "Ingreso por hora trabajada", "objetivo": "Mostrar cuánto ingreso laboral obtienen los jóvenes por hora trabajada.",
+  "definicion_conceptual": "Media y mediana del ingreso laboral por hora entre jóvenes ocupados.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con ingreso positivo y horas válidas en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se divide el ingreso mensual entre las horas semanales multiplicadas por 52/12 y se estiman la media y mediana ponderadas.", "unidad_medida": "Bolivianos por hora", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "estadístico"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "estadistico": "Media o mediana.", "observaciones": "Jóvenes ocupados de la muestra incluidos.", "valor": "Ingreso por hora estimado en bolivianos.", "cv": "Error estándar dividido entre el valor estimado."},
+  "metodo": "CONDACT igual a 1 identifica a ocupados. Se usan YLAB positivo y TOTHRS entre 1 y 168. Las semanas se convierten a meses con 52/12. La media y mediana usan el factor trimestral y su CV considera estrato y UPM."
+}

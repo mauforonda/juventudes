@@ -1,0 +1,15 @@
+{
+  "codigo": "I010",
+  "nombre": "Tenencia de cédula de identidad",
+  "objetivo": "Mostrar la tenencia de cédula de identidad boliviana entre jóvenes.",
+  "definicion_conceptual": "Porcentaje de jóvenes que tiene o tuvo cédula de identidad boliviana.",
+  "poblacion_objetivo": "Personas de 16 a 28 años que declararon una respuesta válida en la pregunta 29 del Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se divide el número de jóvenes que respondió que tiene o tuvo cédula boliviana entre las respuestas 1, 2 y 3.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {
+    "gestion": "Año de referencia del censo.", "codigo_municipio": "Código de cinco dígitos del municipio de registro.", "area": "Área urbana o rural de la vivienda.", "edad": "Edad cumplida, entre 16 y 28 años.", "sexo": "Sexo registrado en el censo.", "numerador": "Jóvenes que tienen o tuvieron cédula de identidad boliviana.", "denominador": "Jóvenes con respuesta válida sobre cédula.", "valor": "Jóvenes con cédula por cada cien respuestas válidas."
+  },
+  "metodo": "La respuesta 1 de P29_CI forma el numerador. Las respuestas 1, 2 y 3 forman el denominador. El código 3 identifica una cédula boliviana de extranjero y se conserva fuera del numerador."
+}

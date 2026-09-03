@@ -1,0 +1,11 @@
+{
+  "codigo": "I032", "nombre": "Frecuencia de uso de internet",
+  "objetivo": "Mostrar con qué frecuencia usan internet los jóvenes usuarios.",
+  "definicion_conceptual": "Distribución de jóvenes usuarios de internet según su frecuencia de uso.",
+  "poblacion_objetivo": "Personas de 16 a 28 años que usaron internet en los últimos tres meses y declararon su frecuencia en la EH 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada de cada categoría de frecuencia entre usuarios recientes.",
+  "unidad_medida": "Porcentaje", "fuente": "Encuesta de Hogares 2025. Tabla persona.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "frecuencia"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "frecuencia": "Frecuencia declarada: diariamente, algunos días por semana, mes o trimestre.", "observaciones": "Usuarios de la muestra incluidos.", "numerador": "Población expandida de la categoría indicada.", "denominador": "Población expandida de usuarios con frecuencia declarada.", "valor": "Porcentaje estimado de la categoría.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "Se selecciona S03C_16A igual a 1. Las cuatro categorías de S03C_16B se presentan con etiquetas armonizadas. Cada porcentaje usa el factor de expansión y un CV que considera estrato y UPM."
+}

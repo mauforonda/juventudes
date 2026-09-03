@@ -1,0 +1,21 @@
+{
+  "codigo": "I002",
+  "nombre": "Peso de la juventud en la población",
+  "objetivo": "Mostrar qué parte de la población de cada territorio tiene entre 16 y 28 años.",
+  "definicion_conceptual": "Porcentaje de personas jóvenes dentro de la población total.",
+  "poblacion_objetivo": "Personas registradas en el Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se divide el número de personas de 16 a 28 años entre el total de personas del mismo municipio, área y sexo.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "sexo"],
+  "campos": {
+    "gestion": "Año de referencia del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio de registro.",
+    "area": "Área urbana o rural de la vivienda.",
+    "sexo": "Sexo registrado en el censo.",
+    "numerador": "Número de personas de 16 a 28 años.",
+    "denominador": "Número total de personas.",
+    "valor": "Personas jóvenes por cada cien personas."
+  },
+  "metodo": "Se seleccionan todas las personas censadas. Para cada municipio, área y sexo se cuenta cuántas tienen entre 16 y 28 años y se divide este número entre la población total del mismo grupo."
+}

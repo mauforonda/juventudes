@@ -1,0 +1,7 @@
+{
+  "codigo": "I061", "nombre": "Contrato con fecha de término", "objetivo": "Mostrar cuántos jóvenes asalariados firmaron un contrato de duración definida.",
+  "definicion_conceptual": "Porcentaje de jóvenes asalariados con contrato escrito que tiene fecha de vencimiento o término.", "poblacion_objetivo": "Personas de 16 a 28 años asalariadas con modalidad contractual declarada en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada de asalariados con contrato escrito de duración definida.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Asalariados de la muestra incluidos.", "numerador": "Población expandida con contrato de duración definida.", "denominador": "Población expandida asalariada con modalidad declarada.", "valor": "Porcentaje estimado con contrato de duración definida.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "CONDACT igual a 1 y S2_18 igual a 1 o 7 identifican a asalariados. S2_21 igual a 1 forma el numerador; sus categorías 1 a 5 forman el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
+}

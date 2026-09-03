@@ -1,0 +1,16 @@
+{
+  "codigo": "I055",
+  "nombre": "Aprendizaje sin remuneración",
+  "objetivo": "Mostrar cuántos jóvenes ocupados trabajan como aprendices sin pago.",
+  "definicion_conceptual": "Porcentaje de jóvenes ocupados cuya categoría laboral es aprendiz o persona en formación sin remuneración.",
+  "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con categoría laboral declarada en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada de aprendices sin remuneración entre jóvenes ocupados con categoría laboral válida.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {
+    "gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes ocupados de la muestra incluidos.", "numerador": "Población expandida de aprendices sin remuneración.", "denominador": "Población expandida ocupada con categoría laboral válida.", "valor": "Porcentaje estimado de aprendices sin remuneración.", "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "CONDACT igual a 1 identifica a la población ocupada. S2_18 igual a 6 forma el numerador; sus categorías 1 a 7 forman el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
+}

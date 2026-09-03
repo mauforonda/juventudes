@@ -1,0 +1,11 @@
+{
+  "codigo": "I025", "nombre": "No matriculación por tareas de cuidado",
+  "objetivo": "Mostrar las labores del hogar y de cuidado como causa de no matriculación entre jóvenes.",
+  "definicion_conceptual": "Porcentaje de jóvenes no matriculados cuya razón principal es realizar labores de casa o cuidar niños.",
+  "poblacion_objetivo": "Personas de 16 a 28 años no matriculadas que declararon una razón principal en la EH 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada cuya razón de no matriculación es la categoría 4.",
+  "unidad_medida": "Porcentaje", "fuente": "Encuesta de Hogares 2025. Tabla persona.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Personas de la muestra incluidas.", "numerador": "Población expandida que no se matriculó por labores del hogar o cuidado.", "denominador": "Población expandida no matriculada con una razón declarada.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "Se selecciona S03A_04 igual a 2. La categoría 4 de S03A_05 forma el numerador y las categorías 1 a 8 forman el denominador. Se usa el factor de expansión. El CV considera estrato y UPM mediante linealización de Taylor."
+}

@@ -1,0 +1,25 @@
+{
+  "codigo": "I001",
+  "nombre": "Población joven",
+  "objetivo": "Mostrar cuántas personas jóvenes viven en cada municipio de Bolivia.",
+  "definicion_conceptual": "Número de personas que tienen entre 16 y 28 años cumplidos.",
+  "poblacion_objetivo": "Personas de 16 a 28 años registradas en el Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se cuentan las personas de 16 a 28 años por municipio, área, edad simple y sexo.",
+  "unidad_medida": "Personas",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "campos": {
+    "gestion": "Año de referencia del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio de registro.",
+    "area": "Área urbana o rural de la vivienda.",
+    "edad": "Edad cumplida, entre 16 y 28 años.",
+    "sexo": "Sexo registrado en el censo.",
+    "valor": "Número de personas jóvenes."
+  },
+  "metodo": "La edad y el sexo provienen de la tabla persona. El área proviene de la vivienda donde fue registrada cada persona. Ambas tablas se unen con el número de vivienda. El código municipal de cinco dígitos se forma uniendo los códigos de departamento, provincia y municipio. Finalmente se cuenta una persona por registro. Las combinaciones de municipio, área, edad y sexo sin personas jóvenes se conservan con valor cero."
+}

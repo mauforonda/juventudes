@@ -1,0 +1,13 @@
+{
+  "codigo": "I125",
+  "nombre": "Uso actual de anticonceptivos modernos",
+  "objetivo": "Mostrar cuántas mujeres jóvenes sexualmente activas usan un método anticonceptivo moderno.",
+  "definicion_conceptual": "Porcentaje de mujeres jóvenes sexualmente activas que usa actualmente un método moderno.",
+  "poblacion_objetivo": "Mujeres de 16 a 28 años clasificadas como sexualmente activas en la EDSA 2023.",
+  "descripcion_operativa": "Se estima el uso moderno dentro de las mujeres clasificadas como sexualmente activas.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tabla mujer.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Mujeres de la muestra incluidas.", "numerador": "Población expandida que usa un método moderno.", "denominador": "Población expandida sexualmente activa con clasificación válida.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "SEXACT_M igual a 1 define el universo. ACTMACONCEP_MMO_M igual a 1 forma el numerador; sus valores 0 y 1 forman el denominador. Se usa el ponderador de mujeres y un CV que considera estrato y UPM."
+}

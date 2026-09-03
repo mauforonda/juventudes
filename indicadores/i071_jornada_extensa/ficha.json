@@ -1,0 +1,7 @@
+{
+  "codigo": "I071", "nombre": "Jornada extensa", "objetivo": "Mostrar cuántos jóvenes tienen una jornada semanal mayor a 48 horas.",
+  "definicion_conceptual": "Porcentaje de jóvenes ocupados que trabaja más de 48 horas por semana.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con horas semanales registradas en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada cuyas horas semanales superan 48.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes ocupados de la muestra incluidos.", "numerador": "Población expandida con más de 48 horas semanales.", "denominador": "Población expandida con horas válidas.", "valor": "Porcentaje estimado con jornada extensa.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "CONDACT igual a 1 identifica a ocupados. TOTHRS mayor a 48 forma el numerador; los valores de 1 a 168 forman el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
+}

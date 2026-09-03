@@ -1,0 +1,20 @@
+{
+  "codigo": "I005",
+  "nombre": "Distribución territorial de la juventud",
+  "objetivo": "Mostrar dónde se encuentra la población joven de Bolivia.",
+  "definicion_conceptual": "Número de jóvenes de cada municipio y área y su porcentaje dentro de la población joven nacional.",
+  "poblacion_objetivo": "Personas de 16 a 28 años registradas en el Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se cuenta a los jóvenes de cada municipio y área y se divide este número entre el total nacional de jóvenes.",
+  "unidad_medida": "Personas y porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural"],
+  "campos": {
+    "gestion": "Año de referencia del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio de registro.",
+    "area": "Área urbana o rural de la vivienda.",
+    "numerador": "Número de jóvenes del municipio y área.",
+    "denominador": "Número de jóvenes de Bolivia.",
+    "valor": "Jóvenes del municipio y área por cada cien jóvenes del país."
+  },
+  "metodo": "Se cuentan las personas de 16 a 28 años por municipio y área. Cada conteo se divide entre el total nacional de personas de esas edades."
+}

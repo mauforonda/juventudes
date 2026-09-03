@@ -1,0 +1,22 @@
+{
+  "codigo": "I050",
+  "nombre": "Movilidad cotidiana por trabajo",
+  "objetivo": "Mostrar cuántos jóvenes ocupados trabajan fuera de su municipio de residencia.",
+  "definicion_conceptual": "Porcentaje de jóvenes ocupados cuyo lugar principal de trabajo está en otro municipio o país.",
+  "poblacion_objetivo": "Personas de 16 a 28 años ocupadas que declararon la ubicación de su trabajo en el CPV 2024.",
+  "descripcion_operativa": "Se divide a quienes trabajan en otro municipio o país entre los jóvenes ocupados con ubicación laboral declarada.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio de residencia", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {
+    "gestion": "Año del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio de residencia.",
+    "area": "Área urbana o rural de residencia.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes ocupados que trabajan en otro municipio o país.",
+    "denominador": "Jóvenes ocupados con ubicación laboral declarada.",
+    "valor": "Jóvenes que trabajan fuera de su municipio por cada cien jóvenes ocupados."
+  },
+  "metodo": "CONDACT_19 igual a 1 identifica a la población ocupada. P52_MOV igual a 3 o 4 forma el numerador; sus categorías 1 a 4 forman el denominador."
+}

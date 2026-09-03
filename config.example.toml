@@ -1,0 +1,8 @@
+# Copie este archivo como config.local.toml y ajuste las rutas.
+
+[fuentes]
+cpv2024 = "/ruta/local/cpv2024/microdatos"
+edsa2023 = "/ruta/local/edsa2023"
+eh2025 = "/ruta/local/eh/EH2025"
+ece_4t2025 = "/ruta/local/ece/ECE_4T2025"
+

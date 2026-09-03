@@ -1,0 +1,25 @@
+{
+  "codigo": "I047",
+  "nombre": "Razón de salida del último trabajo",
+  "objetivo": "Mostrar por qué los jóvenes sin empleo dejaron su último trabajo.",
+  "definicion_conceptual": "Distribución de jóvenes sin empleo y con experiencia laboral según la causa principal de salida de su último trabajo.",
+  "poblacion_objetivo": "Personas de 16 a 28 años sin empleo que declararon la razón de salida de su último trabajo en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada de cada razón declarada entre las respuestas válidas.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "razón de salida"],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "razon_salida": "Causa principal declarada de salida del último trabajo.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida de la razón indicada.",
+    "denominador": "Población expandida con una razón válida.",
+    "valor": "Porcentaje estimado de la razón.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "CONDACT igual a 2, 4 o 5 identifica a jóvenes sin empleo que pudieron haber trabajado antes. Las diez respuestas de S2_13A_A se presentan con etiquetas claras. Los porcentajes usan el factor trimestral y un CV que considera estrato y UPM."
+}

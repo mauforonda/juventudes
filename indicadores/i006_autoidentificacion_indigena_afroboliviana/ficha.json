@@ -1,0 +1,22 @@
+{
+  "codigo": "I006",
+  "nombre": "Jóvenes de pueblos indígenas o afrobolivianos",
+  "objetivo": "Mostrar la autoidentificación indígena originaria campesina o afroboliviana entre jóvenes.",
+  "definicion_conceptual": "Porcentaje de jóvenes que se autoidentifica con alguna nación o pueblo indígena originario campesino o afroboliviano.",
+  "poblacion_objetivo": "Personas de 16 a 28 años que respondieron la pregunta de autoidentificación del Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se divide el número de jóvenes que respondió sí a la pregunta 32 entre el total de jóvenes que respondió sí o no.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {
+    "gestion": "Año de referencia del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio de registro.",
+    "area": "Área urbana o rural de la vivienda.",
+    "edad": "Edad cumplida, entre 16 y 28 años.",
+    "sexo": "Sexo registrado en el censo.",
+    "numerador": "Jóvenes que se autoidentifican con una nación o pueblo indígena originario campesino o afroboliviano.",
+    "denominador": "Jóvenes que respondieron sí o no a la pregunta.",
+    "valor": "Jóvenes que se autoidentifican por cada cien jóvenes que respondieron."
+  },
+  "metodo": "La respuesta 1 de P32_PUEBLO_PER forma el numerador. Las respuestas 1 y 2 forman el denominador. El porcentaje se calcula para cada municipio, área, edad y sexo."
+}

@@ -1,0 +1,13 @@
+{
+  "codigo": "I122",
+  "nombre": "Capacidad de conseguir un condón",
+  "objetivo": "Mostrar cuántas mujeres jóvenes declaran que podrían conseguir un condón por sí mismas.",
+  "definicion_conceptual": "Porcentaje de mujeres jóvenes que considera que podría conseguir un condón por sí misma.",
+  "poblacion_objetivo": "Mujeres de 16 a 28 años con respuesta sí o no en la EDSA 2023.",
+  "descripcion_operativa": "Se estima la proporción ponderada que respondió afirmativamente.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tabla mujer.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Mujeres de la muestra incluidas.", "numerador": "Población expandida que podría conseguir un condón.", "denominador": "Población expandida con respuesta sí o no.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "MS06_0618 igual a 1 forma el numerador; las respuestas 1 y 2 forman el denominador. Se usa el ponderador de mujeres y un CV que considera estrato y UPM."
+}

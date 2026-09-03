@@ -1,0 +1,13 @@
+{
+  "codigo": "I126",
+  "nombre": "Necesidad de anticoncepción no cubierta",
+  "objetivo": "Mostrar cuántas mujeres jóvenes sexualmente activas quieren postergar o evitar un embarazo y no usan anticonceptivos.",
+  "definicion_conceptual": "Porcentaje de mujeres jóvenes sexualmente activas que no usa un método y quiere tener otro hijo más adelante, no sabe cuándo o no quiere más hijos.",
+  "poblacion_objetivo": "Mujeres de 16 a 28 años sexualmente activas con información válida sobre uso y preferencia de fecundidad en la EDSA 2023.",
+  "descripcion_operativa": "Se combinan actividad sexual, ausencia de método y preferencia de postergar o evitar otro embarazo.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tabla mujer.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Mujeres de la muestra incluidas.", "numerador": "Población expandida con necesidad no cubierta.", "denominador": "Población expandida sexualmente activa con datos válidos.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "SEXACT_M igual a 1 define el universo. ACTMACONCEP_NIN_M igual a 1 y DESEO_M igual a 2, 3 o 5 forman el numerador. Se usa el ponderador de mujeres y un CV que considera estrato y UPM."
+}

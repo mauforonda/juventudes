@@ -1,0 +1,11 @@
+{
+  "codigo": "I026", "nombre": "No matriculación por embarazo",
+  "objetivo": "Mostrar el embarazo como causa de no matriculación entre mujeres jóvenes.",
+  "definicion_conceptual": "Porcentaje de mujeres jóvenes no matriculadas cuya razón principal es el embarazo.",
+  "poblacion_objetivo": "Mujeres de 16 a 28 años no matriculadas que declararon una razón principal en la EH 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada cuya razón de no matriculación es la categoría 3.",
+  "unidad_medida": "Porcentaje", "fuente": "Encuesta de Hogares 2025. Tabla persona.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado; siempre mujer.", "observaciones": "Mujeres de la muestra incluidas.", "numerador": "Población expandida que no se matriculó por embarazo.", "denominador": "Población expandida de mujeres no matriculadas con una razón declarada.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "Se seleccionan mujeres con S03A_04 igual a 2. La categoría 3 de S03A_05 forma el numerador y las categorías 1 a 8 forman el denominador. Se usa el factor de expansión. El CV considera estrato y UPM mediante linealización de Taylor."
+}

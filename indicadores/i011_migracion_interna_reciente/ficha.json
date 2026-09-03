@@ -1,0 +1,15 @@
+{
+  "codigo": "I011",
+  "nombre": "Migración interna reciente",
+  "objetivo": "Mostrar el cambio de municipio de residencia de la población joven desde 2019.",
+  "definicion_conceptual": "Porcentaje de jóvenes que en 2019 vivía en otro municipio de Bolivia.",
+  "poblacion_objetivo": "Personas de 16 a 28 años que declararon dónde vivían en 2019 en el Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se divide el número de jóvenes que vivía en otro municipio del país entre quienes declararon que vivían en el municipio actual, otro municipio u otro país.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio actual", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {
+    "gestion": "Año de referencia del censo.", "codigo_municipio": "Código del municipio de registro en 2024.", "area": "Área urbana o rural de la vivienda en 2024.", "edad": "Edad cumplida en 2024.", "sexo": "Sexo registrado en el censo.", "numerador": "Jóvenes que en 2019 vivían en otro municipio de Bolivia.", "denominador": "Jóvenes con una respuesta especificada sobre su residencia en 2019.", "valor": "Migrantes internos recientes por cada cien jóvenes con respuesta."
+  },
+  "metodo": "La respuesta 2 de P37_LUGRES5 forma el numerador. Las respuestas 1, 2 y 3 forman el denominador. La respuesta 9, sin especificar, se excluye."
+}

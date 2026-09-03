@@ -1,0 +1,11 @@
+{
+  "codigo": "I020", "nombre": "Conclusión de educación superior",
+  "objetivo": "Mostrar la conclusión de carreras técnicas superiores o universitarias entre jóvenes.",
+  "definicion_conceptual": "Porcentaje de jóvenes que concluyó una carrera técnica superior, licenciatura o posgrado.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con nivel y curso aprobados especificados en el CPV 2024.",
+  "descripcion_operativa": "Se identifica la conclusión del tercer año técnico superior, quinto año de licenciatura o un nivel de posgrado.",
+  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes que concluyeron educación superior.", "denominador": "Jóvenes con nivel y curso especificados.", "valor": "Jóvenes con educación superior concluida por cada cien con información especificada."},
+  "metodo": "El numerador incluye técnico superior con al menos tres cursos, licenciatura con al menos cinco cursos, maestría y doctorado. Se excluyen nivel o curso sin especificar."
+}

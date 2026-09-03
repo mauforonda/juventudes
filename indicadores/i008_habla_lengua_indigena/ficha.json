@@ -1,0 +1,13 @@
+{
+  "codigo": "I008",
+  "nombre": "Jóvenes que hablan una lengua indígena",
+  "objetivo": "Mostrar el uso de lenguas indígenas entre la población joven.",
+  "definicion_conceptual": "Porcentaje de jóvenes que declara al menos una lengua indígena entre los tres idiomas que más usa.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con una respuesta especificada sobre los idiomas que hablan en el CPV 2024.",
+  "descripcion_operativa": "Se identifica la presencia de un código nacional indígena en cualquiera de las tres respuestas de idioma hablado.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes que declararon al menos una lengua indígena.", "denominador": "Jóvenes con una respuesta especificada sobre idiomas hablados.", "valor": "Jóvenes que hablan una lengua indígena por cada cien respuestas especificadas."},
+  "metodo": "Se revisan P331_IDIOHAB1_COD, P332_IDIOHAB2_COD y P333_IDIOHAB3_COD. Los códigos 001 a 037 identifican lenguas nacionales; se excluye 006, castellano. El numerador incluye a quien tiene al menos uno de los demás códigos del intervalo. El código 999 no se considera una respuesta especificada."
+}

@@ -1,0 +1,25 @@
+{
+  "codigo": "I048",
+  "nombre": "Razones para no buscar trabajo",
+  "objetivo": "Mostrar por qué los jóvenes sin trabajo no buscaron empleo.",
+  "definicion_conceptual": "Distribución de jóvenes que no buscaron trabajo según la razón principal declarada.",
+  "poblacion_objetivo": "Personas de 16 a 28 años sin trabajo que no buscaron empleo y declararon una razón en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada de cada razón entre quienes respondieron que no buscaron trabajo.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "razón para no buscar"],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "razon_no_busqueda": "Razón principal declarada para no buscar trabajo.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida de la razón indicada.",
+    "denominador": "Población expandida con una razón válida.",
+    "valor": "Porcentaje estimado de la razón.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "S2_05 igual a 2 identifica a quienes no buscaron trabajo. Las respuestas válidas de S2_06 se presentan con etiquetas claras. Los porcentajes usan el factor trimestral y un CV que considera estrato y UPM."
+}

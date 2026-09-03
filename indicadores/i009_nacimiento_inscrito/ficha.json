@@ -1,0 +1,15 @@
+{
+  "codigo": "I009",
+  "nombre": "Nacimiento inscrito",
+  "objetivo": "Mostrar el acceso de la población joven al registro civil.",
+  "definicion_conceptual": "Porcentaje de jóvenes cuyo nacimiento está inscrito en el registro civil boliviano.",
+  "poblacion_objetivo": "Personas de 16 a 28 años que respondieron la pregunta 28 del Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se divide el número de jóvenes con nacimiento inscrito entre quienes respondieron sí o no.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {
+    "gestion": "Año de referencia del censo.", "codigo_municipio": "Código de cinco dígitos del municipio de registro.", "area": "Área urbana o rural de la vivienda.", "edad": "Edad cumplida, entre 16 y 28 años.", "sexo": "Sexo registrado en el censo.", "numerador": "Jóvenes cuyo nacimiento está inscrito.", "denominador": "Jóvenes que respondieron sí o no.", "valor": "Jóvenes con nacimiento inscrito por cada cien respuestas."
+  },
+  "metodo": "La respuesta 1 de P28_CN forma el numerador. Las respuestas 1 y 2 forman el denominador."
+}

@@ -1,0 +1,7 @@
+{
+  "codigo": "I063", "nombre": "Seguro de salud provisto por el trabajo", "objetivo": "Mostrar cuántos jóvenes reciben seguro de salud en su empleo.",
+  "definicion_conceptual": "Porcentaje de jóvenes ocupados con seguro de salud como beneficio de su ocupación.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas que respondieron sobre el beneficio en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada que declara tener seguro de salud en su ocupación.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida con seguro de salud laboral.", "denominador": "Población expandida con respuesta válida.", "valor": "Porcentaje estimado con seguro de salud laboral.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "CONDACT igual a 1 identifica a ocupados. S2_36A igual a 1 forma el numerador; sus respuestas 1 y 2 forman el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
+}

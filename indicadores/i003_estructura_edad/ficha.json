@@ -1,0 +1,22 @@
+{
+  "codigo": "I003",
+  "nombre": "Estructura por edad de la juventud",
+  "objetivo": "Mostrar cómo se distribuye la población joven entre los 16 y 28 años.",
+  "definicion_conceptual": "Porcentaje de jóvenes que tiene cada edad simple.",
+  "poblacion_objetivo": "Personas de 16 a 28 años registradas en el Censo de Población y Vivienda 2024.",
+  "descripcion_operativa": "Se divide el número de jóvenes de cada edad entre el total de jóvenes del mismo municipio, área y sexo.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "sexo", "edad simple"],
+  "campos": {
+    "gestion": "Año de referencia del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio de registro.",
+    "area": "Área urbana o rural de la vivienda.",
+    "sexo": "Sexo registrado en el censo.",
+    "edad": "Edad cumplida, entre 16 y 28 años.",
+    "numerador": "Número de jóvenes de la edad indicada.",
+    "denominador": "Número de jóvenes del mismo municipio, área y sexo.",
+    "valor": "Jóvenes de la edad indicada por cada cien jóvenes."
+  },
+  "metodo": "Se cuenta a las personas de cada edad y se divide el conteo entre la población de 16 a 28 años del mismo municipio, área y sexo."
+}

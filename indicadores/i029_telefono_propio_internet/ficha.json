@@ -1,0 +1,11 @@
+{
+  "codigo": "I029", "nombre": "Teléfono propio con internet",
+  "objetivo": "Mostrar cuántos jóvenes disponen de un teléfono personal que puede conectarse a internet.",
+  "definicion_conceptual": "Porcentaje de jóvenes con teléfono celular personal habilitado para conectarse a internet.",
+  "poblacion_objetivo": "Personas de 16 a 28 años que respondieron sobre tenencia de celular personal en la EH 2025.",
+  "descripcion_operativa": "Se exige una respuesta afirmativa tanto en tenencia personal como en capacidad de conexión.",
+  "unidad_medida": "Porcentaje", "fuente": "Encuesta de Hogares 2025. Tabla persona.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Personas de la muestra incluidas.", "numerador": "Población expandida con celular personal conectado a internet.", "denominador": "Población expandida con respuesta sobre tenencia de celular.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "El numerador combina S03C_13 igual a 1 y S03C_13A igual a 1. Las respuestas 1 y 2 de S03C_13 forman el denominador. La respuesta no sabe sobre conexión queda fuera del numerador."
+}

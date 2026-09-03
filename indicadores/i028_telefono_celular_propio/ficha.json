@@ -1,0 +1,11 @@
+{
+  "codigo": "I028", "nombre": "Teléfono celular propio",
+  "objetivo": "Mostrar el acceso personal de jóvenes a telefonía celular.",
+  "definicion_conceptual": "Porcentaje de jóvenes que dispone de teléfono celular para uso personal.",
+  "poblacion_objetivo": "Personas de 16 a 28 años que respondieron sobre tenencia de celular personal en la EH 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada que respondió sí a S03C_13.",
+  "unidad_medida": "Porcentaje", "fuente": "Encuesta de Hogares 2025. Tabla persona.",
+  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Personas de la muestra incluidas.", "numerador": "Población expandida con celular personal.", "denominador": "Población expandida con respuesta sí o no.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "La respuesta 1 de S03C_13 forma el numerador y las respuestas 1 y 2 forman el denominador. Se usa el factor de expansión y un CV que considera estrato y UPM."
+}

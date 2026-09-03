@@ -1,0 +1,7 @@
+{
+  "codigo": "I073", "nombre": "Más de un trabajo", "objetivo": "Mostrar cuántos jóvenes ocupados realizaron un trabajo secundario.",
+  "definicion_conceptual": "Porcentaje de jóvenes ocupados que realizó otro trabajo durante la semana anterior.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con respuesta válida en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada que declaró una actividad laboral secundaria.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes ocupados de la muestra incluidos.", "numerador": "Población expandida con otro trabajo.", "denominador": "Población expandida ocupada con respuesta válida.", "valor": "Porcentaje estimado con más de un trabajo.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "metodo": "CONDACT igual a 1 identifica a ocupados. S2_42 igual a 1 forma el numerador; sus respuestas 1 y 2 forman el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
+}

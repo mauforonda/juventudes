@@ -1,0 +1,11 @@
+{
+  "codigo": "I042", "nombre": "Desempleo juvenil",
+  "objetivo": "Mostrar la falta de empleo entre jóvenes que participan en el mercado laboral.",
+  "definicion_conceptual": "Porcentaje de jóvenes desocupados dentro de la fuerza de trabajo joven.",
+  "poblacion_objetivo": "Personas de 16 a 28 años dentro de la fuerza de trabajo en el CPV 2024.",
+  "descripcion_operativa": "Se divide la población desocupada entre la población ocupada y desocupada.",
+  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes desocupados.", "denominador": "Jóvenes dentro de la fuerza de trabajo.", "valor": "Jóvenes desocupados por cada cien participantes en el mercado laboral."},
+  "metodo": "CONDACT_19 igual a 2 o 3 forma el numerador. Las categorías 1, 2 y 3 forman el denominador."
+}

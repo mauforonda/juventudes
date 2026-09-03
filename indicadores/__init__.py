@@ -1,0 +1,1 @@
+"""Indicadores reproducibles del observatorio."""

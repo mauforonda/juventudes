@@ -1,0 +1,4 @@
+config.local.toml
+__pycache__/
+*.py[cod]
+

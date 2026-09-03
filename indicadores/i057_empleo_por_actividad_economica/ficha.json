@@ -1,0 +1,16 @@
+{
+  "codigo": "I057",
+  "nombre": "Empleo por actividad económica",
+  "objetivo": "Mostrar en qué actividades económicas trabajan los jóvenes.",
+  "definicion_conceptual": "Distribución de jóvenes ocupados por sección de actividad económica del lugar de trabajo.",
+  "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con actividad económica identificada en el CPV 2024.",
+  "descripcion_operativa": "Se calcula la proporción de cada sección de actividad entre respuestas identificadas.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo", "actividad económica"],
+  "campos": {
+    "gestion": "Año del censo.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "actividad_economica": "Sección de actividad del establecimiento o lugar de trabajo.",
+    "numerador": "Jóvenes ocupados de la actividad indicada.", "denominador": "Jóvenes ocupados con actividad identificada.", "valor": "Jóvenes de la actividad por cada cien jóvenes ocupados."
+  },
+  "metodo": "CONDACT_19 igual a 1 identifica a la población ocupada. ACT_ECO_2D_19 se presenta en sus 21 secciones de actividad. Los códigos 97 y 99 no se incluyen."
+}

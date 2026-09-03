@@ -1,0 +1,16 @@
+{
+  "codigo": "I056",
+  "nombre": "Empleo por ocupación",
+  "objetivo": "Mostrar en qué grupos ocupacionales trabajan los jóvenes.",
+  "definicion_conceptual": "Distribución de jóvenes ocupados por gran grupo de ocupación.",
+  "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con grupo ocupacional identificado en el CPV 2024.",
+  "descripcion_operativa": "Se calcula la proporción de cada gran grupo de la clasificación ocupacional entre respuestas identificadas.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo", "grupo ocupacional"],
+  "campos": {
+    "gestion": "Año del censo.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "grupo_ocupacional": "Gran grupo de la ocupación principal.",
+    "numerador": "Jóvenes ocupados del grupo indicado.", "denominador": "Jóvenes ocupados con grupo identificado.", "valor": "Jóvenes del grupo por cada cien jóvenes ocupados."
+  },
+  "metodo": "CONDACT_19 igual a 1 identifica a la población ocupada. OCU_1D_19 se agrupa con los diez grandes grupos de la COB 2023. Los códigos 97 y 99 no se incluyen."
+}
