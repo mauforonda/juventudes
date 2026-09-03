@@ -1,0 +1,44 @@
+name: Publicar vista en GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "vista/**"
+
+permissions:
+  actions: read
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v6
+
+      - name: Construir índice
+        run: python vista/construir_indice.py
+
+      - name: Configurar GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Preparar artefacto
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: vista
+
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Indicadores del Observatorio de la Juventud de Bolivia">
+  <title>Observatorio de la Juventud</title>
+  <link rel="icon" href="https://mauforonda.github.io/images/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Observatorio de la Juventud</h1>
+    <section id="catalogue" aria-label="Indicadores">
+      <div id="search">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"></circle><path d="m10.5 10.5 3 3"></path></svg>
+        <input type="search" aria-label="Buscar" autocomplete="off">
+        <button type="button" aria-label="Limpiar búsqueda">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8m0-8-8 8"></path></svg>
+        </button>
+      </div>
+      <div id="datasets"></div>
+      <div id="empty" hidden>No se encontraron indicadores.</div>
+      <div id="catalogue-sentinel" aria-hidden="true"></div>
+    </section>
+  </main>
+</body>
+</html>
