@@ -7,9 +7,25 @@
   "descripcion_operativa": "Se seleccionan registros de emigración cuya edad de salida está entre 16 y 28 años y se cuentan por municipio de origen, sexo, edad y año de salida y país de destino.",
   "unidad_medida": "Personas",
   "fuente": "Censo de Población y Vivienda 2024. Tabla emigración.",
-  "desagregaciones": ["código de municipio de origen", "sexo", "edad al salir", "año de salida", "código de país de destino"],
+  "desagregaciones": [
+    "código de municipio de origen",
+    "sexo",
+    "edad al salir",
+    "año de salida",
+    "código de país de destino"
+  ],
+  "temas": [
+    "poblacion_territorio"
+  ],
+  "espacios_politica": [],
   "campos": {
-    "gestion": "Año de referencia del censo.", "codigo_municipio": "Código del municipio del hogar que declaró a la persona emigrante.", "sexo": "Sexo de la persona emigrante.", "edad_salida": "Edad que tenía cuando salió de Bolivia.", "anio_salida": "Año en que salió de Bolivia.", "codigo_pais_destino": "Código del país donde vive actualmente.", "valor": "Número de personas con la misma combinación de características."
+    "gestion": "Año de referencia del censo.",
+    "codigo_municipio": "Código del municipio del hogar que declaró a la persona emigrante.",
+    "sexo": "Sexo de la persona emigrante.",
+    "edad_salida": "Edad que tenía cuando salió de Bolivia.",
+    "anio_salida": "Año en que salió de Bolivia.",
+    "codigo_pais_destino": "Código del país donde vive actualmente.",
+    "valor": "Número de personas con la misma combinación de características."
   },
   "metodo": "Se filtra E205_EDAD entre 16 y 28 años. El municipio se forma con IDEP, IPROV e IMUN. Luego se cuentan registros por las dimensiones indicadas."
 }

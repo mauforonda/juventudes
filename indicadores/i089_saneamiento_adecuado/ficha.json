@@ -1,4 +1,33 @@
 {
-  "codigo": "I089", "nombre": "Saneamiento adecuado", "objetivo": "Mostrar cuántos jóvenes viven en viviendas con baño y desagüe adecuado.", "definicion_conceptual": "Porcentaje de jóvenes en viviendas con baño o letrina y desagüe a alcantarillado o cámara séptica.", "poblacion_objetivo": "Personas de 16 a 28 años en viviendas con respuesta sanitaria válida en el CPV 2024.", "descripcion_operativa": "Se identifica la presencia de baño y desagüe a alcantarillado o cámara séptica.", "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.", "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año del censo.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes en viviendas con saneamiento adecuado.", "denominador": "Jóvenes en viviendas con respuesta sanitaria válida.", "valor": "Jóvenes con saneamiento adecuado por cada cien jóvenes."}, "metodo": "V15_SERVSAN igual a 1 o 2 y V16_DESAGUE igual a 1 o 2 forman el numerador. Las categorías 1 a 3 de V15_SERVSAN forman el denominador."
+  "codigo": "I089",
+  "nombre": "Saneamiento adecuado",
+  "objetivo": "Mostrar cuántos jóvenes viven en viviendas con baño y desagüe adecuado.",
+  "definicion_conceptual": "Porcentaje de jóvenes en viviendas con baño o letrina y desagüe a alcantarillado o cámara séptica.",
+  "poblacion_objetivo": "Personas de 16 a 28 años en viviendas con respuesta sanitaria válida en el CPV 2024.",
+  "descripcion_operativa": "Se identifica la presencia de baño y desagüe a alcantarillado o cámara séptica.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "autonomia_economica_vivienda"
+  ],
+  "espacios_politica": [
+    "independencia_economica_residencial"
+  ],
+  "campos": {
+    "gestion": "Año del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes en viviendas con saneamiento adecuado.",
+    "denominador": "Jóvenes en viviendas con respuesta sanitaria válida.",
+    "valor": "Jóvenes con saneamiento adecuado por cada cien jóvenes."
+  },
+  "metodo": "V15_SERVSAN igual a 1 o 2 y V16_DESAGUE igual a 1 o 2 forman el numerador. Las categorías 1 a 3 de V15_SERVSAN forman el denominador."
 }

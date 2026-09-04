@@ -1,0 +1,11 @@
+[
+  {
+    "tipo": "numero_nacional",
+    "campo": "valor"
+  },
+  {
+    "tipo": "numero_edad",
+    "dimension": "edad_salida",
+    "campo": "valor"
+  }
+]

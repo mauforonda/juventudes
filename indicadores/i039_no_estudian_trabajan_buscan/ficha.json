@@ -1,11 +1,35 @@
 {
-  "codigo": "I039", "nombre": "Jóvenes que no estudian, no trabajan ni buscan trabajo",
+  "codigo": "I039",
+  "nombre": "Jóvenes que no estudian, no trabajan ni buscan trabajo",
   "objetivo": "Mostrar la desvinculación de educación, empleo y búsqueda laboral entre jóvenes.",
   "definicion_conceptual": "Porcentaje de jóvenes que no asiste, no está ocupado y está fuera de la fuerza de trabajo.",
   "poblacion_objetivo": "Personas de 16 a 28 años con asistencia y condición de actividad definidas en el CPV 2024.",
   "descripcion_operativa": "Se combinan falta de asistencia educativa y condición fuera de la fuerza de trabajo.",
-  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes que no asisten, no trabajan ni buscan trabajo.", "denominador": "Jóvenes con asistencia y actividad definidas.", "valor": "Jóvenes desvinculados de las tres actividades por cada cien con información definida."},
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "estudio_trabajo_desempleo",
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "transicion_educacion_trabajo",
+    "acceso_primer_empleo"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes que no asisten, no trabajan ni buscan trabajo.",
+    "denominador": "Jóvenes con asistencia y actividad definidas.",
+    "valor": "Jóvenes desvinculados de las tres actividades por cada cien con información definida."
+  },
   "metodo": "El numerador combina ASISTE igual a 2 y CONDACT_19 igual a 4. El denominador incluye ASISTE 1 o 2 y CONDACT_19 de 1 a 4."
 }

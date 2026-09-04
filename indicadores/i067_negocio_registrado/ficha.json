@@ -1,7 +1,35 @@
 {
-  "codigo": "I067", "nombre": "Negocio registrado", "objetivo": "Mostrar cuántos jóvenes trabajan en una empresa o negocio con NIT.",
-  "definicion_conceptual": "Porcentaje de jóvenes ocupados cuyo lugar de trabajo tiene NIT en régimen general o simplificado.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas que conocen la situación del NIT en la ECE del cuarto trimestre de 2025.",
-  "descripcion_operativa": "Se estima la proporción ponderada que trabaja en un establecimiento con NIT.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes ocupados de la muestra incluidos.", "numerador": "Población expandida en establecimientos con NIT.", "denominador": "Población expandida con situación del NIT conocida.", "valor": "Porcentaje estimado en establecimientos con NIT.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "codigo": "I067",
+  "nombre": "Negocio registrado",
+  "objetivo": "Mostrar cuántos jóvenes trabajan en una empresa o negocio con NIT.",
+  "definicion_conceptual": "Porcentaje de jóvenes ocupados cuyo lugar de trabajo tiene NIT en régimen general o simplificado.",
+  "poblacion_objetivo": "Personas de 16 a 28 años ocupadas que conocen la situación del NIT en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada que trabaja en un establecimiento con NIT.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "calidad_empleo_ingresos"
+  ],
+  "espacios_politica": [
+    "trabajo_digno_proteccion_social"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes ocupados de la muestra incluidos.",
+    "numerador": "Población expandida en establecimientos con NIT.",
+    "denominador": "Población expandida con situación del NIT conocida.",
+    "valor": "Porcentaje estimado en establecimientos con NIT.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "CONDACT igual a 1 identifica a ocupados. S2_23 igual a 1 o 2 forma el numerador; las categorías 1 a 3 forman el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
 }

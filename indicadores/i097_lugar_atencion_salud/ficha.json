@@ -1,4 +1,37 @@
 {
-  "codigo": "I097", "nombre": "Lugar de atención", "objetivo": "Mostrar dónde se atendieron los jóvenes con problemas de salud recientes.", "definicion_conceptual": "Porcentaje de jóvenes atendidos que mencionó cada tipo de servicio ante un problema de salud reciente.", "poblacion_objetivo": "Personas de 16 a 28 años con un problema de salud en los últimos tres meses que mencionaron algún lugar de atención en la EDSA 2023.", "descripcion_operativa": "Se agrupan los lugares mencionados en servicios públicos, cajas o seguros, privados, farmacia, medicina tradicional y otra atención. Una persona puede mencionar más de uno.", "unidad_medida": "Porcentaje", "fuente": "Encuesta de Demografía y Salud 2023. Tabla hogar.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "lugar de atención"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "lugar_atencion": "Tipo de servicio mencionado.", "observaciones": "Jóvenes atendidos de la muestra incluidos.", "numerador": "Población expandida que mencionó el lugar.", "denominador": "Población expandida que mencionó algún lugar de atención.", "valor": "Porcentaje estimado que mencionó el lugar.", "cv": "Error estándar dividido entre el porcentaje estimado."}, "metodo": "HS03_0033 igual a 1 identifica un problema reciente. Las respuestas afirmativas de HS03_0035_A a U y X se agrupan en seis tipos. Se usa FACTOREXPH y un CV que considera estrato y UPM."
+  "codigo": "I097",
+  "nombre": "Lugar de atención",
+  "objetivo": "Mostrar dónde se atendieron los jóvenes con problemas de salud recientes.",
+  "definicion_conceptual": "Porcentaje de jóvenes atendidos que mencionó cada tipo de servicio ante un problema de salud reciente.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con un problema de salud en los últimos tres meses que mencionaron algún lugar de atención en la EDSA 2023.",
+  "descripcion_operativa": "Se agrupan los lugares mencionados en servicios públicos, cajas o seguros, privados, farmacia, medicina tradicional y otra atención. Una persona puede mencionar más de uno.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tabla hogar.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "lugar de atención"
+  ],
+  "temas": [
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "barreras_acceso_servicios"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "lugar_atencion": "Tipo de servicio mencionado.",
+    "observaciones": "Jóvenes atendidos de la muestra incluidos.",
+    "numerador": "Población expandida que mencionó el lugar.",
+    "denominador": "Población expandida que mencionó algún lugar de atención.",
+    "valor": "Porcentaje estimado que mencionó el lugar.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "HS03_0033 igual a 1 identifica un problema reciente. Las respuestas afirmativas de HS03_0035_A a U y X se agrupan en seis tipos. Se usa FACTOREXPH y un CV que considera estrato y UPM."
 }

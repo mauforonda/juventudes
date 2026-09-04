@@ -7,7 +7,30 @@
   "descripcion_operativa": "Se compara la edad declarada en la primera relación sexual con los 18 años.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida que inició su vida sexual antes de los 18 años.", "denominador": "Población expandida con una edad válida de inicio sexual.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "sexualidad_reproduccion_familia",
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "autonomia_sexual_reproductiva"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida que inició su vida sexual antes de los 18 años.",
+    "denominador": "Población expandida con una edad válida de inicio sexual.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "MS06_0610 o VS04_0412 entre 5 años y la edad actual forma el denominador. Una edad menor a 18 forma el numerador. Las respuestas nunca tuvo relaciones, cuando se casó o unió, no sabe y no responde no contienen una edad exacta y no se incluyen. Se usa el ponderador individual y un CV que considera estrato y UPM."
 }

@@ -7,7 +7,18 @@
   "descripcion_operativa": "Se divide a quienes trabajan en otro municipio o país entre los jóvenes ocupados con ubicación laboral declarada.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio de residencia", "área urbana o rural", "edad simple", "sexo"],
+  "desagregaciones": [
+    "código de municipio de residencia",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "estudio_trabajo_desempleo"
+  ],
+  "espacios_politica": [
+    "transicion_educacion_trabajo"
+  ],
   "campos": {
     "gestion": "Año del censo.",
     "codigo_municipio": "Código de cinco dígitos del municipio de residencia.",

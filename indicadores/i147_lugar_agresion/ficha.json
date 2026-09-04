@@ -1,1 +1,37 @@
-{"codigo":"I147","nombre":"Lugar de la agresión","objetivo":"Mostrar dónde ocurrieron las agresiones sufridas por jóvenes fuera de la pareja.","definicion_conceptual":"Porcentaje que menciona cada lugar entre jóvenes agredidos por una persona distinta de su pareja.","poblacion_objetivo":"Personas de 16 a 28 años con al menos un lugar de agresión declarado en la EDSA 2023.","descripcion_operativa":"Se reúnen los lugares de agresión verbal, física y sexual. Una persona puede declarar más de un lugar.","unidad_medida":"Porcentaje de respuestas múltiples","fuente":"Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.","desagregaciones":["código de departamento","área urbana o rural","edad simple","sexo","lugar"],"campos":{"gestion":"Año de la encuesta.","codigo_departamento":"Primer dígito del código municipal del departamento.","area":"Área urbana o rural.","edad":"Edad cumplida.","sexo":"Sexo declarado.","lugar":"Lugar donde ocurrió la agresión.","observaciones":"Jóvenes agredidos incluidos en la muestra.","numerador":"Población expandida que declaró el lugar.","denominador":"Población expandida que declaró al menos un lugar.","valor":"Porcentaje estimado que declaró el lugar.","cv":"Error estándar dividido entre el porcentaje estimado."},"metodo":"Se combinan MS11_1134 y MS11_1137 en mujeres, o VS08_0826 y VS08_0829 en hombres. Los lugares son espacio público, trabajo, escuela, universidad, evento público, institución policial o militar, organización social o política y otro. Se usa el ponderador individual y un CV que considera estrato y UPM."}
+{
+  "codigo": "I147",
+  "nombre": "Lugar de la agresión",
+  "objetivo": "Mostrar dónde ocurrieron las agresiones sufridas por jóvenes fuera de la pareja.",
+  "definicion_conceptual": "Porcentaje que menciona cada lugar entre jóvenes agredidos por una persona distinta de su pareja.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con al menos un lugar de agresión declarado en la EDSA 2023.",
+  "descripcion_operativa": "Se reúnen los lugares de agresión verbal, física y sexual. Una persona puede declarar más de un lugar.",
+  "unidad_medida": "Porcentaje de respuestas múltiples",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "lugar"
+  ],
+  "temas": [
+    "seguridad_discriminacion_violencia"
+  ],
+  "espacios_politica": [
+    "proteccion_violencia_acceso_justicia"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "lugar": "Lugar donde ocurrió la agresión.",
+    "observaciones": "Jóvenes agredidos incluidos en la muestra.",
+    "numerador": "Población expandida que declaró el lugar.",
+    "denominador": "Población expandida que declaró al menos un lugar.",
+    "valor": "Porcentaje estimado que declaró el lugar.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "Se combinan MS11_1134 y MS11_1137 en mujeres, o VS08_0826 y VS08_0829 en hombres. Los lugares son espacio público, trabajo, escuela, universidad, evento público, institución policial o militar, organización social o política y otro. Se usa el ponderador individual y un CV que considera estrato y UPM."
+}

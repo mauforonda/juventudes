@@ -1,4 +1,33 @@
 {
-  "codigo": "I087", "nombre": "Acceso a agua por red", "objetivo": "Mostrar cuántos jóvenes viven en viviendas abastecidas por una red de agua.", "definicion_conceptual": "Porcentaje de jóvenes cuya fuente principal de agua es una cañería de red.", "poblacion_objetivo": "Personas de 16 a 28 años en viviendas con fuente de agua declarada en el CPV 2024.", "descripcion_operativa": "Se divide a jóvenes en viviendas abastecidas por cañería de red entre quienes tienen una fuente válida.", "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.", "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año del censo.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes en viviendas abastecidas por cañería de red.", "denominador": "Jóvenes en viviendas con fuente válida.", "valor": "Jóvenes con agua por red por cada cien jóvenes."}, "metodo": "V07_AGUAPRO igual a 1 forma el numerador; sus categorías 1 a 9 forman el denominador."
+  "codigo": "I087",
+  "nombre": "Acceso a agua por red",
+  "objetivo": "Mostrar cuántos jóvenes viven en viviendas abastecidas por una red de agua.",
+  "definicion_conceptual": "Porcentaje de jóvenes cuya fuente principal de agua es una cañería de red.",
+  "poblacion_objetivo": "Personas de 16 a 28 años en viviendas con fuente de agua declarada en el CPV 2024.",
+  "descripcion_operativa": "Se divide a jóvenes en viviendas abastecidas por cañería de red entre quienes tienen una fuente válida.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "autonomia_economica_vivienda"
+  ],
+  "espacios_politica": [
+    "independencia_economica_residencial"
+  ],
+  "campos": {
+    "gestion": "Año del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes en viviendas abastecidas por cañería de red.",
+    "denominador": "Jóvenes en viviendas con fuente válida.",
+    "valor": "Jóvenes con agua por red por cada cien jóvenes."
+  },
+  "metodo": "V07_AGUAPRO igual a 1 forma el numerador; sus categorías 1 a 9 forman el denominador."
 }

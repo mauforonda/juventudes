@@ -7,7 +7,28 @@
   "descripcion_operativa": "Se usa la clasificación censal de atención calificada del último parto.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año del censo.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Mujeres cuyo último parto tuvo atención calificada.", "denominador": "Mujeres con último parto y clasificación válida.", "valor": "Partos con atención calificada por cada cien últimos partos."},
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "sexualidad_reproduccion_familia",
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "autonomia_sexual_reproductiva"
+  ],
+  "campos": {
+    "gestion": "Año del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Mujeres cuyo último parto tuvo atención calificada.",
+    "denominador": "Mujeres con último parto y clasificación válida.",
+    "valor": "Partos con atención calificada por cada cien últimos partos."
+  },
   "metodo": "P59_PARTOCALIF igual a 1 forma el numerador; los valores 1 y 2 forman el denominador. La variable censal identifica la atención por personal calificado en el último parto de los cinco años anteriores."
 }

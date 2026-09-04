@@ -27,9 +27,16 @@ CAMPOS_FICHA = frozenset(
         "unidad_medida",
         "fuente",
         "desagregaciones",
+        "temas",
+        "espacios_politica",
         "metodo",
     }
 )
+
+DICCIONARIOS_CLASIFICACION = {
+    "temas": DICCIONARIOS_DIR / "temas.json",
+    "espacios_politica": DICCIONARIOS_DIR / "espacios_politica.json",
+}
 
 
 def cargar_configuracion(ruta: Path | None = None) -> dict:
@@ -94,7 +101,7 @@ def validar_codigos_municipales(datos: pd.DataFrame, columna: str) -> None:
 
 
 def validar_ficha(ruta: Path) -> None:
-    """Comprueba que una ficha contenga las definiciones mínimas acordadas."""
+    """Comprueba los campos mínimos y las categorías de una ficha."""
 
     with ruta.open(encoding="utf-8") as archivo:
         ficha = json.load(archivo)
@@ -102,6 +109,31 @@ def validar_ficha(ruta: Path) -> None:
     faltantes = sorted(CAMPOS_FICHA - ficha.keys())
     if faltantes:
         raise ValueError(f"La ficha no contiene: {', '.join(faltantes)}")
+
+    for campo, ruta_diccionario in DICCIONARIOS_CLASIFICACION.items():
+        valores = ficha[campo]
+        if not isinstance(valores, list) or not all(
+            isinstance(valor, str) for valor in valores
+        ):
+            raise ValueError(f"{campo} debe ser una lista de slugs.")
+        if len(valores) != len(set(valores)):
+            raise ValueError(f"{campo} contiene slugs repetidos.")
+
+        with ruta_diccionario.open(encoding="utf-8") as archivo:
+            diccionario = json.load(archivo)
+        campos_invalidos = [
+            slug
+            for slug, definicion in diccionario.items()
+            if set(definicion) != {"nombre", "descripcion"}
+        ]
+        if campos_invalidos:
+            raise ValueError(f"El diccionario de {campo} contiene campos no esperados.")
+
+        desconocidos = sorted(set(valores) - diccionario.keys())
+        if desconocidos:
+            raise ValueError(
+                f"{campo} contiene slugs desconocidos: {', '.join(desconocidos)}"
+            )
 
 
 def escribir_resultados(

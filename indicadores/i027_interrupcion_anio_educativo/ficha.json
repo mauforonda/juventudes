@@ -7,7 +7,32 @@
   "descripcion_operativa": "Para cada razón se estima la proporción de matriculados que no pasa clases y declaró esa causa.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta de Hogares 2025. Tabla persona.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "razón de inasistencia"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "razon_inasistencia": "Razón principal declarada para no pasar clases.", "observaciones": "Personas matriculadas de la muestra con respuesta sobre asistencia.", "numerador": "Población expandida que no pasa clases por la razón indicada.", "denominador": "Población expandida matriculada con respuesta sobre asistencia.", "valor": "Porcentaje estimado para la razón indicada.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "razón de inasistencia"
+  ],
+  "temas": [
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "permanencia_conclusion_educativa",
+    "barreras_acceso_servicios"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "razon_inasistencia": "Razón principal declarada para no pasar clases.",
+    "observaciones": "Personas matriculadas de la muestra con respuesta sobre asistencia.",
+    "numerador": "Población expandida que no pasa clases por la razón indicada.",
+    "denominador": "Población expandida matriculada con respuesta sobre asistencia.",
+    "valor": "Porcentaje estimado para la razón indicada.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "Se selecciona S03A_04 igual a 1. S03B_10 igual a 4 identifica a quienes no pasan clases. Las categorías 1 a 5 de S03B_11 se presentan por separado. El denominador incluye las categorías 1 a 4 de S03B_10."
 }

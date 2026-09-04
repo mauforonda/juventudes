@@ -1,4 +1,35 @@
 {
-  "codigo": "I101", "nombre": "Falta de atención ante un problema de salud", "objetivo": "Mostrar cuántos jóvenes con un problema reciente no acudieron a un servicio de salud.", "definicion_conceptual": "Porcentaje de jóvenes con un problema de salud reciente que no acudió a ningún establecimiento o servicio.", "poblacion_objetivo": "Personas de 16 a 28 años con un problema de salud reciente y respuesta de atención válida en la EDSA 2023.", "descripcion_operativa": "Se estima la proporción ponderada que marcó que no acudió a ningún establecimiento.", "unidad_medida": "Porcentaje", "fuente": "Encuesta de Demografía y Salud 2023. Tabla hogar.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes con problema de salud de la muestra incluidos.", "numerador": "Población expandida que no acudió a un servicio.", "denominador": "Población expandida con problema reciente y respuesta válida.", "valor": "Porcentaje estimado sin atención.", "cv": "Error estándar dividido entre el porcentaje estimado."}, "metodo": "HS03_0033 igual a 1 identifica un problema reciente. HS03_0035_V igual a 1 forma el numerador; sus respuestas 1 y 2 forman el denominador. Se usa FACTOREXPH y un CV que considera estrato y UPM."
+  "codigo": "I101",
+  "nombre": "Falta de atención ante un problema de salud",
+  "objetivo": "Mostrar cuántos jóvenes con un problema reciente no acudieron a un servicio de salud.",
+  "definicion_conceptual": "Porcentaje de jóvenes con un problema de salud reciente que no acudió a ningún establecimiento o servicio.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con un problema de salud reciente y respuesta de atención válida en la EDSA 2023.",
+  "descripcion_operativa": "Se estima la proporción ponderada que marcó que no acudió a ningún establecimiento.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tabla hogar.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "barreras_acceso_servicios"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes con problema de salud de la muestra incluidos.",
+    "numerador": "Población expandida que no acudió a un servicio.",
+    "denominador": "Población expandida con problema reciente y respuesta válida.",
+    "valor": "Porcentaje estimado sin atención.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "HS03_0033 igual a 1 identifica un problema reciente. HS03_0035_V igual a 1 forma el numerador; sus respuestas 1 y 2 forman el denominador. Se usa FACTOREXPH y un CV que considera estrato y UPM."
 }

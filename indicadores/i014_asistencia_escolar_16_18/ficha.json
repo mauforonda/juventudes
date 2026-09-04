@@ -7,7 +7,27 @@
   "descripcion_operativa": "Se divide el número que asiste a escuela o colegio entre quienes declararon una de las ocho categorías de asistencia.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida, de 16 a 18 años.", "sexo": "Sexo registrado.", "numerador": "Personas que asisten a escuela o colegio.", "denominador": "Personas con respuesta definida.", "valor": "Personas que asisten por cada cien respuestas definidas."},
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "permanencia_conclusion_educativa"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida, de 16 a 18 años.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Personas que asisten a escuela o colegio.",
+    "denominador": "Personas con respuesta definida.",
+    "valor": "Personas que asisten por cada cien respuestas definidas."
+  },
   "metodo": "La categoría 5 de P38_ASISTE forma el numerador. Las categorías 1 a 8 forman el denominador."
 }

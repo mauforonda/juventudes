@@ -7,7 +7,32 @@
   "descripcion_operativa": "Se estima la proporción ponderada que respondió que su primera relación sexual no tenía su consentimiento.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta de Demografía y Salud 2023. Tabla mujer.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Mujeres de la muestra incluidas.", "numerador": "Población expandida cuya primera relación sexual no fue consentida.", "denominador": "Población expandida con respuesta válida.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "sexualidad_reproduccion_familia",
+    "salud_nutricion_bienestar",
+    "seguridad_discriminacion_violencia"
+  ],
+  "espacios_politica": [
+    "autonomia_sexual_reproductiva",
+    "proteccion_violencia_acceso_justicia"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Mujeres de la muestra incluidas.",
+    "numerador": "Población expandida cuya primera relación sexual no fue consentida.",
+    "denominador": "Población expandida con respuesta válida.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "MS06_0610_B igual a 2 forma el numerador; las respuestas 1 y 2 forman el denominador. Se usa el ponderador de mujeres y un CV que considera estrato y UPM."
 }

@@ -7,7 +7,30 @@
   "descripcion_operativa": "Se estima la proporción ponderada que declaró uso de condón en la primera relación sexual.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida que usó condón.", "denominador": "Población expandida con respuesta sí o no.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "sexualidad_reproduccion_familia",
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "autonomia_sexual_reproductiva"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida que usó condón.",
+    "denominador": "Población expandida con respuesta sí o no.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "MS06_0612 o VS04_0415 igual a 1 forma el numerador; las respuestas 1 y 2 forman el denominador. Se usa el ponderador individual y un CV que considera estrato y UPM."
 }

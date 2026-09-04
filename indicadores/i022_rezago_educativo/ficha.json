@@ -7,7 +7,27 @@
   "descripcion_operativa": "Se comparan los años escolares aprobados con diez años a los 16, once a los 17 y doce desde los 18 años.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes con menos años escolares aprobados de los esperados.", "denominador": "Jóvenes con nivel y curso especificados.", "valor": "Jóvenes con rezago por cada cien con información especificada."},
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "permanencia_conclusion_educativa"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes con menos años escolares aprobados de los esperados.",
+    "denominador": "Jóvenes con nivel y curso especificados.",
+    "valor": "Jóvenes con rezago por cada cien con información especificada."
+  },
   "metodo": "Básico equivale a sus cursos aprobados; intermedio, a cinco más el curso; medio, a ocho más el curso; primaria, a sus cursos; secundaria, a seis más el curso; y los niveles posteriores, a doce años. Se espera edad menos seis, con un máximo de doce años."
 }

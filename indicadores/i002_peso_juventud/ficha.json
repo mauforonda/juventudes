@@ -7,7 +7,15 @@
   "descripcion_operativa": "Se divide el número de personas de 16 a 28 años entre el total de personas del mismo municipio, área y sexo.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "sexo"],
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "sexo"
+  ],
+  "temas": [
+    "poblacion_territorio"
+  ],
+  "espacios_politica": [],
   "campos": {
     "gestion": "Año de referencia del censo.",
     "codigo_municipio": "Código de cinco dígitos del municipio de registro.",

@@ -1,4 +1,4 @@
 config.local.toml
 __pycache__/
 *.py[cod]
-
+vista/indice.json

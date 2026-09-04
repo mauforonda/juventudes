@@ -1,7 +1,37 @@
 {
-  "codigo": "I069", "nombre": "Tamaño del establecimiento", "objetivo": "Mostrar el tamaño de los establecimientos donde trabajan los jóvenes.",
-  "definicion_conceptual": "Distribución de jóvenes ocupados según el número total de personas que trabajan en la empresa o lugar de trabajo.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con tamaño del establecimiento declarado en la ECE del cuarto trimestre de 2025.",
-  "descripcion_operativa": "Se estima la proporción ponderada de cada rango de personas ocupadas en el establecimiento.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "tamaño del establecimiento"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "tamano_establecimiento": "Rango de personas que trabajan en el establecimiento.", "observaciones": "Jóvenes ocupados de la muestra incluidos.", "numerador": "Población expandida del rango indicado.", "denominador": "Población expandida con tamaño declarado.", "valor": "Porcentaje estimado del rango.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "codigo": "I069",
+  "nombre": "Tamaño del establecimiento",
+  "objetivo": "Mostrar el tamaño de los establecimientos donde trabajan los jóvenes.",
+  "definicion_conceptual": "Distribución de jóvenes ocupados según el número total de personas que trabajan en la empresa o lugar de trabajo.",
+  "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con tamaño del establecimiento declarado en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada de cada rango de personas ocupadas en el establecimiento.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "tamaño del establecimiento"
+  ],
+  "temas": [
+    "calidad_empleo_ingresos"
+  ],
+  "espacios_politica": [
+    "trabajo_digno_proteccion_social"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "tamano_establecimiento": "Rango de personas que trabajan en el establecimiento.",
+    "observaciones": "Jóvenes ocupados de la muestra incluidos.",
+    "numerador": "Población expandida del rango indicado.",
+    "denominador": "Población expandida con tamaño declarado.",
+    "valor": "Porcentaje estimado del rango.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "Las ocho respuestas de S2_26A se presentan con etiquetas claras entre jóvenes con CONDACT igual a 1. Se usa el factor trimestral y un CV que considera estrato y UPM."
 }

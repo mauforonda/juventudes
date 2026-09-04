@@ -1,4 +1,33 @@
 {
-  "codigo": "I098", "nombre": "Automedicación", "objetivo": "Mostrar cuántos jóvenes recurren a medicamentos sin receta.", "definicion_conceptual": "Porcentaje de jóvenes que declaró automedicación como forma de atención de salud.", "poblacion_objetivo": "Personas de 16 a 28 años con respuesta válida en el CPV 2024.", "descripcion_operativa": "Se divide a quienes declararon automedicación entre jóvenes con respuesta válida.", "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.", "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año del censo.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes que declararon automedicación.", "denominador": "Jóvenes con respuesta válida.", "valor": "Jóvenes que se automedican por cada cien jóvenes."}, "metodo": "P30F_AUTOME igual a 1 forma el numerador; sus respuestas 1 y 2 forman el denominador."
+  "codigo": "I098",
+  "nombre": "Automedicación",
+  "objetivo": "Mostrar cuántos jóvenes recurren a medicamentos sin receta.",
+  "definicion_conceptual": "Porcentaje de jóvenes que declaró automedicación como forma de atención de salud.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con respuesta válida en el CPV 2024.",
+  "descripcion_operativa": "Se divide a quienes declararon automedicación entre jóvenes con respuesta válida.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "barreras_acceso_servicios"
+  ],
+  "campos": {
+    "gestion": "Año del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes que declararon automedicación.",
+    "denominador": "Jóvenes con respuesta válida.",
+    "valor": "Jóvenes que se automedican por cada cien jóvenes."
+  },
+  "metodo": "P30F_AUTOME igual a 1 forma el numerador; sus respuestas 1 y 2 forman el denominador."
 }

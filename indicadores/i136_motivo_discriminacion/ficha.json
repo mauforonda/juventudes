@@ -1,1 +1,38 @@
-{"codigo":"I136","nombre":"Motivo de discriminación","objetivo":"Mostrar los motivos de discriminación declarados por jóvenes discriminados.","definicion_conceptual":"Porcentaje que menciona cada motivo entre jóvenes que sufrió discriminación durante los últimos 12 meses.","poblacion_objetivo":"Personas de 16 a 28 años que declaró al menos un motivo de discriminación en la EH 2025.","descripcion_operativa":"Se estima cada uno de los doce motivos por separado. Una persona puede declarar más de uno.","unidad_medida":"Porcentaje de respuestas múltiples","fuente":"Encuesta de Hogares 2025. Tablas discriminación y persona.","desagregaciones":["código de departamento","área urbana o rural","edad simple","sexo","motivo"],"campos":{"gestion":"Año de la encuesta.","codigo_departamento":"Primer dígito del código municipal del departamento.","area":"Área urbana o rural.","edad":"Edad cumplida.","sexo":"Sexo declarado.","motivo":"Motivo de discriminación.","observaciones":"Jóvenes discriminados de la muestra.","numerador":"Población expandida que declaró el motivo.","denominador":"Población expandida que declaró alguna discriminación.","valor":"Porcentaje estimado que declaró el motivo.","cv":"Error estándar dividido entre el porcentaje estimado."},"metodo":"S09A_01A a S09A_01L identifican color de piel, pertenencia indígena, procedencia, orientación o identidad, edad, sexo, idioma, vestimenta, discapacidad, religión, condición económica o social y otro motivo. Se usa el ponderador del módulo y un CV que considera estrato y UPM."}
+{
+  "codigo": "I136",
+  "nombre": "Motivo de discriminación",
+  "objetivo": "Mostrar los motivos de discriminación declarados por jóvenes discriminados.",
+  "definicion_conceptual": "Porcentaje que menciona cada motivo entre jóvenes que sufrió discriminación durante los últimos 12 meses.",
+  "poblacion_objetivo": "Personas de 16 a 28 años que declaró al menos un motivo de discriminación en la EH 2025.",
+  "descripcion_operativa": "Se estima cada uno de los doce motivos por separado. Una persona puede declarar más de uno.",
+  "unidad_medida": "Porcentaje de respuestas múltiples",
+  "fuente": "Encuesta de Hogares 2025. Tablas discriminación y persona.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "motivo"
+  ],
+  "temas": [
+    "seguridad_discriminacion_violencia",
+    "identidad_derechos_civiles"
+  ],
+  "espacios_politica": [
+    "proteccion_violencia_acceso_justicia"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "motivo": "Motivo de discriminación.",
+    "observaciones": "Jóvenes discriminados de la muestra.",
+    "numerador": "Población expandida que declaró el motivo.",
+    "denominador": "Población expandida que declaró alguna discriminación.",
+    "valor": "Porcentaje estimado que declaró el motivo.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "S09A_01A a S09A_01L identifican color de piel, pertenencia indígena, procedencia, orientación o identidad, edad, sexo, idioma, vestimenta, discapacidad, religión, condición económica o social y otro motivo. Se usa el ponderador del módulo y un CV que considera estrato y UPM."
+}

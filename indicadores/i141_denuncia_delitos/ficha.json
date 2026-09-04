@@ -1,1 +1,35 @@
-{"codigo":"I141","nombre":"Denuncia de delitos","objetivo":"Mostrar cuántos jóvenes víctimas de delitos presentaron una denuncia formal.","definicion_conceptual":"Porcentaje de jóvenes víctimas que denunció el delito ante una instancia correspondiente.","poblacion_objetivo":"Personas de 16 a 28 años víctimas de delitos con respuesta sí o no en la EH 2025.","descripcion_operativa":"Se estima la proporción ponderada que presentó una denuncia formal.","unidad_medida":"Porcentaje","fuente":"Encuesta de Hogares 2025. Tablas discriminación y persona.","desagregaciones":["código de departamento","área urbana o rural","edad simple","sexo"],"campos":{"gestion":"Año de la encuesta.","codigo_departamento":"Primer dígito del código municipal del departamento.","area":"Área urbana o rural.","edad":"Edad cumplida.","sexo":"Sexo declarado.","observaciones":"Jóvenes víctimas de la muestra.","numerador":"Población expandida que presentó una denuncia.","denominador":"Población expandida víctima con respuesta válida.","valor":"Porcentaje estimado.","cv":"Error estándar dividido entre el porcentaje estimado."},"metodo":"S09B_03 igual a 1 forma el numerador; las respuestas 1 y 2 forman el denominador. Se usa el ponderador del módulo y un CV que considera estrato y UPM."}
+{
+  "codigo": "I141",
+  "nombre": "Denuncia de delitos",
+  "objetivo": "Mostrar cuántos jóvenes víctimas de delitos presentaron una denuncia formal.",
+  "definicion_conceptual": "Porcentaje de jóvenes víctimas que denunció el delito ante una instancia correspondiente.",
+  "poblacion_objetivo": "Personas de 16 a 28 años víctimas de delitos con respuesta sí o no en la EH 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada que presentó una denuncia formal.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Hogares 2025. Tablas discriminación y persona.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "seguridad_discriminacion_violencia"
+  ],
+  "espacios_politica": [
+    "proteccion_violencia_acceso_justicia"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes víctimas de la muestra.",
+    "numerador": "Población expandida que presentó una denuncia.",
+    "denominador": "Población expandida víctima con respuesta válida.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "S09B_03 igual a 1 forma el numerador; las respuestas 1 y 2 forman el denominador. Se usa el ponderador del módulo y un CV que considera estrato y UPM."
+}

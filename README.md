@@ -10,5 +10,6 @@ Cada indicador tiene una carpeta dentro de `indicadores/` con tres archivos:
 - `resultados.csv`: contiene la tabla final.
 
 Las rutas locales se guardan en `config.local.toml`. Los códigos comunes están en `diccionarios/` y las funciones compartidas en `comun.py`.
+Las fichas referencian temas y espacios de política definidos en los diccionarios comunes.
 
 Desde esta carpeta, el primer indicador se actualiza con `python -m indicadores.i001_poblacion_joven.calcular`.

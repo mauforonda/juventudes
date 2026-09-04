@@ -1,7 +1,37 @@
 {
-  "codigo": "I068", "nombre": "Lugar de trabajo", "objetivo": "Mostrar dónde realizan sus labores los jóvenes ocupados.",
-  "definicion_conceptual": "Distribución de jóvenes ocupados según el lugar donde realizan su ocupación principal.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con lugar de trabajo declarado en la ECE del cuarto trimestre de 2025.",
-  "descripcion_operativa": "Se estima la proporción ponderada de cada lugar de trabajo declarado.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "lugar de trabajo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "lugar_trabajo": "Lugar principal donde realiza sus labores.", "observaciones": "Jóvenes ocupados de la muestra incluidos.", "numerador": "Población expandida del lugar indicado.", "denominador": "Población expandida con lugar declarado.", "valor": "Porcentaje estimado del lugar.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "codigo": "I068",
+  "nombre": "Lugar de trabajo",
+  "objetivo": "Mostrar dónde realizan sus labores los jóvenes ocupados.",
+  "definicion_conceptual": "Distribución de jóvenes ocupados según el lugar donde realizan su ocupación principal.",
+  "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con lugar de trabajo declarado en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada de cada lugar de trabajo declarado.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "lugar de trabajo"
+  ],
+  "temas": [
+    "calidad_empleo_ingresos"
+  ],
+  "espacios_politica": [
+    "trabajo_digno_proteccion_social"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "lugar_trabajo": "Lugar principal donde realiza sus labores.",
+    "observaciones": "Jóvenes ocupados de la muestra incluidos.",
+    "numerador": "Población expandida del lugar indicado.",
+    "denominador": "Población expandida con lugar declarado.",
+    "valor": "Porcentaje estimado del lugar.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "Las once respuestas de S2_25 se presentan con etiquetas claras entre jóvenes con CONDACT igual a 1. Se usa el factor trimestral y un CV que considera estrato y UPM."
 }

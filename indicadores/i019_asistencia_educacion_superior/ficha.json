@@ -1,11 +1,34 @@
 {
-  "codigo": "I019", "nombre": "Asistencia a educación superior",
+  "codigo": "I019",
+  "nombre": "Asistencia a educación superior",
   "objetivo": "Mostrar la participación en formación técnica superior o universitaria entre los 17 y 24 años.",
   "definicion_conceptual": "Porcentaje de personas de 17 a 24 años que asiste a formación técnica profesional, universidad o una institución equivalente.",
   "poblacion_objetivo": "Personas de 17 a 24 años con respuesta definida sobre asistencia en el CPV 2024.",
   "descripcion_operativa": "Se divide el número que asiste a las categorías 6 o 7 entre quienes declararon una categoría de asistencia.",
-  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida, de 17 a 24 años.", "sexo": "Sexo registrado.", "numerador": "Personas que asisten a educación superior.", "denominador": "Personas con respuesta definida.", "valor": "Personas en educación superior por cada cien respuestas definidas."},
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "permanencia_conclusion_educativa",
+    "transicion_educacion_trabajo"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida, de 17 a 24 años.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Personas que asisten a educación superior.",
+    "denominador": "Personas con respuesta definida.",
+    "valor": "Personas en educación superior por cada cien respuestas definidas."
+  },
   "metodo": "Las categorías 6 y 7 de P38_ASISTE forman el numerador. Las categorías 1 a 8 forman el denominador."
 }

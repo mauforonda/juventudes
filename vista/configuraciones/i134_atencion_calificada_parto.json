@@ -1,0 +1,23 @@
+[
+  {
+    "tipo": "porcentaje_nacional",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_edad",
+    "dimension": "edad",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_municipios",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_departamentos",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  }
+]

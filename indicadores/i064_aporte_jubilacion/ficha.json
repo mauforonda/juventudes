@@ -1,7 +1,35 @@
 {
-  "codigo": "I064", "nombre": "Aporte para jubilación", "objetivo": "Mostrar cuántos jóvenes ocupados están afiliados y aportan actualmente para su jubilación.",
-  "definicion_conceptual": "Porcentaje de jóvenes ocupados afiliados a la Gestora Pública que aportan mediante su empleador o de forma independiente.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con afiliación declarada en la ECE del cuarto trimestre de 2025.",
-  "descripcion_operativa": "Se estima la proporción ponderada que está afiliada y declara un aporte actual.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes ocupados de la muestra incluidos.", "numerador": "Población expandida afiliada que aporta actualmente.", "denominador": "Población expandida ocupada con afiliación declarada.", "valor": "Porcentaje estimado afiliado y aportante.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "codigo": "I064",
+  "nombre": "Aporte para jubilación",
+  "objetivo": "Mostrar cuántos jóvenes ocupados están afiliados y aportan actualmente para su jubilación.",
+  "definicion_conceptual": "Porcentaje de jóvenes ocupados afiliados a la Gestora Pública que aportan mediante su empleador o de forma independiente.",
+  "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con afiliación declarada en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada que está afiliada y declara un aporte actual.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "calidad_empleo_ingresos"
+  ],
+  "espacios_politica": [
+    "trabajo_digno_proteccion_social"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes ocupados de la muestra incluidos.",
+    "numerador": "Población expandida afiliada que aporta actualmente.",
+    "denominador": "Población expandida ocupada con afiliación declarada.",
+    "valor": "Porcentaje estimado afiliado y aportante.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "CONDACT igual a 1 identifica a ocupados. S2_64 igual a 1 y S2_64A igual a 1 o 2 forman el numerador. S2_64 igual a 1 o 2 forma el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
 }

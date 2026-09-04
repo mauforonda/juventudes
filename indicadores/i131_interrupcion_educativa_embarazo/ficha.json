@@ -7,7 +7,32 @@
   "descripcion_operativa": "Se identifica una respuesta afirmativa en el primer nacimiento o en embarazos posteriores.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta de Demografía y Salud 2023. Tabla mujer.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Mujeres de la muestra incluidas.", "numerador": "Población expandida que dejó de estudiar.", "denominador": "Población expandida con al menos una respuesta válida.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "sexualidad_reproduccion_familia",
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "permanencia_conclusion_educativa",
+    "autonomia_sexual_reproductiva",
+    "cuidados_maternidad_proyectos_vida"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Mujeres de la muestra incluidas.",
+    "numerador": "Población expandida que dejó de estudiar.",
+    "denominador": "Población expandida con al menos una respuesta válida.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "MS02_0211 o MS02_0212 igual a 1 forma el numerador. Se incluyen las respuestas válidas que indican sí, no, que ya no estudiaba o que no tuvo más embarazos. Se usa el ponderador de mujeres y un CV que considera estrato y UPM."
 }

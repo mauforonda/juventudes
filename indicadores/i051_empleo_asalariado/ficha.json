@@ -7,10 +7,27 @@
   "descripcion_operativa": "Se divide a empleados y obreros entre los jóvenes ocupados con categoría laboral válida.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "calidad_empleo_ingresos"
+  ],
+  "espacios_politica": [
+    "trabajo_digno_proteccion_social"
+  ],
   "campos": {
-    "gestion": "Año del censo.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.",
-    "numerador": "Jóvenes ocupados que trabajan como empleados u obreros.", "denominador": "Jóvenes ocupados con categoría laboral válida.", "valor": "Empleados u obreros por cada cien jóvenes ocupados."
+    "gestion": "Año del censo.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes ocupados que trabajan como empleados u obreros.",
+    "denominador": "Jóvenes ocupados con categoría laboral válida.",
+    "valor": "Empleados u obreros por cada cien jóvenes ocupados."
   },
   "metodo": "CONDACT_19 igual a 1 identifica a la población ocupada. P50_SEMP igual a 2 forma el numerador; sus categorías 1 a 6 forman el denominador."
 }

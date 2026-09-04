@@ -1,4 +1,35 @@
 {
-  "codigo": "I085", "nombre": "Carga mensual de alquiler", "objetivo": "Mostrar qué parte del ingreso destinan al alquiler los hogares encabezados por jóvenes.", "definicion_conceptual": "Media y mediana del alquiler mensual como porcentaje del ingreso total en hogares jóvenes que alquilan.", "poblacion_objetivo": "Hogares alquilados encabezados por personas de 16 a 28 años con alquiler e ingreso positivos en la EH 2025.", "descripcion_operativa": "Se divide el alquiler mensual entre el ingreso mensual del hogar y se estiman la media y mediana ponderadas.", "unidad_medida": "Porcentaje del ingreso", "fuente": "Encuesta de Hogares 2025. Tablas persona y vivienda.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple de la jefatura", "sexo de la jefatura", "estadístico"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad de la jefa o jefe.", "sexo": "Sexo de la jefa o jefe.", "estadistico": "Media o mediana.", "observaciones": "Hogares de la muestra incluidos.", "valor": "Porcentaje estimado del ingreso destinado al alquiler.", "cv": "Error estándar dividido entre el valor estimado."}, "metodo": "S01A_05 igual a 1 identifica a la jefatura y S06A_02 igual a 3 a hogares alquilados. La carga es 100 por S06A_02B dividido entre YHOG. Se usa el factor de expansión y un CV que considera estrato y UPM."
+  "codigo": "I085",
+  "nombre": "Carga mensual de alquiler",
+  "objetivo": "Mostrar qué parte del ingreso destinan al alquiler los hogares encabezados por jóvenes.",
+  "definicion_conceptual": "Media y mediana del alquiler mensual como porcentaje del ingreso total en hogares jóvenes que alquilan.",
+  "poblacion_objetivo": "Hogares alquilados encabezados por personas de 16 a 28 años con alquiler e ingreso positivos en la EH 2025.",
+  "descripcion_operativa": "Se divide el alquiler mensual entre el ingreso mensual del hogar y se estiman la media y mediana ponderadas.",
+  "unidad_medida": "Porcentaje del ingreso",
+  "fuente": "Encuesta de Hogares 2025. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple de la jefatura",
+    "sexo de la jefatura",
+    "estadístico"
+  ],
+  "temas": [
+    "autonomia_economica_vivienda"
+  ],
+  "espacios_politica": [
+    "independencia_economica_residencial"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad de la jefa o jefe.",
+    "sexo": "Sexo de la jefa o jefe.",
+    "estadistico": "Media o mediana.",
+    "observaciones": "Hogares de la muestra incluidos.",
+    "valor": "Porcentaje estimado del ingreso destinado al alquiler.",
+    "cv": "Error estándar dividido entre el valor estimado."
+  },
+  "metodo": "S01A_05 igual a 1 identifica a la jefatura y S06A_02 igual a 3 a hogares alquilados. La carga es 100 por S06A_02B dividido entre YHOG. Se usa el factor de expansión y un CV que considera estrato y UPM."
 }

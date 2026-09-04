@@ -1,4 +1,33 @@
 {
-  "codigo": "I109", "nombre": "Consumo reciente de bebidas azucaradas", "objetivo": "Mostrar cuántos jóvenes consumieron bebidas azucaradas durante la última semana.", "definicion_conceptual": "Porcentaje de jóvenes que consumió bebidas con gas, néctares, jugos envasados, energizantes u otras bebidas azucaradas durante la última semana.", "poblacion_objetivo": "Personas de 16 a 28 años con respuesta válida en la EDSA 2023.", "descripcion_operativa": "Se estima la proporción ponderada que respondió afirmativamente.", "unidad_medida": "Porcentaje", "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida que consumió bebidas azucaradas.", "denominador": "Población expandida con respuesta válida.", "valor": "Porcentaje estimado que consumió bebidas azucaradas.", "cv": "Error estándar dividido entre el porcentaje estimado."}, "metodo": "MS05_0503_B o VS01_0131_B igual a 1 forma el numerador; sus respuestas 1 y 2 forman el denominador. Se usa el ponderador individual y un CV que considera estrato y UPM."
+  "codigo": "I109",
+  "nombre": "Consumo reciente de bebidas azucaradas",
+  "objetivo": "Mostrar cuántos jóvenes consumieron bebidas azucaradas durante la última semana.",
+  "definicion_conceptual": "Porcentaje de jóvenes que consumió bebidas con gas, néctares, jugos envasados, energizantes u otras bebidas azucaradas durante la última semana.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con respuesta válida en la EDSA 2023.",
+  "descripcion_operativa": "Se estima la proporción ponderada que respondió afirmativamente.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida que consumió bebidas azucaradas.",
+    "denominador": "Población expandida con respuesta válida.",
+    "valor": "Porcentaje estimado que consumió bebidas azucaradas.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "MS05_0503_B o VS01_0131_B igual a 1 forma el numerador; sus respuestas 1 y 2 forman el denominador. Se usa el ponderador individual y un CV que considera estrato y UPM."
 }

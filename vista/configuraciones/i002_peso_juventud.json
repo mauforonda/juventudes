@@ -1,0 +1,12 @@
+[
+  {
+    "tipo": "porcentaje_nacional",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_municipios",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  }
+]

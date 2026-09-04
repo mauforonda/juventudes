@@ -1,11 +1,33 @@
 {
-  "codigo": "I016", "nombre": "Conclusión de secundaria entre jóvenes",
+  "codigo": "I016",
+  "nombre": "Conclusión de secundaria entre jóvenes",
   "objetivo": "Mostrar la conclusión de secundaria a cada edad de la juventud.",
   "definicion_conceptual": "Porcentaje de jóvenes que concluyó secundaria o alcanzó un nivel posterior.",
   "poblacion_objetivo": "Personas de 16 a 28 años con nivel y curso aprobados especificados en el CPV 2024.",
   "descripcion_operativa": "Se identifica la conclusión del cuarto curso de medio, sexto de secundaria o un nivel educativo posterior.",
-  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes que concluyeron secundaria o alcanzaron un nivel posterior.", "denominador": "Jóvenes con nivel y curso especificados.", "valor": "Jóvenes que concluyeron secundaria por cada cien con información especificada."},
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "permanencia_conclusion_educativa"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes que concluyeron secundaria o alcanzaron un nivel posterior.",
+    "denominador": "Jóvenes con nivel y curso especificados.",
+    "valor": "Jóvenes que concluyeron secundaria por cada cien con información especificada."
+  },
   "metodo": "El numerador incluye nivel medio con al menos cuatro cursos, secundaria con al menos seis cursos y los niveles técnico medio, técnico superior, licenciatura, maestría y doctorado. Se excluyen nivel o curso sin especificar."
 }

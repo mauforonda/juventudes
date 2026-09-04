@@ -1,1 +1,36 @@
-{"codigo":"I135","nombre":"Discriminación en los últimos 12 meses","objetivo":"Mostrar cuántos jóvenes sufrieron al menos una forma de discriminación durante los últimos 12 meses.","definicion_conceptual":"Porcentaje de jóvenes que declaró discriminación por uno o más motivos consultados.","poblacion_objetivo":"Personas de 16 a 28 años seleccionadas para el módulo y con respuestas válidas en la EH 2025.","descripcion_operativa":"Se identifica al menos una respuesta afirmativa entre los doce motivos consultados.","unidad_medida":"Porcentaje","fuente":"Encuesta de Hogares 2025. Tablas discriminación y persona.","desagregaciones":["código de departamento","área urbana o rural","edad simple","sexo"],"campos":{"gestion":"Año de la encuesta.","codigo_departamento":"Primer dígito del código municipal del departamento.","area":"Área urbana o rural.","edad":"Edad cumplida.","sexo":"Sexo declarado.","observaciones":"Jóvenes de la muestra incluidos.","numerador":"Población expandida que declaró al menos un motivo de discriminación.","denominador":"Población expandida con respuestas válidas en todos los motivos.","valor":"Porcentaje estimado.","cv":"Error estándar dividido entre el porcentaje estimado."},"metodo":"Una respuesta 1 en S09A_01A a S09A_01L forma el numerador. Se requieren respuestas 1 a 4 en los doce motivos. Se usa el ponderador del módulo y un CV que considera estrato y UPM."}
+{
+  "codigo": "I135",
+  "nombre": "Discriminación en los últimos 12 meses",
+  "objetivo": "Mostrar cuántos jóvenes sufrieron al menos una forma de discriminación durante los últimos 12 meses.",
+  "definicion_conceptual": "Porcentaje de jóvenes que declaró discriminación por uno o más motivos consultados.",
+  "poblacion_objetivo": "Personas de 16 a 28 años seleccionadas para el módulo y con respuestas válidas en la EH 2025.",
+  "descripcion_operativa": "Se identifica al menos una respuesta afirmativa entre los doce motivos consultados.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Hogares 2025. Tablas discriminación y persona.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "seguridad_discriminacion_violencia",
+    "identidad_derechos_civiles"
+  ],
+  "espacios_politica": [
+    "proteccion_violencia_acceso_justicia"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida que declaró al menos un motivo de discriminación.",
+    "denominador": "Población expandida con respuestas válidas en todos los motivos.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "Una respuesta 1 en S09A_01A a S09A_01L forma el numerador. Se requieren respuestas 1 a 4 en los doce motivos. Se usa el ponderador del módulo y un CV que considera estrato y UPM."
+}

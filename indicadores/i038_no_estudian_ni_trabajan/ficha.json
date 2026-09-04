@@ -1,11 +1,35 @@
 {
-  "codigo": "I038", "nombre": "Jóvenes que no estudian ni trabajan",
+  "codigo": "I038",
+  "nombre": "Jóvenes que no estudian ni trabajan",
   "objetivo": "Mostrar la desvinculación simultánea de educación y empleo entre jóvenes.",
   "definicion_conceptual": "Porcentaje de jóvenes que no asiste a educación y no está ocupado.",
   "poblacion_objetivo": "Personas de 16 a 28 años con asistencia y condición de actividad definidas en el CPV 2024.",
   "descripcion_operativa": "Se combinan falta de asistencia educativa y condición distinta de ocupado.",
-  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes que no asisten y no están ocupados.", "denominador": "Jóvenes con asistencia y actividad definidas.", "valor": "Jóvenes que no estudian ni trabajan por cada cien con información definida."},
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "estudio_trabajo_desempleo",
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "transicion_educacion_trabajo",
+    "acceso_primer_empleo"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes que no asisten y no están ocupados.",
+    "denominador": "Jóvenes con asistencia y actividad definidas.",
+    "valor": "Jóvenes que no estudian ni trabajan por cada cien con información definida."
+  },
   "metodo": "El numerador combina ASISTE igual a 2 y CONDACT_19 igual a 2, 3 o 4. El denominador incluye ASISTE 1 o 2 y CONDACT_19 de 1 a 4."
 }

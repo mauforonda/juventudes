@@ -1,14 +1,37 @@
 {
-  "codigo": "I059", "nombre": "Antigüedad en la ocupación",
+  "codigo": "I059",
+  "nombre": "Antigüedad en la ocupación",
   "objetivo": "Mostrar cuánto tiempo llevan los jóvenes en su ocupación actual.",
   "definicion_conceptual": "Distribución de jóvenes ocupados según el tiempo que desempeñan su ocupación actual.",
   "poblacion_objetivo": "Personas de 16 a 28 años ocupadas que declararon su antigüedad en la ocupación en la EH 2025.",
   "descripcion_operativa": "Se convierte el tiempo declarado a meses y se estima la proporción ponderada de cada tramo.",
-  "unidad_medida": "Porcentaje", "fuente": "Encuesta de Hogares 2025. Tabla persona.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "antigüedad en la ocupación"],
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Hogares 2025. Tabla persona.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "antigüedad en la ocupación"
+  ],
+  "temas": [
+    "calidad_empleo_ingresos"
+  ],
+  "espacios_politica": [
+    "trabajo_digno_proteccion_social"
+  ],
   "campos": {
-    "gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "antiguedad_ocupacion": "Tramo de tiempo en la ocupación actual.",
-    "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida del tramo indicado.", "denominador": "Población expandida con antigüedad declarada.", "valor": "Porcentaje estimado del tramo.", "cv": "Error estándar dividido entre el porcentaje estimado."
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "antiguedad_ocupacion": "Tramo de tiempo en la ocupación actual.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida del tramo indicado.",
+    "denominador": "Población expandida con antigüedad declarada.",
+    "valor": "Porcentaje estimado del tramo.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
   },
   "metodo": "S04B_11BA contiene el tiempo y S04B_11BB distingue semanas, meses y años. Las semanas se dividen entre 52/12 y los años se multiplican por 12. Se usa el factor de expansión y un CV que considera estrato y UPM."
 }

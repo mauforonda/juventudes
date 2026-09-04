@@ -7,7 +7,16 @@
   "descripcion_operativa": "Se divide el número de jóvenes que respondió sí a la pregunta 32 entre el total de jóvenes que respondió sí o no.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "identidad_derechos_civiles"
+  ],
+  "espacios_politica": [],
   "campos": {
     "gestion": "Año de referencia del censo.",
     "codigo_municipio": "Código de cinco dígitos del municipio de registro.",

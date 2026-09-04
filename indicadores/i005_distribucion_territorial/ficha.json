@@ -7,7 +7,14 @@
   "descripcion_operativa": "Se cuenta a los jóvenes de cada municipio y área y se divide este número entre el total nacional de jóvenes.",
   "unidad_medida": "Personas y porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural"],
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural"
+  ],
+  "temas": [
+    "poblacion_territorio"
+  ],
+  "espacios_politica": [],
   "campos": {
     "gestion": "Año de referencia del censo.",
     "codigo_municipio": "Código de cinco dígitos del municipio de registro.",

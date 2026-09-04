@@ -1,11 +1,37 @@
 {
-  "codigo": "I024", "nombre": "No matriculación por trabajo",
+  "codigo": "I024",
+  "nombre": "No matriculación por trabajo",
   "objetivo": "Mostrar el trabajo como causa de no matriculación entre jóvenes.",
   "definicion_conceptual": "Porcentaje de jóvenes no matriculados cuya razón principal es trabajar o ayudar en una actividad familiar.",
   "poblacion_objetivo": "Personas de 16 a 28 años no matriculadas que declararon una razón principal en la EH 2025.",
   "descripcion_operativa": "Se estima la proporción ponderada cuya razón de no matriculación es la categoría 6.",
-  "unidad_medida": "Porcentaje", "fuente": "Encuesta de Hogares 2025. Tabla persona.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Personas de la muestra incluidas.", "numerador": "Población expandida que no se matriculó por trabajo.", "denominador": "Población expandida no matriculada con una razón declarada.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Hogares 2025. Tabla persona.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "educacion_formacion",
+    "estudio_trabajo_desempleo"
+  ],
+  "espacios_politica": [
+    "permanencia_conclusion_educativa",
+    "barreras_acceso_servicios"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Personas de la muestra incluidas.",
+    "numerador": "Población expandida que no se matriculó por trabajo.",
+    "denominador": "Población expandida no matriculada con una razón declarada.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "Se selecciona S03A_04 igual a 2. La categoría 6 de S03A_05 forma el numerador y las categorías 1 a 8 forman el denominador. Se usa el factor de expansión. El CV considera estrato y UPM mediante linealización de Taylor."
 }

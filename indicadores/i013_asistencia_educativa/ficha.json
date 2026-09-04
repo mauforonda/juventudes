@@ -7,7 +7,27 @@
   "descripcion_operativa": "Se divide el número de jóvenes que asiste entre quienes tienen una respuesta sí o no.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes que asisten.", "denominador": "Jóvenes con respuesta definida.", "valor": "Jóvenes que asisten por cada cien respuestas definidas."},
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "permanencia_conclusion_educativa"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes que asisten.",
+    "denominador": "Jóvenes con respuesta definida.",
+    "valor": "Jóvenes que asisten por cada cien respuestas definidas."
+  },
   "metodo": "La categoría 1 de ASISTE forma el numerador. Las categorías 1 y 2 forman el denominador."
 }

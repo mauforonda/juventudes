@@ -7,7 +7,30 @@
   "descripcion_operativa": "Se estima la proporción ponderada que respondió que tuvo al menos una hija o hijo propio nacido vivo.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida con al menos una hija o hijo nacido vivo.", "denominador": "Población expandida con respuesta sí o no.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "sexualidad_reproduccion_familia"
+  ],
+  "espacios_politica": [
+    "independencia_economica_residencial",
+    "cuidados_maternidad_proyectos_vida"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida con al menos una hija o hijo nacido vivo.",
+    "denominador": "Población expandida con respuesta sí o no.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "MS02_0201 o VS02_0201 igual a 1 forma el numerador; las respuestas 1 y 2 forman el denominador. Se usa el ponderador individual y un CV que considera estrato y UPM."
 }

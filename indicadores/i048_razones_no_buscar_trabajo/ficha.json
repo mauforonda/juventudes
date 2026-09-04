@@ -7,7 +7,20 @@
   "descripcion_operativa": "Se estima la proporción ponderada de cada razón entre quienes respondieron que no buscaron trabajo.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "razón para no buscar"],
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "razón para no buscar"
+  ],
+  "temas": [
+    "estudio_trabajo_desempleo"
+  ],
+  "espacios_politica": [
+    "transicion_educacion_trabajo",
+    "acceso_primer_empleo"
+  ],
   "campos": {
     "gestion": "Año de la encuesta.",
     "codigo_departamento": "Primer dígito del código municipal del departamento.",

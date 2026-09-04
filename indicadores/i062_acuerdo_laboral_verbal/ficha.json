@@ -1,7 +1,35 @@
 {
-  "codigo": "I062", "nombre": "Acuerdo laboral sólo verbal", "objetivo": "Mostrar cuántos jóvenes asalariados trabajan mediante un acuerdo verbal.",
-  "definicion_conceptual": "Porcentaje de jóvenes asalariados cuyo vínculo laboral es sólo verbal.", "poblacion_objetivo": "Personas de 16 a 28 años asalariadas con modalidad contractual declarada en la ECE del cuarto trimestre de 2025.",
-  "descripcion_operativa": "Se estima la proporción ponderada de asalariados con acuerdo verbal.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Asalariados de la muestra incluidos.", "numerador": "Población expandida con acuerdo laboral verbal.", "denominador": "Población expandida asalariada con modalidad declarada.", "valor": "Porcentaje estimado con acuerdo verbal.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "codigo": "I062",
+  "nombre": "Acuerdo laboral sólo verbal",
+  "objetivo": "Mostrar cuántos jóvenes asalariados trabajan mediante un acuerdo verbal.",
+  "definicion_conceptual": "Porcentaje de jóvenes asalariados cuyo vínculo laboral es sólo verbal.",
+  "poblacion_objetivo": "Personas de 16 a 28 años asalariadas con modalidad contractual declarada en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se estima la proporción ponderada de asalariados con acuerdo verbal.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "calidad_empleo_ingresos"
+  ],
+  "espacios_politica": [
+    "trabajo_digno_proteccion_social"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Asalariados de la muestra incluidos.",
+    "numerador": "Población expandida con acuerdo laboral verbal.",
+    "denominador": "Población expandida asalariada con modalidad declarada.",
+    "valor": "Porcentaje estimado con acuerdo verbal.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "CONDACT igual a 1 y S2_18 igual a 1 o 7 identifican a asalariados. S2_21 igual a 3 forma el numerador; sus categorías 1 a 5 forman el denominador. Se usa el factor trimestral y un CV que considera estrato y UPM."
 }

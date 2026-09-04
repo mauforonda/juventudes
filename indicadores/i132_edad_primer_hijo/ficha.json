@@ -7,7 +7,30 @@
   "descripcion_operativa": "Para mujeres se calcula la edad con las fechas de nacimiento de la madre y su primer hijo. Para hombres se usa la edad declarada directamente.",
   "unidad_medida": "Años",
   "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "medida"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida al momento de la encuesta.", "sexo": "Sexo declarado.", "medida": "Promedio o mediana.", "observaciones": "Jóvenes de la muestra incluidos.", "valor": "Edad estimada al primer hijo, en años.", "cv": "Error estándar dividido entre la edad estimada."},
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "medida"
+  ],
+  "temas": [
+    "sexualidad_reproduccion_familia"
+  ],
+  "espacios_politica": [
+    "independencia_economica_residencial",
+    "cuidados_maternidad_proyectos_vida"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida al momento de la encuesta.",
+    "sexo": "Sexo declarado.",
+    "medida": "Promedio o mediana.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "valor": "Edad estimada al primer hijo, en años.",
+    "cv": "Error estándar dividido entre la edad estimada."
+  },
   "metodo": "En mujeres se resta V011 de B3_01; ambas fechas están expresadas como un conteo de meses. En hombres se usa VS02_0216. Se conservan edades entre 10 años y la edad actual. Se estiman promedio y mediana con ponderadores individuales y un CV que considera estrato y UPM."
 }

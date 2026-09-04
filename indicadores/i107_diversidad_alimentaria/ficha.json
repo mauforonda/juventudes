@@ -1,4 +1,31 @@
 {
-  "codigo": "I107", "nombre": "Diversidad alimentaria", "objetivo": "Mostrar la variedad de grupos de alimentos consumidos por jóvenes.", "definicion_conceptual": "Número promedio de ocho grupos de alimentos consumidos durante el día anterior.", "poblacion_objetivo": "Personas de 16 a 28 años con respuestas completas de consumo en la EDSA 2023.", "descripcion_operativa": "Se identifica consumo en cereales y tubérculos, verduras, frutas, lácteos, alimentos de origen animal, grasas, azúcares y otros; luego se suma y promedia.", "unidad_medida": "Grupos de alimentos", "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes de la muestra incluidos.", "valor": "Promedio estimado de grupos consumidos.", "cv": "Error estándar dividido entre el promedio estimado."}, "metodo": "Las respuestas afirmativas de MS05_0502_A a S y VS01_0130_A a S se reúnen en ocho grupos. El promedio usa el ponderador individual y un CV que considera estrato y UPM."
+  "codigo": "I107",
+  "nombre": "Diversidad alimentaria",
+  "objetivo": "Mostrar la variedad de grupos de alimentos consumidos por jóvenes.",
+  "definicion_conceptual": "Número promedio de ocho grupos de alimentos consumidos durante el día anterior.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con respuestas completas de consumo en la EDSA 2023.",
+  "descripcion_operativa": "Se identifica consumo en cereales y tubérculos, verduras, frutas, lácteos, alimentos de origen animal, grasas, azúcares y otros; luego se suma y promedia.",
+  "unidad_medida": "Grupos de alimentos",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "valor": "Promedio estimado de grupos consumidos.",
+    "cv": "Error estándar dividido entre el promedio estimado."
+  },
+  "metodo": "Las respuestas afirmativas de MS05_0502_A a S y VS01_0130_A a S se reúnen en ocho grupos. El promedio usa el ponderador individual y un CV que considera estrato y UPM."
 }

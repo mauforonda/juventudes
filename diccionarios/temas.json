@@ -1,0 +1,42 @@
+{
+  "poblacion_territorio": {
+    "nombre": "Población y territorio",
+    "descripcion": "Tamaño, composición, distribución y movilidad territorial de la población joven."
+  },
+  "identidad_derechos_civiles": {
+    "nombre": "Identidad y derechos civiles",
+    "descripcion": "Identidad cultural y lingüística, registro civil y documentación personal."
+  },
+  "educacion_formacion": {
+    "nombre": "Educación y formación",
+    "descripcion": "Acceso, permanencia, avance y conclusión educativa."
+  },
+  "inclusion_digital": {
+    "nombre": "Inclusión digital",
+    "descripcion": "Acceso a dispositivos, internet y tecnologías de información."
+  },
+  "estudio_trabajo_desempleo": {
+    "nombre": "Estudio, trabajo y desempleo",
+    "descripcion": "Participación educativa y laboral, búsqueda de empleo e inactividad."
+  },
+  "calidad_empleo_ingresos": {
+    "nombre": "Calidad del empleo e ingresos",
+    "descripcion": "Condiciones laborales, protección social, jornadas e ingresos del trabajo."
+  },
+  "autonomia_economica_vivienda": {
+    "nombre": "Autonomía económica y vivienda",
+    "descripcion": "Pobreza, formación de hogares, vivienda, servicios básicos y alimentación."
+  },
+  "salud_nutricion_bienestar": {
+    "nombre": "Salud, nutrición y bienestar",
+    "descripcion": "Acceso a atención, estado de salud, nutrición, salud mental y consumos."
+  },
+  "sexualidad_reproduccion_familia": {
+    "nombre": "Sexualidad, reproducción y familia",
+    "descripcion": "Autonomía sexual, anticoncepción, embarazo, maternidad y paternidad."
+  },
+  "seguridad_discriminacion_violencia": {
+    "nombre": "Seguridad, discriminación y violencia",
+    "descripcion": "Seguridad ciudadana, discriminación, violencia y respuesta institucional."
+  }
+}

@@ -1,4 +1,37 @@
 {
-  "codigo": "I102", "nombre": "Barreras para recibir atención", "objetivo": "Mostrar por qué los jóvenes con un problema de salud no acudieron a un servicio.", "definicion_conceptual": "Porcentaje de jóvenes sin atención que mencionó cada barrera para acudir a un servicio de salud.", "poblacion_objetivo": "Personas de 16 a 28 años que no acudieron a un servicio y mencionaron alguna razón en la EDSA 2023.", "descripcion_operativa": "Las razones se agrupan en espera, calidad o falta de personal, distancia, horarios, dinero, desconocimiento, idioma y otras. Una persona puede mencionar más de una.", "unidad_medida": "Porcentaje", "fuente": "Encuesta de Demografía y Salud 2023. Tabla hogar.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "barrera"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "barrera": "Tipo de barrera mencionada.", "observaciones": "Jóvenes sin atención de la muestra incluidos.", "numerador": "Población expandida que mencionó la barrera.", "denominador": "Población expandida que mencionó alguna barrera.", "valor": "Porcentaje estimado que mencionó la barrera.", "cv": "Error estándar dividido entre el porcentaje estimado."}, "metodo": "HS03_0035_V igual a 1 identifica falta de atención. Las respuestas de HS03_0039_A a M y X se agrupan en ocho barreras. Se usa FACTOREXPH y un CV que considera estrato y UPM."
+  "codigo": "I102",
+  "nombre": "Barreras para recibir atención",
+  "objetivo": "Mostrar por qué los jóvenes con un problema de salud no acudieron a un servicio.",
+  "definicion_conceptual": "Porcentaje de jóvenes sin atención que mencionó cada barrera para acudir a un servicio de salud.",
+  "poblacion_objetivo": "Personas de 16 a 28 años que no acudieron a un servicio y mencionaron alguna razón en la EDSA 2023.",
+  "descripcion_operativa": "Las razones se agrupan en espera, calidad o falta de personal, distancia, horarios, dinero, desconocimiento, idioma y otras. Una persona puede mencionar más de una.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tabla hogar.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "barrera"
+  ],
+  "temas": [
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "barreras_acceso_servicios"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "barrera": "Tipo de barrera mencionada.",
+    "observaciones": "Jóvenes sin atención de la muestra incluidos.",
+    "numerador": "Población expandida que mencionó la barrera.",
+    "denominador": "Población expandida que mencionó alguna barrera.",
+    "valor": "Porcentaje estimado que mencionó la barrera.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "HS03_0035_V igual a 1 identifica falta de atención. Las respuestas de HS03_0039_A a M y X se agrupan en ocho barreras. Se usa FACTOREXPH y un CV que considera estrato y UPM."
 }

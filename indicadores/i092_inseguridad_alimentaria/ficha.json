@@ -1,4 +1,34 @@
 {
-  "codigo": "I092", "nombre": "Inseguridad alimentaria", "objetivo": "Mostrar cuántos jóvenes viven en hogares con alguna experiencia de falta de alimentos.", "definicion_conceptual": "Porcentaje de jóvenes en hogares que reportaron al menos una experiencia de inseguridad alimentaria por falta de recursos en los últimos 12 meses.", "poblacion_objetivo": "Personas de 16 a 28 años en hogares con respuestas completas en la EH 2025.", "descripcion_operativa": "Se identifica al menos una respuesta afirmativa entre las ocho experiencias consultadas.", "unidad_medida": "Porcentaje", "fuente": "Encuesta de Hogares 2025. Tablas persona y seguridad alimentaria.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida con alguna experiencia de inseguridad alimentaria.", "denominador": "Población expandida con respuestas completas.", "valor": "Porcentaje estimado con inseguridad alimentaria.", "cv": "Error estándar dividido entre el porcentaje estimado."}, "metodo": "Una respuesta igual a 1 en S07A_01 a S07A_08 forma el numerador. Se requieren respuestas 1 o 2 en las ocho preguntas. Se usa el factor de expansión y un CV que considera estrato y UPM."
+  "codigo": "I092",
+  "nombre": "Inseguridad alimentaria",
+  "objetivo": "Mostrar cuántos jóvenes viven en hogares con alguna experiencia de falta de alimentos.",
+  "definicion_conceptual": "Porcentaje de jóvenes en hogares que reportaron al menos una experiencia de inseguridad alimentaria por falta de recursos en los últimos 12 meses.",
+  "poblacion_objetivo": "Personas de 16 a 28 años en hogares con respuestas completas en la EH 2025.",
+  "descripcion_operativa": "Se identifica al menos una respuesta afirmativa entre las ocho experiencias consultadas.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Hogares 2025. Tablas persona y seguridad alimentaria.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "autonomia_economica_vivienda",
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida con alguna experiencia de inseguridad alimentaria.",
+    "denominador": "Población expandida con respuestas completas.",
+    "valor": "Porcentaje estimado con inseguridad alimentaria.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "Una respuesta igual a 1 en S07A_01 a S07A_08 forma el numerador. Se requieren respuestas 1 o 2 en las ocho preguntas. Se usa el factor de expansión y un CV que considera estrato y UPM."
 }

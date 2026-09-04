@@ -1,4 +1,35 @@
 {
-  "codigo": "I111", "nombre": "Malestar emocional que interfiere con la vida diaria", "objetivo": "Mostrar cuántos jóvenes ven afectadas sus actividades por el malestar emocional.", "definicion_conceptual": "Porcentaje de jóvenes con nerviosismo, tensión o irritabilidad que declaró interferencia en alguna actividad cotidiana.", "poblacion_objetivo": "Personas de 16 a 28 años con alguna respuesta sobre interferencia en la EDSA 2023.", "descripcion_operativa": "Se identifica al menos una respuesta afirmativa de interferencia entre los ámbitos aplicables.", "unidad_medida": "Porcentaje", "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes con respuesta de la muestra incluidos.", "numerador": "Población expandida con interferencia en alguna actividad.", "denominador": "Población expandida con alguna respuesta aplicable.", "valor": "Porcentaje estimado con interferencia.", "cv": "Error estándar dividido entre el porcentaje estimado."}, "metodo": "Una respuesta igual a 1 en MS10_1022_A a D o VS01_0133_A a D forma el numerador. El denominador requiere al menos una respuesta 1 o 2. Se usa el ponderador individual y un CV que considera estrato y UPM."
+  "codigo": "I111",
+  "nombre": "Malestar emocional que interfiere con la vida diaria",
+  "objetivo": "Mostrar cuántos jóvenes ven afectadas sus actividades por el malestar emocional.",
+  "definicion_conceptual": "Porcentaje de jóvenes con nerviosismo, tensión o irritabilidad que declaró interferencia en alguna actividad cotidiana.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con alguna respuesta sobre interferencia en la EDSA 2023.",
+  "descripcion_operativa": "Se identifica al menos una respuesta afirmativa de interferencia entre los ámbitos aplicables.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "salud_mental_consumos"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes con respuesta de la muestra incluidos.",
+    "numerador": "Población expandida con interferencia en alguna actividad.",
+    "denominador": "Población expandida con alguna respuesta aplicable.",
+    "valor": "Porcentaje estimado con interferencia.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "Una respuesta igual a 1 en MS10_1022_A a D o VS01_0133_A a D forma el numerador. El denominador requiere al menos una respuesta 1 o 2. Se usa el ponderador individual y un CV que considera estrato y UPM."
 }

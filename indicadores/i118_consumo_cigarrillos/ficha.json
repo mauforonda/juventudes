@@ -1,4 +1,39 @@
 {
-  "codigo": "I118", "nombre": "Consumo de cigarrillos", "objetivo": "Mostrar cuántos jóvenes fuman, con qué frecuencia y en qué cantidad.", "definicion_conceptual": "Distribución de jóvenes entre no fumadores y fumadores por frecuencia, con el promedio de cigarrillos de cada categoría.", "poblacion_objetivo": "Personas de 16 a 28 años con respuesta sobre consumo en los últimos 12 meses en la EDSA 2023.", "descripcion_operativa": "Se presenta no consumo y consumo diario, semanal, ocasional o sin frecuencia declarada; además se estima el promedio de cigarrillos.", "unidad_medida": "Porcentaje y cigarrillos", "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "frecuencia"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "frecuencia": "No consumo o frecuencia declarada.", "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida de la categoría indicada.", "denominador": "Población expandida con respuesta de consumo.", "valor": "Porcentaje estimado de la categoría.", "cv": "Error estándar dividido entre el porcentaje estimado.", "cigarrillos_promedio": "Promedio estimado de cigarrillos en la categoría.", "cv_cigarrillos": "Error estándar dividido entre el promedio de cigarrillos."}, "metodo": "MS10_1030 y VS01_0141 identifican consumo. MS10_1031_01 y VS01_0142_01 distinguen frecuencia; MS10_1031_02 y VS01_0142_02 registran cantidad. Se usan ponderadores individuales y CV que consideran estrato y UPM."
+  "codigo": "I118",
+  "nombre": "Consumo de cigarrillos",
+  "objetivo": "Mostrar cuántos jóvenes fuman, con qué frecuencia y en qué cantidad.",
+  "definicion_conceptual": "Distribución de jóvenes entre no fumadores y fumadores por frecuencia, con el promedio de cigarrillos de cada categoría.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con respuesta sobre consumo en los últimos 12 meses en la EDSA 2023.",
+  "descripcion_operativa": "Se presenta no consumo y consumo diario, semanal, ocasional o sin frecuencia declarada; además se estima el promedio de cigarrillos.",
+  "unidad_medida": "Porcentaje y cigarrillos",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "frecuencia"
+  ],
+  "temas": [
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "salud_mental_consumos"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "frecuencia": "No consumo o frecuencia declarada.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida de la categoría indicada.",
+    "denominador": "Población expandida con respuesta de consumo.",
+    "valor": "Porcentaje estimado de la categoría.",
+    "cv": "Error estándar dividido entre el porcentaje estimado.",
+    "cigarrillos_promedio": "Promedio estimado de cigarrillos en la categoría.",
+    "cv_cigarrillos": "Error estándar dividido entre el promedio de cigarrillos."
+  },
+  "metodo": "MS10_1030 y VS01_0141 identifican consumo. MS10_1031_01 y VS01_0142_01 distinguen frecuencia; MS10_1031_02 y VS01_0142_02 registran cantidad. Se usan ponderadores individuales y CV que consideran estrato y UPM."
 }

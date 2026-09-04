@@ -1,7 +1,34 @@
 {
-  "codigo": "I076", "nombre": "Brecha de ingreso entre mujeres y hombres", "objetivo": "Comparar el ingreso laboral por hora de mujeres y hombres jóvenes.",
-  "definicion_conceptual": "Diferencia porcentual entre el ingreso mediano por hora de hombres y mujeres jóvenes, expresada respecto al ingreso de los hombres.", "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con ingreso positivo y horas válidas en la ECE del cuarto trimestre de 2025.",
-  "descripcion_operativa": "Se calcula cien menos el ingreso mediano femenino como porcentaje del ingreso mediano masculino.", "unidad_medida": "Porcentaje", "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "observaciones_mujeres": "Mujeres de la muestra incluidas.", "observaciones_hombres": "Hombres de la muestra incluidos.", "mediana_mujeres": "Ingreso mediano femenino por hora.", "mediana_hombres": "Ingreso mediano masculino por hora.", "valor": "Brecha porcentual; un valor positivo indica menor ingreso femenino.", "cv": "Error estándar de la brecha dividido entre su valor absoluto."},
+  "codigo": "I076",
+  "nombre": "Brecha de ingreso entre mujeres y hombres",
+  "objetivo": "Comparar el ingreso laboral por hora de mujeres y hombres jóvenes.",
+  "definicion_conceptual": "Diferencia porcentual entre el ingreso mediano por hora de hombres y mujeres jóvenes, expresada respecto al ingreso de los hombres.",
+  "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con ingreso positivo y horas válidas en la ECE del cuarto trimestre de 2025.",
+  "descripcion_operativa": "Se calcula cien menos el ingreso mediano femenino como porcentaje del ingreso mediano masculino.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple"
+  ],
+  "temas": [
+    "calidad_empleo_ingresos"
+  ],
+  "espacios_politica": [
+    "independencia_economica_residencial"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "observaciones_mujeres": "Mujeres de la muestra incluidas.",
+    "observaciones_hombres": "Hombres de la muestra incluidos.",
+    "mediana_mujeres": "Ingreso mediano femenino por hora.",
+    "mediana_hombres": "Ingreso mediano masculino por hora.",
+    "valor": "Brecha porcentual; un valor positivo indica menor ingreso femenino.",
+    "cv": "Error estándar de la brecha dividido entre su valor absoluto."
+  },
   "metodo": "El ingreso por hora divide YLAB entre TOTHRS por 52/12. Se calculan medianas ponderadas por sexo. La brecha es 100 por uno menos la mediana femenina dividida entre la masculina. Su error combina los errores de ambas medianas."
 }

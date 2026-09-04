@@ -1,4 +1,33 @@
 {
-  "codigo": "I106", "nombre": "Sobrepeso y obesidad", "objetivo": "Mostrar cuántos jóvenes tienen sobrepeso u obesidad.", "definicion_conceptual": "Porcentaje de jóvenes clasificados con sobrepeso u obesidad mediante el índice de masa corporal.", "poblacion_objetivo": "Personas de 16 a 28 años con clasificación de peso y talla en la EDSA 2023.", "descripcion_operativa": "Se estima la proporción ponderada en la categoría agregada de sobrepeso u obesidad.", "unidad_medida": "Porcentaje", "fuente": "Encuesta de Demografía y Salud 2023. Tabla peso, talla y hemoglobina.", "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo declarado.", "observaciones": "Jóvenes de la muestra incluidos.", "numerador": "Población expandida con sobrepeso u obesidad.", "denominador": "Población expandida con clasificación válida.", "valor": "Porcentaje estimado con sobrepeso u obesidad.", "cv": "Error estándar dividido entre el porcentaje estimado."}, "metodo": "CATEGAIMC_M o CATEGAIMC_H igual a 2 forma el numerador; sus categorías 1 a 3 forman el denominador. Se usan los ponderadores de peso y talla de mujeres y hombres y un CV que considera estrato y UPM."
+  "codigo": "I106",
+  "nombre": "Sobrepeso y obesidad",
+  "objetivo": "Mostrar cuántos jóvenes tienen sobrepeso u obesidad.",
+  "definicion_conceptual": "Porcentaje de jóvenes clasificados con sobrepeso u obesidad mediante el índice de masa corporal.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con clasificación de peso y talla en la EDSA 2023.",
+  "descripcion_operativa": "Se estima la proporción ponderada en la categoría agregada de sobrepeso u obesidad.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tabla peso, talla y hemoglobina.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes de la muestra incluidos.",
+    "numerador": "Población expandida con sobrepeso u obesidad.",
+    "denominador": "Población expandida con clasificación válida.",
+    "valor": "Porcentaje estimado con sobrepeso u obesidad.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "CATEGAIMC_M o CATEGAIMC_H igual a 2 forma el numerador; sus categorías 1 a 3 forman el denominador. Se usan los ponderadores de peso y talla de mujeres y hombres y un CV que considera estrato y UPM."
 }

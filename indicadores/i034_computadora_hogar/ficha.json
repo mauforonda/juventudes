@@ -1,11 +1,33 @@
 {
-  "codigo": "I034", "nombre": "Computadora en el hogar",
+  "codigo": "I034",
+  "nombre": "Computadora en el hogar",
   "objetivo": "Mostrar la disponibilidad de equipos de computación en los hogares donde viven jóvenes.",
   "definicion_conceptual": "Porcentaje de jóvenes que vive en un hogar con computadora, laptop o tableta.",
   "poblacion_objetivo": "Personas de 16 a 28 años en hogares que respondieron sobre disponibilidad de computadora en el CPV 2024.",
   "descripcion_operativa": "Se divide el número de jóvenes en hogares que respondieron sí entre quienes viven en hogares con respuesta sí o no.",
-  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes en hogares con computadora, laptop o tableta.", "denominador": "Jóvenes en hogares con respuesta sí o no.", "valor": "Jóvenes con computadora en el hogar por cada cien respuestas definidas."},
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "inclusion_digital"
+  ],
+  "espacios_politica": [
+    "barreras_acceso_servicios"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes en hogares con computadora, laptop o tableta.",
+    "denominador": "Jóvenes en hogares con respuesta sí o no.",
+    "valor": "Jóvenes con computadora en el hogar por cada cien respuestas definidas."
+  },
   "metodo": "La respuesta 1 de V19C_COMPU forma el numerador y las respuestas 1 y 2 forman el denominador. El código 9 se excluye."
 }

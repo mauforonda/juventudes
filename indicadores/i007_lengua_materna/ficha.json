@@ -7,7 +7,17 @@
   "descripcion_operativa": "Se cuenta cada código de IDIOMA_MAT y se divide entre las respuestas especificadas del mismo municipio, área, edad y sexo.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo", "código de lengua materna"],
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "código de lengua materna"
+  ],
+  "temas": [
+    "identidad_derechos_civiles"
+  ],
+  "espacios_politica": [],
   "campos": {
     "gestion": "Año de referencia del censo.",
     "codigo_municipio": "Código de cinco dígitos del municipio de registro.",

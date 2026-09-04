@@ -1,1 +1,35 @@
-{"codigo":"I143","nombre":"Violencia psicológica de pareja","objetivo":"Mostrar cuántos jóvenes sufrieron violencia psicológica de pareja durante los últimos 12 meses.","definicion_conceptual":"Porcentaje de jóvenes con pareja que sufrió al menos uno de los actos psicológicos o de control consultados.","poblacion_objetivo":"Personas de 16 a 28 años con respuestas válidas sobre su relación de pareja en la EDSA 2023.","descripcion_operativa":"Se identifica acusación, insulto, restricción, humillación, amenaza, control económico u otro acto ocurrido al menos una vez.","unidad_medida":"Porcentaje","fuente":"Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.","desagregaciones":["código de departamento","área urbana o rural","edad simple","sexo"],"campos":{"gestion":"Año de la encuesta.","codigo_departamento":"Primer dígito del código municipal del departamento.","area":"Área urbana o rural.","edad":"Edad cumplida.","sexo":"Sexo declarado.","observaciones":"Jóvenes con pareja incluidos en la muestra.","numerador":"Población expandida que sufrió al menos un acto.","denominador":"Población expandida con respuestas válidas en todos los actos.","valor":"Porcentaje estimado.","cv":"Error estándar dividido entre el porcentaje estimado."},"metodo":"MS11_1105_A a K o VS08_0805_A a K igual a 1, 2 o 3 en algún acto forma el numerador. Se requieren respuestas 1 a 4 en todos los actos. Se usa el ponderador individual y un CV que considera estrato y UPM."}
+{
+  "codigo": "I143",
+  "nombre": "Violencia psicológica de pareja",
+  "objetivo": "Mostrar cuántos jóvenes sufrieron violencia psicológica de pareja durante los últimos 12 meses.",
+  "definicion_conceptual": "Porcentaje de jóvenes con pareja que sufrió al menos uno de los actos psicológicos o de control consultados.",
+  "poblacion_objetivo": "Personas de 16 a 28 años con respuestas válidas sobre su relación de pareja en la EDSA 2023.",
+  "descripcion_operativa": "Se identifica acusación, insulto, restricción, humillación, amenaza, control económico u otro acto ocurrido al menos una vez.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "seguridad_discriminacion_violencia"
+  ],
+  "espacios_politica": [
+    "proteccion_violencia_acceso_justicia"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes con pareja incluidos en la muestra.",
+    "numerador": "Población expandida que sufrió al menos un acto.",
+    "denominador": "Población expandida con respuestas válidas en todos los actos.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "MS11_1105_A a K o VS08_0805_A a K igual a 1, 2 o 3 en algún acto forma el numerador. Se requieren respuestas 1 a 4 en todos los actos. Se usa el ponderador individual y un CV que considera estrato y UPM."
+}

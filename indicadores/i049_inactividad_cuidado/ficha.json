@@ -7,7 +7,20 @@
   "descripcion_operativa": "Se divide a quienes declararon labores del hogar o cuidado entre todos los jóvenes fuera de la fuerza de trabajo.",
   "unidad_medida": "Porcentaje",
   "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "estudio_trabajo_desempleo",
+    "sexualidad_reproduccion_familia"
+  ],
+  "espacios_politica": [
+    "transicion_educacion_trabajo",
+    "cuidados_maternidad_proyectos_vida"
+  ],
   "campos": {
     "gestion": "Año del censo.",
     "codigo_municipio": "Código de cinco dígitos del municipio.",

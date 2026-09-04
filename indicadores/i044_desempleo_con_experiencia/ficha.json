@@ -1,11 +1,34 @@
 {
-  "codigo": "I044", "nombre": "Desempleo después de haber trabajado",
+  "codigo": "I044",
+  "nombre": "Desempleo después de haber trabajado",
   "objetivo": "Mostrar cuántos jóvenes desocupados tuvieron un empleo anterior.",
   "definicion_conceptual": "Porcentaje de jóvenes desocupados que busca trabajo después de haber trabajado.",
   "poblacion_objetivo": "Personas de 16 a 28 años desocupadas en el CPV 2024.",
   "descripcion_operativa": "Se divide a los desocupados con trabajo anterior entre todos los desocupados.",
-  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes desocupados con experiencia laboral previa.", "denominador": "Jóvenes desocupados.", "valor": "Desocupados con experiencia por cada cien jóvenes desocupados."},
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "estudio_trabajo_desempleo"
+  ],
+  "espacios_politica": [
+    "transicion_educacion_trabajo",
+    "acceso_primer_empleo"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes desocupados con experiencia laboral previa.",
+    "denominador": "Jóvenes desocupados.",
+    "valor": "Desocupados con experiencia por cada cien jóvenes desocupados."
+  },
   "metodo": "CONDACT_19 igual a 2 forma el numerador. Las categorías 2 y 3 forman el denominador."
 }

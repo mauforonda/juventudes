@@ -7,7 +7,33 @@
   "descripcion_operativa": "Se calcula el porcentaje correspondiente a cada edad declarada.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta de Demografía y Salud 2023. Tabla mujer.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo", "edad al primer embarazo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida al momento de la encuesta.", "sexo": "Sexo declarado.", "edad_primer_embarazo": "Edad cumplida cuando ocurrió el primer embarazo.", "observaciones": "Mujeres de la muestra incluidas.", "numerador": "Población expandida que declaró esa edad.", "denominador": "Población expandida con edad válida al primer embarazo.", "valor": "Porcentaje estimado en esa edad.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo",
+    "edad al primer embarazo"
+  ],
+  "temas": [
+    "sexualidad_reproduccion_familia",
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "autonomia_sexual_reproductiva",
+    "cuidados_maternidad_proyectos_vida"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida al momento de la encuesta.",
+    "sexo": "Sexo declarado.",
+    "edad_primer_embarazo": "Edad cumplida cuando ocurrió el primer embarazo.",
+    "observaciones": "Mujeres de la muestra incluidas.",
+    "numerador": "Población expandida que declaró esa edad.",
+    "denominador": "Población expandida con edad válida al primer embarazo.",
+    "valor": "Porcentaje estimado en esa edad.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "MS02_0238 entre 10 años y la edad actual define las edades válidas. Se estima su distribución con el ponderador de mujeres y un CV que considera estrato y UPM."
 }

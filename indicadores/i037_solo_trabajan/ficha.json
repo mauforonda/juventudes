@@ -1,11 +1,34 @@
 {
-  "codigo": "I037", "nombre": "Jóvenes que sólo trabajan",
+  "codigo": "I037",
+  "nombre": "Jóvenes que sólo trabajan",
   "objetivo": "Mostrar cuántos jóvenes trabajan sin asistir a educación.",
   "definicion_conceptual": "Porcentaje de jóvenes que está ocupado y no asiste a educación.",
   "poblacion_objetivo": "Personas de 16 a 28 años con asistencia y condición de actividad definidas en el CPV 2024.",
   "descripcion_operativa": "Se combinan falta de asistencia educativa y condición de ocupado.",
-  "unidad_medida": "Porcentaje", "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
-  "desagregaciones": ["código de municipio", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de referencia.", "codigo_municipio": "Código de cinco dígitos del municipio.", "area": "Área urbana o rural.", "edad": "Edad cumplida.", "sexo": "Sexo registrado.", "numerador": "Jóvenes ocupados que no asisten.", "denominador": "Jóvenes con asistencia y actividad definidas.", "valor": "Jóvenes que sólo trabajan por cada cien con información definida."},
+  "unidad_medida": "Porcentaje",
+  "fuente": "Censo de Población y Vivienda 2024. Tablas persona y vivienda.",
+  "desagregaciones": [
+    "código de municipio",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "estudio_trabajo_desempleo",
+    "educacion_formacion"
+  ],
+  "espacios_politica": [
+    "transicion_educacion_trabajo"
+  ],
+  "campos": {
+    "gestion": "Año de referencia.",
+    "codigo_municipio": "Código de cinco dígitos del municipio.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo registrado.",
+    "numerador": "Jóvenes ocupados que no asisten.",
+    "denominador": "Jóvenes con asistencia y actividad definidas.",
+    "valor": "Jóvenes que sólo trabajan por cada cien con información definida."
+  },
   "metodo": "El numerador combina ASISTE igual a 2 y CONDACT_19 igual a 1. El denominador incluye ASISTE 1 o 2 y CONDACT_19 de 1 a 4."
 }

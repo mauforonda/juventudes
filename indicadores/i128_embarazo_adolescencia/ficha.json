@@ -7,7 +7,31 @@
   "descripcion_operativa": "Se reúnen las categorías ya son madres y embarazadas por primera vez.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta de Demografía y Salud 2023. Tabla mujer.",
-  "desagregaciones": ["código de departamento", "área urbana o rural", "edad simple", "sexo"],
-  "campos": {"gestion": "Año de la encuesta.", "codigo_departamento": "Primer dígito del código municipal del departamento.", "area": "Área urbana o rural.", "edad": "Edad cumplida entre 16 y 19 años.", "sexo": "Sexo declarado.", "observaciones": "Mujeres de la muestra incluidas.", "numerador": "Población expandida que ya es madre o cursa su primer embarazo.", "denominador": "Población expandida con clasificación válida.", "valor": "Porcentaje estimado.", "cv": "Error estándar dividido entre el porcentaje estimado."},
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "sexualidad_reproduccion_familia",
+    "salud_nutricion_bienestar"
+  ],
+  "espacios_politica": [
+    "autonomia_sexual_reproductiva",
+    "cuidados_maternidad_proyectos_vida"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida entre 16 y 19 años.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Mujeres de la muestra incluidas.",
+    "numerador": "Población expandida que ya es madre o cursa su primer embarazo.",
+    "denominador": "Población expandida con clasificación válida.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
   "metodo": "EMBADOLES_M igual a 1 o 2 forma el numerador; los valores 0 a 3 forman el denominador. Se usa el ponderador de mujeres y un CV que considera estrato y UPM."
 }

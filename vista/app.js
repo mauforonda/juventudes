@@ -1,3 +1,5 @@
+import { cargarComponente } from "./componentes/registro.js";
+
 const RAW_ROOT = "https://raw.githubusercontent.com/mauforonda/juventudes/refs/heads/main/";
 const INDEX_URL = "indice.json";
 const MUNICIPALITIES_URL = `${RAW_ROOT}diccionarios/municipios.csv`;
@@ -7,6 +9,8 @@ const TABLE_BATCH_SIZE = 60;
 const input = document.querySelector("#search input");
 const clearButton = document.querySelector("#search button");
 const searchBox = document.querySelector("#search");
+const catalogue = document.querySelector("#catalogue");
+const groups = document.querySelector("#groups");
 const list = document.querySelector("#datasets");
 const empty = document.querySelector("#empty");
 const catalogueSentinel = document.querySelector("#catalogue-sentinel");
@@ -15,6 +19,8 @@ let indicators = [];
 let filtered = [];
 let shown = 0;
 let municipalityMaps = { municipalities: new Map(), departments: new Map() };
+let datasetActivo = null;
+let grupoActivo = null;
 
 const normalize = value => String(value ?? "")
   .normalize("NFD")
@@ -109,8 +115,20 @@ function metadataMarkup(ficha) {
   return dl;
 }
 
-function resultsTable(csvText, fieldDescriptions = {}) {
-  const rows = parseCsv(csvText);
+function descargarCsv(rows, slug) {
+  const csv = rows.map(row => row.map(value => {
+    const clean = String(value ?? "");
+    return /[",\n\r]/.test(clean) ? `"${clean.replaceAll('"', '""')}"` : clean;
+  }).join(",")).join("\r\n");
+  const url = URL.createObjectURL(new Blob(["\ufeff", csv], { type: "text/csv;charset=utf-8" }));
+  const enlace = document.createElement("a");
+  enlace.href = url;
+  enlace.download = `${slug}.csv`;
+  enlace.click();
+  setTimeout(() => URL.revokeObjectURL(url), 0);
+}
+
+function resultsTable(rows, fieldDescriptions = {}, slug) {
   const [headers = [], ...values] = rows;
   const section = document.createElement("section");
   section.className = "results-section";
@@ -141,6 +159,12 @@ function resultsTable(csvText, fieldDescriptions = {}) {
   table.append(thead, tbody);
   wrapper.append(table);
   section.append(wrapper);
+  const download = document.createElement("button");
+  download.className = "download-button";
+  download.type = "button";
+  download.textContent = "descarga";
+  download.addEventListener("click", () => descargarCsv(rows, slug));
+  section.append(download);
 
   let rowIndex = 0;
   const renderRows = () => {
@@ -150,7 +174,6 @@ function resultsTable(csvText, fieldDescriptions = {}) {
       headers.forEach((header, columnIndex) => {
         const td = document.createElement("td");
         td.textContent = formatValue(row[columnIndex], header);
-        td.title = td.textContent;
         tr.append(td);
       });
       fragment.append(tr);
@@ -168,6 +191,47 @@ function resultsTable(csvText, fieldDescriptions = {}) {
   return section;
 }
 
+async function visualizations(config, rows, version = "") {
+  if (!config) return null;
+  const section = document.createElement("section");
+  section.className = "visualizations";
+  for (const definition of config) {
+    const modulo = await cargarComponente(definition.tipo, version);
+    const component = document.createElement("article");
+    component.className = "visualization";
+    if (modulo.layout) {
+      component.style.minWidth = `${modulo.layout.minWidth}px`;
+      component.style.minHeight = `${modulo.layout.minHeight}px`;
+    }
+    component.append(await modulo.render({ rows, ...definition, version }));
+    section.append(component);
+  }
+  return section;
+}
+
+async function actualizarVisualizaciones(version = "") {
+  if (!datasetActivo?.article.classList.contains("open")) return;
+  const section = await visualizations(datasetActivo.config, datasetActivo.rows, version);
+  const anterior = datasetActivo.article.querySelector(".visualizations");
+  if (section?.childElementCount) {
+    if (anterior) anterior.replaceWith(section);
+    else datasetActivo.article.querySelector(".results-section").before(section);
+  } else {
+    anterior?.remove();
+  }
+}
+
+async function actualizarConfiguracion(version) {
+  if (!datasetActivo) return;
+  const url = `configuraciones/${datasetActivo.indicator.slug}.json?v=${version}`;
+  try {
+    datasetActivo.config = await fetchChecked(url, "json");
+  } catch {
+    datasetActivo.config = null;
+  }
+  await actualizarVisualizaciones(version);
+}
+
 async function openDataset(article, indicator) {
   const button = article.querySelector(".dataset-summary");
   const shell = article.querySelector(".details-shell");
@@ -181,14 +245,24 @@ async function openDataset(article, indicator) {
   content.innerHTML = '<div class="loading"><span></span>Cargando ficha y resultados…</div>';
   try {
     const base = `${RAW_ROOT}indicadores/${indicator.slug}/`;
-    const [ficha, csvText] = await Promise.all([
+    const [ficha, csvText, config] = await Promise.all([
       fetchChecked(`${base}ficha.json`, "json"),
       fetchChecked(`${base}resultados.csv`),
+      indicator.tiene_config
+        ? fetchChecked(`configuraciones/${indicator.slug}.json`, "json")
+        : Promise.resolve(null),
     ]);
+    const rows = parseCsv(csvText);
+    const [headers = [], ...values] = rows;
+    const objects = values.map(row => Object.fromEntries(headers.map((header, index) => [header, row[index]])));
     const metadata = document.createElement("section");
     metadata.className = "metadata-section";
     metadata.append(metadataMarkup(ficha));
-    content.replaceChildren(metadata, resultsTable(csvText, ficha.campos));
+    const visualizationSection = await visualizations(config, objects);
+    content.replaceChildren(metadata);
+    if (visualizationSection && visualizationSection.childElementCount) content.append(visualizationSection);
+    content.append(resultsTable(rows, ficha.campos, indicator.slug));
+    datasetActivo = { article, config, ficha, indicator, rows: objects };
     article.dataset.loaded = "true";
   } catch (error) {
     content.innerHTML = "";
@@ -231,15 +305,42 @@ function renderIndicators() {
   list.append(fragment);
 }
 
+function renderGroups(data) {
+  const grupos = data.espacios_politica.map(grupo => ({ ...grupo, tipo: "espacio" }));
+  const fragment = document.createDocumentFragment();
+  grupos.forEach(grupo => {
+    const button = document.createElement("button");
+    button.className = "group-button";
+    button.type = "button";
+    button.textContent = grupo.nombre;
+    button.setAttribute("aria-pressed", "false");
+    button.addEventListener("click", () => {
+      const clave = `${grupo.tipo}:${grupo.id}`;
+      grupoActivo = grupoActivo?.clave === clave ? null : { clave, indicadores: new Set(grupo.indicadores) };
+      groups.querySelectorAll(".group-button").forEach(elemento => {
+        elemento.classList.toggle("selected", elemento === button && grupoActivo !== null);
+        elemento.setAttribute("aria-pressed", String(elemento === button && grupoActivo !== null));
+      });
+      search();
+    });
+    fragment.append(button);
+  });
+  groups.replaceChildren(fragment);
+}
+
 function search() {
   const query = normalize(input.value.trim());
-  filtered = indicators.filter(indicator => normalize([
+  const subset = grupoActivo
+    ? indicators.filter(indicator => grupoActivo.indicadores.has(indicator.slug))
+    : indicators;
+  filtered = subset.filter(indicator => normalize([
     indicator.nombre,
     indicator.definicion_conceptual,
     indicator.fuente,
   ].join(" ")).includes(query));
   shown = 0;
   list.replaceChildren();
+  catalogue.scrollTop = 0;
   searchBox.classList.toggle("has-value", Boolean(input.value));
   empty.hidden = filtered.length > 0;
   renderIndicators();
@@ -247,7 +348,7 @@ function search() {
 
 new IntersectionObserver(entries => {
   if (entries[0].isIntersecting) renderIndicators();
-}, { rootMargin: "0px 0px 300px" }).observe(catalogueSentinel);
+}, { root: catalogue, rootMargin: "0px 0px 300px" }).observe(catalogueSentinel);
 
 input.addEventListener("input", search);
 clearButton.addEventListener("click", () => {
@@ -256,11 +357,25 @@ clearButton.addEventListener("click", () => {
   search();
 });
 
+if (["localhost", "127.0.0.1", "::1"].includes(location.hostname)) {
+  const liveReload = new EventSource("/__livereload");
+  liveReload.addEventListener("message", async event => {
+    const change = JSON.parse(event.data);
+    if (change.tipo === "componente") await actualizarVisualizaciones(change.version);
+    else if (change.tipo === "configuracion" && change.slugs.includes(datasetActivo?.indicator.slug)) {
+      await actualizarConfiguracion(change.version);
+    }
+    else if (change.tipo === "recargar") location.reload();
+  });
+}
+
 Promise.all([
   fetchChecked(INDEX_URL, "json"),
   loadMunicipalityMaps(),
 ]).then(([data]) => {
-  indicators = data.sort((a, b) => a.slug.localeCompare(b.slug, "es", { numeric: true }));
+  indicators = Object.values(data.indicadores).sort((a, b) =>
+    a.slug.localeCompare(b.slug, "es", { numeric: true }));
+  renderGroups(data);
   search();
 }).catch(error => {
   empty.hidden = false;

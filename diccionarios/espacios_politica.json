@@ -1,0 +1,42 @@
+{
+  "permanencia_conclusion_educativa": {
+    "nombre": "Permanencia y conclusión educativa",
+    "descripcion": "Políticas para sostener la asistencia, evitar interrupciones y completar trayectorias educativas."
+  },
+  "transicion_educacion_trabajo": {
+    "nombre": "Transición de la educación al trabajo",
+    "descripcion": "Políticas que conectan la formación con la incorporación al trabajo."
+  },
+  "acceso_primer_empleo": {
+    "nombre": "Acceso al primer empleo",
+    "descripcion": "Políticas para facilitar la búsqueda y obtención de la primera experiencia laboral."
+  },
+  "trabajo_digno_proteccion_social": {
+    "nombre": "Trabajo digno y protección social",
+    "descripcion": "Políticas sobre estabilidad, derechos laborales, seguridad social y condiciones de trabajo."
+  },
+  "independencia_economica_residencial": {
+    "nombre": "Independencia económica y residencial",
+    "descripcion": "Políticas para fortalecer ingresos propios, formación de hogares y acceso a vivienda adecuada."
+  },
+  "barreras_acceso_servicios": {
+    "nombre": "Barreras de acceso a servicios",
+    "descripcion": "Políticas para reducir obstáculos económicos, territoriales y sociales en servicios esenciales."
+  },
+  "salud_mental_consumos": {
+    "nombre": "Salud mental y consumos",
+    "descripcion": "Políticas de prevención, atención del malestar emocional y reducción de consumos perjudiciales."
+  },
+  "autonomia_sexual_reproductiva": {
+    "nombre": "Autonomía sexual y reproductiva",
+    "descripcion": "Políticas para decisiones informadas, relaciones consentidas y acceso a salud reproductiva."
+  },
+  "cuidados_maternidad_proyectos_vida": {
+    "nombre": "Cuidados, maternidad y proyectos de vida",
+    "descripcion": "Políticas para conciliar cuidados, educación, trabajo y formación familiar."
+  },
+  "proteccion_violencia_acceso_justicia": {
+    "nombre": "Protección frente a la violencia y acceso a justicia",
+    "descripcion": "Políticas de prevención, protección, denuncia, atención y respuesta institucional."
+  }
+}

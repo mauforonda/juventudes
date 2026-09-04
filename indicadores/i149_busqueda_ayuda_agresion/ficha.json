@@ -1,1 +1,35 @@
-{"codigo":"I149","nombre":"Búsqueda de ayuda tras una agresión","objetivo":"Mostrar cuántos jóvenes agredidos por su pareja buscaron ayuda cercana o institucional.","definicion_conceptual":"Porcentaje de jóvenes agredidos por su pareja que pidió ayuda a una persona cercana o denunció ante una institución.","poblacion_objetivo":"Personas de 16 a 28 años agredidas por su pareja con respuestas válidas en la EDSA 2023.","descripcion_operativa":"Se identifica una respuesta afirmativa al pedido de ayuda cercana o a la denuncia institucional.","unidad_medida":"Porcentaje","fuente":"Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.","desagregaciones":["código de departamento","área urbana o rural","edad simple","sexo"],"campos":{"gestion":"Año de la encuesta.","codigo_departamento":"Primer dígito del código municipal del departamento.","area":"Área urbana o rural.","edad":"Edad cumplida.","sexo":"Sexo declarado.","observaciones":"Jóvenes agredidos incluidos en la muestra.","numerador":"Población expandida que buscó ayuda cercana o institucional.","denominador":"Población expandida agredida con respuestas válidas.","valor":"Porcentaje estimado.","cv":"Error estándar dividido entre el porcentaje estimado."},"metodo":"En mujeres se combinan MS11_1125 y MS11_1127. En hombres se combinan VS08_0817 y VS08_0819. Una respuesta 1 en cualquiera forma el numerador; respuestas 1 o 2 en ambas forman el denominador. Se usa el ponderador individual y un CV que considera estrato y UPM."}
+{
+  "codigo": "I149",
+  "nombre": "Búsqueda de ayuda tras una agresión",
+  "objetivo": "Mostrar cuántos jóvenes agredidos por su pareja buscaron ayuda cercana o institucional.",
+  "definicion_conceptual": "Porcentaje de jóvenes agredidos por su pareja que pidió ayuda a una persona cercana o denunció ante una institución.",
+  "poblacion_objetivo": "Personas de 16 a 28 años agredidas por su pareja con respuestas válidas en la EDSA 2023.",
+  "descripcion_operativa": "Se identifica una respuesta afirmativa al pedido de ayuda cercana o a la denuncia institucional.",
+  "unidad_medida": "Porcentaje",
+  "fuente": "Encuesta de Demografía y Salud 2023. Tablas mujer y hombre.",
+  "desagregaciones": [
+    "código de departamento",
+    "área urbana o rural",
+    "edad simple",
+    "sexo"
+  ],
+  "temas": [
+    "seguridad_discriminacion_violencia"
+  ],
+  "espacios_politica": [
+    "proteccion_violencia_acceso_justicia"
+  ],
+  "campos": {
+    "gestion": "Año de la encuesta.",
+    "codigo_departamento": "Primer dígito del código municipal del departamento.",
+    "area": "Área urbana o rural.",
+    "edad": "Edad cumplida.",
+    "sexo": "Sexo declarado.",
+    "observaciones": "Jóvenes agredidos incluidos en la muestra.",
+    "numerador": "Población expandida que buscó ayuda cercana o institucional.",
+    "denominador": "Población expandida agredida con respuestas válidas.",
+    "valor": "Porcentaje estimado.",
+    "cv": "Error estándar dividido entre el porcentaje estimado."
+  },
+  "metodo": "En mujeres se combinan MS11_1125 y MS11_1127. En hombres se combinan VS08_0817 y VS08_0819. Una respuesta 1 en cualquiera forma el numerador; respuestas 1 o 2 en ambas forman el denominador. Se usa el ponderador individual y un CV que considera estrato y UPM."
+}
