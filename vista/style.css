@@ -522,14 +522,16 @@ th {
 .loading {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  min-height: 56px;
+  background: var(--hover);
 }
 
 .loading span {
   width: 14px;
   height: 14px;
-  border: 1px solid var(--line);
-  border-top-color: var(--ink);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+  border-top-color: var(--accent);
   border-radius: 50%;
   animation: spin 0.7s linear infinite;
 }

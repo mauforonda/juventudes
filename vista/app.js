@@ -242,7 +242,7 @@ async function openDataset(article, indicator) {
   button.setAttribute("aria-expanded", String(opening));
   if (!opening || article.dataset.loaded) return;
 
-  content.innerHTML = '<div class="loading"><span></span>Cargando ficha y resultados…</div>';
+  content.innerHTML = '<div class="loading" aria-label="Cargando"><span></span></div>';
   try {
     const base = `${RAW_ROOT}indicadores/${indicator.slug}/`;
     const [ficha, csvText, config] = await Promise.all([
