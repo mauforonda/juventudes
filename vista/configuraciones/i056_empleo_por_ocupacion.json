@@ -1,0 +1,35 @@
+[
+  {
+    "tipo": "porcentaje_categorias",
+    "dimension": "grupo_ocupacional",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_subcategoria",
+    "dimension": "grupo_ocupacional",
+    "numerador": "numerador",
+    "denominador": "denominador",
+    "subdimension": "sexo"
+  },
+  {
+    "tipo": "porcentaje_subcategoria",
+    "dimension": "grupo_ocupacional",
+    "numerador": "numerador",
+    "denominador": "denominador",
+    "subdimension": "area"
+  },
+  {
+    "tipo": "porcentaje_edad_categoria",
+    "dimension": "edad",
+    "categoria": "grupo_ocupacional",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_municipio_categoria",
+    "categoria": "grupo_ocupacional",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  }
+]

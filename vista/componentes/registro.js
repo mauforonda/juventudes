@@ -5,6 +5,11 @@ const loaders = {
   porcentaje_edad: "./porcentaje_edad.js",
   porcentaje_municipios: "./porcentaje_municipios.js",
   porcentaje_departamentos: "./porcentaje_departamentos.js",
+  porcentaje_categorias: "./porcentaje_categorias.js",
+  porcentaje_subcategoria: "./porcentaje_subcategoria.js",
+  porcentaje_edad_categoria: "./porcentaje_edad_categoria.js",
+  porcentaje_departamento_categoria: "./porcentaje_departamento_categoria.js",
+  porcentaje_municipio_categoria: "./porcentaje_municipio_categoria.js",
 };
 
 const cache = new Map();

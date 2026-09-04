@@ -2,6 +2,7 @@
 
 :root {
   --background: #fff;
+  --body-background: #f7f7f4;
   --ink: #111;
   --muted: color-mix(in srgb, var(--ink) 65%, transparent);
   --line: rgba(0, 0, 0, 0.12);
@@ -12,6 +13,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000;
+    --body-background: var(--background);
     --ink: #ededed;
     --line: rgba(255, 255, 255, 0.145);
     --accent: #2488fa;
@@ -31,7 +33,7 @@ body {
   padding: 0 0 10px 0;
   height: 100vh;
   overflow: hidden;
-  background: var(--background);
+  background: var(--body-background);
   color: var(--ink);
   font:
     14px/1.4 Inter,
@@ -377,9 +379,16 @@ th {
   width: 100%;
   margin: 0 0 12px;
   padding: 16px;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   border: 1px solid var(--line);
   border-radius: 8px;
   break-inside: avoid;
+}
+
+.visualization::-webkit-scrollbar {
+  display: none;
 }
 
 @media (max-width: 600px) {

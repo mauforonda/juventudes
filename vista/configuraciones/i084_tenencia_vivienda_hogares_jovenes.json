@@ -1,0 +1,35 @@
+[
+  {
+    "tipo": "porcentaje_categorias",
+    "dimension": "tenencia_vivienda",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_subcategoria",
+    "dimension": "tenencia_vivienda",
+    "subdimension": "sexo",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_subcategoria",
+    "dimension": "tenencia_vivienda",
+    "subdimension": "area",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_edad_categoria",
+    "dimension": "edad",
+    "categoria": "tenencia_vivienda",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_municipio_categoria",
+    "categoria": "tenencia_vivienda",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  }
+]

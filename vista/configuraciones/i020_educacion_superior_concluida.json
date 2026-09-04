@@ -11,6 +11,18 @@
     "denominador": "denominador"
   },
   {
+    "tipo": "porcentaje_categorias",
+    "dimension": "sexo",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_categorias",
+    "dimension": "area",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
     "tipo": "porcentaje_municipios",
     "numerador": "numerador",
     "denominador": "denominador"

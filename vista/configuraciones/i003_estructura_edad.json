@@ -1,0 +1,16 @@
+[
+  {
+    "tipo": "porcentaje_edad_categoria",
+    "dimension": "edad",
+    "categoria": "area",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_edad_categoria",
+    "dimension": "edad",
+    "categoria": "sexo",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  }
+]

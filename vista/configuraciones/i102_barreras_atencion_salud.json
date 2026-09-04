@@ -1,0 +1,35 @@
+[
+  {
+    "tipo": "porcentaje_categorias",
+    "dimension": "barrera",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_subcategoria",
+    "dimension": "barrera",
+    "numerador": "numerador",
+    "denominador": "denominador",
+    "subdimension": "sexo"
+  },
+  {
+    "tipo": "porcentaje_subcategoria",
+    "dimension": "barrera",
+    "numerador": "numerador",
+    "denominador": "denominador",
+    "subdimension": "area"
+  },
+  {
+    "tipo": "porcentaje_edad_categoria",
+    "dimension": "edad",
+    "categoria": "barrera",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_departamento_categoria",
+    "categoria": "barrera",
+    "numerador": "numerador",
+    "denominador": "denominador"
+  }
+]

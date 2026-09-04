@@ -14,5 +14,11 @@
     "tipo": "porcentaje_departamentos",
     "numerador": "numerador",
     "denominador": "denominador"
+  },
+  {
+    "tipo": "porcentaje_categorias",
+    "dimension": "area",
+    "numerador": "numerador",
+    "denominador": "denominador"
   }
 ]
