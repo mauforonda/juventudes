@@ -263,7 +263,8 @@ input {
   flex-direction: column;
   gap: 3px;
 
-  &:hover {
+  &:hover,
+  .dataset.open & {
     background: var(--hover);
   }
 
@@ -278,11 +279,14 @@ input {
   }
 
   &:hover .name,
-  &:hover .page {
+  &:hover .page,
+  .dataset.open & .name,
+  .dataset.open & .page {
     color: var(--accent);
   }
 
-  &:hover .meta {
+  &:hover .meta,
+  .dataset.open & .meta {
     color: color-mix(in srgb, var(--accent) 65%, transparent);
   }
 
@@ -339,6 +343,7 @@ input {
 
 .dataset.open .details-shell {
   grid-template-rows: 1fr;
+  background: var(--hover);
 }
 
 .details-content {
