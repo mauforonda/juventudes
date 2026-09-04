@@ -130,7 +130,9 @@ export function render({
   });
   const leyenda = tarjeta.querySelector(".leyenda");
   [...subcategorias].forEach(([subcategoria, indice]) => {
-    const item = html(`<span class="leyenda-item"><span class="swatch"></span><span></span></span>`);
+    const item = html(
+      `<span class="leyenda-item"><span class="swatch"></span><span></span></span>`,
+    );
     item.lastElementChild.textContent = subcategoria.replaceAll("_", " ");
     const swatch = item.querySelector(".swatch");
     swatch.style.backgroundColor = colores.muted;
@@ -157,13 +159,18 @@ export function render({
     };
   });
   const maximos = new Map();
-  datos.forEach(dato => maximos.set(
-    dato.categoria,
-    Math.max(maximos.get(dato.categoria) ?? -Infinity, dato.valor),
-  ));
-  const ordenCategorias = [...maximos].sort(([, a], [, b]) => b - a).map(([categoria]) => categoria);
-  const etiquetas = ordenCategorias.map(categoria =>
-    datos.find(dato => dato.categoria === categoria));
+  datos.forEach((dato) =>
+    maximos.set(
+      dato.categoria,
+      Math.max(maximos.get(dato.categoria) ?? -Infinity, dato.valor),
+    ),
+  );
+  const ordenCategorias = [...maximos]
+    .sort(([, a], [, b]) => b - a)
+    .map(([categoria]) => categoria);
+  const etiquetas = ordenCategorias.map((categoria) =>
+    datos.find((dato) => dato.categoria === categoria),
+  );
   const ordenY = [];
   etiquetas.forEach((dato) => {
     ordenY.push(dato.filaEtiqueta);
@@ -198,6 +205,7 @@ export function render({
             x: "valor",
             fill: color,
             fillOpacity: 0.8,
+            maxRadius: 12,
           }),
         ),
       ];
@@ -210,7 +218,7 @@ export function render({
       marginLeft: 0,
       marginRight: 0,
       insetRight: 58,
-      x: { axis: null, domain: [0, 100] },
+      x: { axis: null },
       y: { axis: null, domain: ordenY, padding: 0.3 },
       style: { color: colores.muted },
       marks: [

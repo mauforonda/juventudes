@@ -41,8 +41,10 @@ body {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr);
+  column-gap: 16px;
   min-height: 0;
   height: 100%;
   width: calc(100% - 20px);
@@ -57,21 +59,50 @@ h1 {
 }
 
 .site-header {
-  padding: 8px 0;
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+  padding: 15px 0;
 
   h1 {
     margin: 0;
+    text-align: left;
+    padding-left: 16px;
   }
 }
 
+.brand-mark {
+  position: absolute;
+  left: -17px;
+  top: 47%;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  transform: translateY(-50%);
+  background:
+    radial-gradient(
+      ellipse at 72% 42%,
+      rgb(255 205 24 / 90%) 0 13%,
+      transparent 48%
+    ),
+    radial-gradient(
+      ellipse at 16% 20%,
+      rgb(239 95 91 / 88%) 0 20%,
+      transparent 63%
+    ),
+    linear-gradient(115deg, #ef776f 0%, #f2a15c 38%, #f1c842 56%, #d7a0ca 100%);
+}
+
 #groups {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   gap: 6px;
-  align-self: center;
-  width: min(calc(100% + 48px), 100vw);
-  padding: 0 24px 10px;
+  width: 100%;
+  padding: 4px 24px 4px;
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-mask-image: linear-gradient(
@@ -110,7 +141,8 @@ h1 {
 }
 
 #catalogue {
-  flex: 1;
+  grid-column: 1 / -1;
+  grid-row: 2;
   min-height: 0;
   position: relative;
   max-height: none;
@@ -207,6 +239,16 @@ input {
     background: var(--hover);
   }
 
+  &:hover + .details-shell {
+    background: var(--hover);
+  }
+
+  &:hover + .loading,
+  .error,
+  #empty {
+    background: var(--hover);
+  }
+
   &:hover .name,
   &:hover .page {
     color: var(--accent);
@@ -274,17 +316,21 @@ input {
 .details-content {
   min-height: 0;
   overflow: hidden;
+  background: var(--background);
   border-radius: 6px;
 }
 
 .dataset.open .details-content:has(.metadata-grid) {
-  margin: 17px;
+  margin: 0 17px 17px 17px;
   border: 1px solid var(--line);
 }
 
-.metadata-section,
-.results-section {
+.metadata-section {
   padding: 16px 16px;
+}
+
+.results-section {
+  padding: 0 16px 16px 16px;
 }
 
 .metadata-grid {
@@ -384,7 +430,6 @@ th {
   -ms-overflow-style: none;
   border: 1px solid var(--line);
   border-radius: 8px;
-  break-inside: avoid;
 }
 
 .visualization::-webkit-scrollbar {
@@ -392,9 +437,41 @@ th {
 }
 
 @media (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .site-header {
+    flex: 0 0 auto;
+
+    .brand-mark {
+      left: 13px;
+    }
+
+    h1 {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+  #groups {
+    flex: 0 0 auto;
+    width: min(calc(100% + 48px), 100vw);
+    padding: 0 24px 8px;
+  }
+
+  #catalogue {
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+
   .visualizations {
     column-width: auto;
     columns: 1;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .visualization {

@@ -18,6 +18,9 @@ const estilo = `
     cursor: pointer;
     font: inherit;
     font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .menu-categoria .menu-content {

@@ -260,7 +260,9 @@ async function openDataset(article, indicator) {
     metadata.append(metadataMarkup(ficha));
     const visualizationSection = await visualizations(config, objects);
     content.replaceChildren(metadata);
-    if (visualizationSection && visualizationSection.childElementCount) content.append(visualizationSection);
+    if (visualizationSection && visualizationSection.childElementCount) {
+      content.append(visualizationSection);
+    }
     content.append(resultsTable(rows, ficha.campos, indicator.slug));
     datasetActivo = { article, config, ficha, indicator, rows: objects };
     article.dataset.loaded = "true";
