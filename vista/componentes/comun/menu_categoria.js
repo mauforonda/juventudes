@@ -123,7 +123,7 @@ export function crearMenu({ opciones, valor, ariaLabel, alSeleccionar }) {
   trigger.addEventListener("click", () => {
     menu.hidden = !menu.hidden;
     trigger.setAttribute("aria-expanded", String(!menu.hidden));
-    if (!menu.hidden) menu.querySelector('[aria-selected="true"]')?.focus();
+    if (!menu.hidden) menu.querySelector('[aria-selected="true"]')?.focus({ preventScroll: true });
   });
   trigger.addEventListener("keydown", event => {
     if (event.key === "Escape") {

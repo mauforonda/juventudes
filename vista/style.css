@@ -26,6 +26,7 @@
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +41,34 @@ body {
     sans-serif;
 }
 
+body::before,
+body::after {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+}
+
+body::before {
+  opacity: 0.1;
+  background:
+    radial-gradient(ellipse 38% 28% at 18% 100%, rgb(239 95 91 / 48%), transparent 100%),
+    radial-gradient(ellipse 42% 30% at 52% 100%, rgb(241 200 66 / 42%), transparent 100%),
+    radial-gradient(ellipse 38% 28% at 88% 100%, rgb(215 160 202 / 42%), transparent 100%);
+}
+
+body::after {
+  opacity: 0.3;
+  background:
+    repeating-radial-gradient(circle at 18% 32%, transparent 0 1px, var(--ink) 1px 2px, transparent 2px 5px),
+    repeating-radial-gradient(circle at 76% 68%, transparent 0 1px, var(--background) 1px 2px, transparent 2px 6px);
+  mix-blend-mode: overlay;
+}
+
 main {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: max-content minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr);
