@@ -154,7 +154,7 @@ export function render({
             geojson,
             Plot.pointer(
               Plot.centroid({
-                stroke: fondo,
+                stroke: muted,
                 strokeOpacity: 0.8,
                 strokeWidth: 1,
               }),
