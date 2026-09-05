@@ -79,6 +79,7 @@ export function crearGraficoEdad({
   const color = getComputedStyle(document.documentElement)
     .getPropertyValue("--muted")
     .trim();
+  const acento = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim();
 
   const dibujar = (ancho) => {
     if (ancho <= 0 || !datos.length) return;
@@ -134,7 +135,7 @@ export function crearGraficoEdad({
           x: "edad",
           y: "valor",
           interval: 1,
-          fill: color,
+          fill: acento,
           fillOpacity: 0.2,
           insetLeft: 1,
           insetRight: 1,
@@ -145,16 +146,16 @@ export function crearGraficoEdad({
             x: "edad",
             y: "valor",
             interval: 1,
-            fill: color,
+            fill: acento,
             fillOpacity: 0.8,
-            insetLeft: 1,
-            insetRight: 1,
+            insetLeft: -.5,
+            insetRight: -1.5,
           }),
         ),
         Plot.line(linea, {
           x: "edad",
           y: "valor",
-          stroke: color,
+          stroke: acento,
           strokeOpacity: 0.8,
           strokeWidth: 2,
           curve: "step-after",

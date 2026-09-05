@@ -72,6 +72,7 @@ export function render({ rows, dimension, numerador, denominador, formatear = po
   const color = getComputedStyle(document.documentElement)
     .getPropertyValue("--muted")
     .trim();
+  const acento = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim();
   const datosPorCategoria = new Map();
 
   rows.forEach((row) => {
@@ -123,8 +124,8 @@ export function render({ rows, dimension, numerador, denominador, formatear = po
           y: "categoria",
           x: "valor",
           insetTop: 10,
-          fill: color,
-          fillOpacity: 0.2,
+          fill: acento,
+          fillOpacity: 0.4,
           sort: {
             y: "-x",
           },
@@ -135,7 +136,7 @@ export function render({ rows, dimension, numerador, denominador, formatear = po
             y: "categoria",
             x: "valor",
             insetTop: 10,
-            fill: color,
+            fill: acento,
             fillOpacity: 0.8,
           }),
         ),

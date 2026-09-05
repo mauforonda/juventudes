@@ -112,8 +112,9 @@ export function render({
   const grafico = tarjeta.querySelector(".grafico");
   const estilos = getComputedStyle(document.documentElement);
   const colores = {
-    muted: estilos.getPropertyValue("--muted").trim(),
-    ink: estilos.getPropertyValue("--ink").trim(),
+    muted: estilos.getPropertyValue("--accent").trim(),
+    ink: estilos.getPropertyValue("--accent").trim(),
+    texto: estilos.getPropertyValue("--muted").trim(),
   };
   const totales = new Map();
   const subcategorias = new Map();
@@ -144,7 +145,7 @@ export function render({
     if (indice === 1) {
       swatch.style.backgroundColor = "transparent";
       swatch.style.opacity = "1";
-      swatch.style.backgroundImage = `repeating-linear-gradient(135deg, transparent 0px, transparent 2px, color-mix(in srgb, rgb(17, 17, 17) 13%, transparent) 2px, color-mix(in srgb, rgb(17, 17, 17) 13%, transparent) 5px)`;
+      swatch.style.backgroundImage = `repeating-linear-gradient(135deg, transparent 0px, transparent 2px, color-mix(in srgb, ${colores.ink} 20%, transparent) 2px, color-mix(in srgb, ${colores.ink} 20%, transparent) 5px)`;
     }
     leyenda.append(item);
   });
@@ -201,7 +202,7 @@ export function render({
           x: "valor",
           insetTop: 2,
           fill: color,
-          fillOpacity: 0.2,
+          fillOpacity: 0.4,
         }),
         Plot.barX(
           datosSubcategoria,
@@ -225,7 +226,7 @@ export function render({
       insetRight: 58,
       x: { axis: null },
       y: { axis: null, domain: ordenY, padding: 0.3 },
-      style: { color: colores.muted },
+      style: { color: colores.texto },
       marks: [
         Plot.gridX({
           ticks: 3,
@@ -247,7 +248,7 @@ export function render({
           text: "etiqueta",
           textAnchor: "start",
           dx: 4,
-          fill: colores.muted,
+          fill: colores.texto,
           fontSize: 12,
         }),
         Plot.text(
@@ -258,7 +259,7 @@ export function render({
             text: (d) => formatear(d.valor),
             textAnchor: "start",
             dx: 5,
-            fill: colores.muted,
+            fill: colores.texto,
             fontSize: 12,
           }),
         ),
@@ -270,7 +271,7 @@ export function render({
       <defs>
         <pattern id="${patronId}" width="6" height="6" patternUnits="userSpaceOnUse">
           <path d="M-1,1 l2,-2 M0,6 L6,0 M5,7 l2,-2"
-            stroke="${colores.ink}" stroke-width="2" stroke-opacity="0.8" />
+            stroke="${colores.ink}" stroke-width="2" stroke-opacity="1" />
         </pattern>
       </defs>
     `,

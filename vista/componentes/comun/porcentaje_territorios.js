@@ -122,10 +122,11 @@ export function render({
   const grafico = document.createElement("div");
   tarjeta.append(cabecera, grafico);
   const estilos = getComputedStyle(document.documentElement);
-  const color = estilos.getPropertyValue("--muted").trim();
+  const color = estilos.getPropertyValue("--accent").trim();
   const fondo = estilos.getPropertyValue("--background").trim();
   const tinta = estilos.getPropertyValue("--ink").trim();
-  const rango = [mezclar(fondo, tinta, 0.12), mezclar(fondo, tinta, 0.65)];
+  const acento = estilos.getPropertyValue("--accent").trim();
+  const rango = [mezclar(fondo, acento, 0.12), mezclar(fondo, acento, 0.65)];
   const formatearValor = formatearExterno ?? (modo === "media" ? formatearMedia : formatear);
   cabecera.querySelector(".minimo").textContent = formatearValor(minimo);
   cabecera.querySelector(".maximo").textContent = formatearValor(maximo);
