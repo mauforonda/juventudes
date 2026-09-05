@@ -25,6 +25,7 @@ function cargarEstilo() {
 
 const formatear = (valor) =>
   `${valor.toLocaleString("es-BO", { minimumFractionDigits: 0, maximumFractionDigits: 1 })}%`;
+const formatearMedia = valor => valor.toLocaleString("es-BO", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 const mezclar = (fondo, tinta, proporcion) => {
   const parsear = color => {
@@ -42,19 +43,28 @@ const mezclar = (fondo, tinta, proporcion) => {
     Math.round(valor + (rgbTinta[indice] - valor) * proporcion));
   return `rgb(${rgb.join(", ")})`;
 };
-const agrupar = (rows, campoCodigo, normalizar, numerador, denominador) => {
+const agrupar = (rows, campoCodigo, normalizar, numerador, denominador, observaciones, estadistico, filtroCampo, filtroValor, modo) => {
   const totales = new Map();
   rows.forEach((row) => {
+    const filtro = filtroValor ?? estadistico;
+    if (filtro && row[filtroCampo] !== filtro) return;
     const codigo = normalizar(row[campoCodigo]);
     const total = totales.get(codigo) ?? { numerador: 0, denominador: 0 };
-    total.numerador += Number(row[numerador]);
-    total.denominador += Number(row[denominador]);
+    if (modo === "media") {
+      total.numerador += Number(row[numerador]) * Number(row[observaciones]);
+      total.denominador += Number(row[observaciones]);
+    } else {
+      total.numerador += Number(row[numerador]);
+      total.denominador += Number(row[denominador]);
+    }
     totales.set(codigo, total);
   });
   return new Map(
     [...totales].map(([codigo, total]) => [
       codigo,
-      total.denominador ? (100 * total.numerador) / total.denominador : 0,
+      total.denominador
+        ? modo === "media" ? total.numerador / total.denominador : (100 * total.numerador) / total.denominador
+        : 0,
     ]),
   );
 };
@@ -63,20 +73,31 @@ export function render({
   rows,
   numerador,
   denominador,
+  campo,
+  observaciones,
+  estadistico,
+  filtroCampo = "estadistico",
+  filtroValor,
   geojson,
   nombres,
   campoCodigo,
   normalizar,
   etiqueta,
   clase,
+  modo = "porcentaje",
 }) {
   cargarEstilo();
   const valores = agrupar(
     rows,
     campoCodigo,
     normalizar,
-    numerador,
-    denominador,
+    modo === "media" ? campo : numerador,
+    modo === "media" ? null : denominador,
+    observaciones,
+    estadistico,
+    filtroCampo,
+    filtroValor,
+    modo,
   );
   const extremos = [...valores.values()];
   const minimo = extremos.length ? Math.min(...extremos) : 0;
@@ -104,8 +125,9 @@ export function render({
   const fondo = estilos.getPropertyValue("--background").trim();
   const tinta = estilos.getPropertyValue("--ink").trim();
   const rango = [mezclar(fondo, tinta, 0.12), mezclar(fondo, tinta, 0.65)];
-  cabecera.querySelector(".minimo").textContent = formatear(minimo);
-  cabecera.querySelector(".maximo").textContent = formatear(maximo);
+  const formatearValor = modo === "media" ? formatearMedia : formatear;
+  cabecera.querySelector(".minimo").textContent = formatearValor(minimo);
+  cabecera.querySelector(".maximo").textContent = formatearValor(maximo);
   cabecera.querySelector(".barra").style.background =
     `linear-gradient(to right, ${rango[0]}, ${rango[1]})`;
   const dominio = minimo === maximo ? [minimo, minimo + 1] : [minimo, maximo];
@@ -140,7 +162,7 @@ export function render({
             Plot.pointer({
               px: (d) => d.properties.centroid[0],
               py: (d) => d.properties.centroid[1],
-              text: (punto) => formatear(punto.properties.porcentaje),
+              text: (punto) => formatearValor(punto.properties.porcentaje),
               frameAnchor: "top-right",
               fill: tinta,
               fontSize: 12,

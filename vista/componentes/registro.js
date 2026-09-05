@@ -1,5 +1,9 @@
 const loaders = {
   numero_nacional: "./numero_nacional.js",
+  media_nacional: "./media_nacional.js",
+  media_edad: "./media_edad.js",
+  media_departamentos: "./media_departamentos.js",
+  media_municipios: "./media_municipios.js",
   numero_edad: "./numero_edad.js",
   porcentaje_nacional: "./porcentaje_nacional.js",
   porcentaje_edad: "./porcentaje_edad.js",

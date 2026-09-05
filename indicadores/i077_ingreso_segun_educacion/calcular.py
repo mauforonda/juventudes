@@ -1,9 +1,9 @@
-"""Calcula el ingreso laboral mediano según el nivel educativo."""
+"""Calcula el ingreso laboral medio y mediano según el nivel educativo."""
 
 from pathlib import Path
 from comun import escribir_resultados, validar_ficha
 from ece import DIMENSIONES_JOVENES, GESTION, cargar_personas
-from encuestas import estimar_mediana
+from encuestas import estimar_media, estimar_mediana
 
 BASE_INDICADOR = Path(__file__).resolve().parent
 FICHA_PATH = BASE_INDICADOR / "ficha.json"
@@ -26,8 +26,11 @@ COLUMNAS_RESULTADO = [
     *DIMENSIONES_JOVENES,
     NIVEL,
     "observaciones",
-    "valor",
-    "cv",
+    "poblacion_estimada",
+    "media",
+    "cv_media",
+    "mediana",
+    "cv_mediana",
 ]
 
 
@@ -38,12 +41,41 @@ def calcular():
         .assign(nivel_educativo=lambda d: d[NIVEL_ORIGINAL].map(MAPA_NIVEL))
         .dropna(subset=[NIVEL])
     )
-    return estimar_mediana(
-        datos,
-        variable=INGRESO,
-        dimensiones=[*DIMENSIONES_JOVENES, NIVEL],
-        gestion=GESTION,
-    ).loc[:, COLUMNAS_RESULTADO]
+    dimensiones = [*DIMENSIONES_JOVENES, NIVEL]
+    return (
+        estimar_media(
+            datos,
+            variable=INGRESO,
+            dimensiones=dimensiones,
+            gestion=GESTION,
+        )
+        .rename(columns={"valor": "media", "cv": "cv_media"})
+        .merge(
+            estimar_mediana(
+                datos,
+                variable=INGRESO,
+                dimensiones=dimensiones,
+                gestion=GESTION,
+            ).rename(
+                columns={
+                    "observaciones": "observaciones_mediana",
+                    "valor": "mediana",
+                    "cv": "cv_mediana",
+                }
+            ),
+            on=["gestion", *dimensiones],
+            validate="one_to_one",
+        )
+        .merge(
+            datos.groupby(dimensiones, as_index=False, dropna=False).agg(
+                poblacion_estimada=("factor", "sum")
+            ),
+            on=dimensiones,
+            validate="one_to_one",
+        )
+        .drop(columns="observaciones_mediana")
+        .loc[:, COLUMNAS_RESULTADO]
+    )
 
 
 def main() -> None:

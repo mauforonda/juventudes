@@ -2,9 +2,9 @@
   "codigo": "I077",
   "nombre": "Ingreso según educación",
   "objetivo": "Mostrar cómo cambia el ingreso laboral juvenil según la educación alcanzada.",
-  "definicion_conceptual": "Ingreso laboral mensual mediano de jóvenes ocupados por nivel educativo alcanzado.",
+  "definicion_conceptual": "Ingreso laboral mensual medio y mediano de jóvenes ocupados por nivel educativo alcanzado.",
   "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con ingreso positivo y nivel educativo identificado en la ECE del cuarto trimestre de 2025.",
-  "descripcion_operativa": "Se estima la mediana ponderada del ingreso mensual dentro de cada nivel educativo.",
+  "descripcion_operativa": "Se estiman la media y la mediana ponderadas del ingreso mensual dentro de cada nivel educativo.",
   "unidad_medida": "Bolivianos por mes",
   "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
   "desagregaciones": [
@@ -30,8 +30,11 @@
     "sexo": "Sexo declarado.",
     "nivel_educativo": "Nivel educativo detallado alcanzado.",
     "observaciones": "Jóvenes ocupados de la muestra incluidos.",
-    "valor": "Ingreso mensual mediano estimado en bolivianos.",
-    "cv": "Error estándar dividido entre la mediana estimada."
+    "poblacion_estimada": "Población expandida representada por la estimación.",
+    "media": "Ingreso mensual medio estimado en bolivianos.",
+    "cv_media": "Error estándar dividido entre la media estimada.",
+    "mediana": "Ingreso mensual mediano estimado en bolivianos.",
+    "cv_mediana": "Error estándar dividido entre la mediana estimada."
   },
-  "metodo": "CONDACT igual a 1 identifica a ocupados. Se usan YLAB positivo y las categorías identificadas de NIV_ED. La mediana usa el factor trimestral y su CV considera estrato y UPM."
+  "metodo": "CONDACT igual a 1 identifica a ocupados. Se usan YLAB positivo y las categorías identificadas de NIV_ED. La media y la mediana usan el factor trimestral; sus CV consideran estrato y UPM. Para agregar celdas, la media se pondera por POBLACION_ESTIMADA."
 }

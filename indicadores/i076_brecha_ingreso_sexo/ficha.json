@@ -2,9 +2,9 @@
   "codigo": "I076",
   "nombre": "Brecha de ingreso entre mujeres y hombres",
   "objetivo": "Comparar el ingreso laboral por hora de mujeres y hombres jóvenes.",
-  "definicion_conceptual": "Diferencia porcentual entre el ingreso mediano por hora de hombres y mujeres jóvenes, expresada respecto al ingreso de los hombres.",
+  "definicion_conceptual": "Diferencia porcentual entre el ingreso por hora de hombres y mujeres jóvenes, calculada con la media y la mediana.",
   "poblacion_objetivo": "Personas de 16 a 28 años ocupadas con ingreso positivo y horas válidas en la ECE del cuarto trimestre de 2025.",
-  "descripcion_operativa": "Se calcula cien menos el ingreso mediano femenino como porcentaje del ingreso mediano masculino.",
+  "descripcion_operativa": "Se comparan por separado la media y la mediana del ingreso por hora de mujeres y hombres.",
   "unidad_medida": "Porcentaje",
   "fuente": "Encuesta Continua de Empleo, cuarto trimestre de 2025.",
   "desagregaciones": [
@@ -25,10 +25,16 @@
     "edad": "Edad cumplida.",
     "observaciones_mujeres": "Mujeres de la muestra incluidas.",
     "observaciones_hombres": "Hombres de la muestra incluidos.",
+    "poblacion_mujeres": "Población femenina expandida representada por la estimación.",
+    "poblacion_hombres": "Población masculina expandida representada por la estimación.",
+    "media_mujeres": "Ingreso medio femenino por hora.",
+    "media_hombres": "Ingreso medio masculino por hora.",
     "mediana_mujeres": "Ingreso mediano femenino por hora.",
     "mediana_hombres": "Ingreso mediano masculino por hora.",
-    "valor": "Brecha porcentual; un valor positivo indica menor ingreso femenino.",
-    "cv": "Error estándar de la brecha dividido entre su valor absoluto."
+    "brecha_media": "Brecha porcentual calculada con medias; un valor positivo indica menor ingreso femenino.",
+    "cv_brecha_media": "Error estándar de la brecha entre medias dividido entre su valor absoluto.",
+    "brecha_mediana": "Brecha porcentual calculada con medianas; un valor positivo indica menor ingreso femenino.",
+    "cv_brecha_mediana": "Error estándar de la brecha entre medianas dividido entre su valor absoluto."
   },
-  "metodo": "El ingreso por hora divide YLAB entre TOTHRS por 52/12. Se calculan medianas ponderadas por sexo. La brecha es 100 por uno menos la mediana femenina dividida entre la masculina. Su error combina los errores de ambas medianas."
+  "metodo": "El ingreso por hora divide YLAB entre TOTHRS por 52/12. Se calculan medias y medianas ponderadas por sexo. Cada brecha es 100 por uno menos el ingreso femenino dividido entre el masculino. Los errores combinan los errores de ambas estimaciones. Para agregar celdas, se ponderan las medias por la población expandida de cada sexo y luego se vuelve a calcular la brecha."
 }
