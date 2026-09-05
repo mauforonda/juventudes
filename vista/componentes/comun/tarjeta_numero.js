@@ -7,6 +7,7 @@ const estilo = `
     font-size: 2rem;
     font-weight: 500;
     line-height: 1.2;
+    color: var(--accent);
   }
 
   .tarjeta-numero .etiqueta {
