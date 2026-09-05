@@ -124,6 +124,7 @@ export function render({
   const estilos = getComputedStyle(document.documentElement);
   const color = estilos.getPropertyValue("--accent").trim();
   const fondo = estilos.getPropertyValue("--background").trim();
+  const muted = estilos.getPropertyValue("--muted").trim();
   const tinta = estilos.getPropertyValue("--ink").trim();
   const acento = estilos.getPropertyValue("--accent").trim();
   const rango = [mezclar(fondo, acento, 0.12), mezclar(fondo, acento, 0.65)];
@@ -178,7 +179,7 @@ export function render({
               py: (d) => d.properties.centroid[1],
               text: (punto) => punto.properties.territorio,
               frameAnchor: "top-right",
-              fill: color,
+              fill: muted,
               fontSize: 12,
               dy: 28,
               textOverflow: "ellipsis",
