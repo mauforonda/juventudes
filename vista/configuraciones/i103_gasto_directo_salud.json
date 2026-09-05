@@ -2,20 +2,22 @@
   {
     "tipo": "media_nacional",
     "campo": "valor",
-    "observaciones": "observaciones",
+    "observaciones": "poblacion_estimada",
     "estadistico": "media"
   },
   {
     "tipo": "media_edad",
     "dimension": "edad",
     "campo": "valor",
-    "observaciones": "observaciones",
+    "observaciones": "poblacion_estimada",
     "estadistico": "media"
   },
   {
     "tipo": "media_departamentos",
     "campo": "valor",
-    "observaciones": "observaciones",
+    "observaciones": "poblacion_estimada",
     "estadistico": "media"
-  }
+  },
+  {"tipo":"media_categorias","dimension":"area","campo":"valor","ponderador":"poblacion_estimada","filtroCampo":"estadistico","filtroValor":"media"},
+  {"tipo":"media_categorias","dimension":"sexo","campo":"valor","ponderador":"poblacion_estimada","filtroCampo":"estadistico","filtroValor":"media"}
 ]

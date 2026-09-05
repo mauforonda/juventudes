@@ -85,6 +85,7 @@ export function render({
   etiqueta,
   clase,
   modo = "porcentaje",
+  formatear: formatearExterno,
 }) {
   cargarEstilo();
   const valores = agrupar(
@@ -125,7 +126,7 @@ export function render({
   const fondo = estilos.getPropertyValue("--background").trim();
   const tinta = estilos.getPropertyValue("--ink").trim();
   const rango = [mezclar(fondo, tinta, 0.12), mezclar(fondo, tinta, 0.65)];
-  const formatearValor = modo === "media" ? formatearMedia : formatear;
+  const formatearValor = formatearExterno ?? (modo === "media" ? formatearMedia : formatear);
   cabecera.querySelector(".minimo").textContent = formatearValor(minimo);
   cabecera.querySelector(".maximo").textContent = formatearValor(maximo);
   cabecera.querySelector(".barra").style.background =

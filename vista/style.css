@@ -121,6 +121,17 @@ h1 {
     linear-gradient(115deg, #ef776f 0%, #f2a15c 38%, #f1c842 56%, #d7a0ca 100%);
 }
 
+.brecha-nacional {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.brecha-nacional .valor {
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 #groups {
   grid-column: 2;
   grid-row: 1;

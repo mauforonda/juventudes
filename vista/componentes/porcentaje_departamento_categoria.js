@@ -5,6 +5,7 @@ export async function render({
   categoria,
   numerador,
   denominador,
+  formatear,
   version = "",
 }) {
   const [{ render: crearMapa }, { crearMenu }] = await Promise.all([
@@ -32,6 +33,7 @@ export async function render({
       rows: rows.filter(row => String(row[categoria] ?? "") === valorCategoria),
       numerador,
       denominador,
+      formatear,
       version,
     });
     tarjeta.classList.add("porcentaje-departamento-categoria");

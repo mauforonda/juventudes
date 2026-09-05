@@ -62,7 +62,7 @@ const plantilla = () => `
 
 export const layout = { minWidth: 300, minHeight: 100 };
 
-export function render({ rows, dimension, numerador, denominador }) {
+export function render({ rows, dimension, numerador, denominador, formatear = porcentaje, regla }) {
   cargarEstilo();
   const tarjeta = html(plantilla());
   tarjeta.querySelector(".etiqueta").textContent = `por ${String(dimension)
@@ -105,8 +105,9 @@ export function render({ rows, dimension, numerador, denominador }) {
       y: { axis: null, padding: 0.3 },
       style: { color },
       marks: [
+        ...(regla == null ? [] : [Plot.ruleX([regla], { stroke: color, strokeOpacity: 0.45, strokeDasharray: "3,3" })]),
         Plot.gridX({
-          ticks: 4,
+          ticks: 3,
           strokeOpacity: 0.8,
           strokeDasharray: "1,2",
           strokeWidth: 0.5,
@@ -115,8 +116,8 @@ export function render({ rows, dimension, numerador, denominador }) {
           anchor: "top",
           tickSize: 0,
           label: null,
-          ticks: 4,
-          tickFormat: (d) => (d == 0 ? "" : porcentaje(d)),
+          ticks: 3,
+          tickFormat: (d) => (d == 0 ? "" : formatear(d)),
         }),
         Plot.barX(datos, {
           y: "categoria",
@@ -168,7 +169,7 @@ export function render({ rows, dimension, numerador, denominador }) {
           Plot.pointerY({
             x: "valor",
             y: "categoria",
-            text: (d) => porcentaje(d.valor),
+            text: (d) => formatear(d.valor),
             textAnchor: "start",
             lineAnchor: "top",
             dx: 5,

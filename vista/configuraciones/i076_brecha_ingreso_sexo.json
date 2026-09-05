@@ -1,0 +1,12 @@
+[
+  {
+    "tipo": "brecha_nacional",
+    "campoHombres": "media_hombres",
+    "campoMujeres": "media_mujeres",
+    "ponderadorHombres": "poblacion_hombres",
+    "ponderadorMujeres": "poblacion_mujeres"
+  },
+  {"tipo":"brecha_edad","dimension":"edad","categoria":"area"},
+  {"tipo":"brecha_departamentos","categoria":"area"},
+  {"tipo":"brecha_categorias","dimension":"area"}
+]

@@ -5,7 +5,7 @@ const decimal = valor => valor.toLocaleString("es-BO", {
 
 export const layout = { minWidth: 100, minHeight: 55 };
 
-export async function render({ rows, campo, observaciones, estadistico, filtroCampo = "estadistico", filtroValor, version = "" }) {
+export async function render({ rows, campo, observaciones, estadistico, filtroCampo = "estadistico", filtroValor, formato = "numero", version = "" }) {
   const { crearTarjetaNumero } = await import(`./comun/tarjeta_numero.js${version ? `?v=${version}` : ""}`);
   const filtro = filtroValor ?? estadistico;
   const datos = filtro
@@ -20,5 +20,6 @@ export async function render({ rows, campo, observaciones, estadistico, filtroCa
     };
   }, { suma: 0, cantidad: 0 });
   const valor = totales.cantidad ? totales.suma / totales.cantidad : 0;
-  return crearTarjetaNumero({ clase: "media_nacional", valor, etiqueta: "en promedio", formatear: decimal });
+  const formatear = formato === "porcentaje" ? v => `${decimal(v)}%` : formato === "moneda" ? v => `Bs. ${decimal(v)}` : decimal;
+  return crearTarjetaNumero({ clase: "media_nacional", valor, etiqueta: "en promedio", formatear });
 }

@@ -1,0 +1,6 @@
+[
+  {"tipo":"media_categorias","dimension":"nivel_educativo"},
+  {"tipo":"media_subcategoria","dimension":"nivel_educativo","subdimension":"area"},
+  {"tipo":"media_departamento_categoria","categoria":"nivel_educativo"},
+  {"tipo":"media_subcategoria","dimension":"nivel_educativo","subdimension":"sexo"}
+]

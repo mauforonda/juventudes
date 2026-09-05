@@ -18,7 +18,8 @@ const nombres = await fetch("https://raw.githubusercontent.com/mauforonda/juvent
 
 export const layout = { minWidth: 360, minHeight: 310 };
 
-export async function render({ rows, campo, observaciones, estadistico, filtroCampo = "estadistico", filtroValor, version = "" }) {
+export async function render({ rows, campo, observaciones, estadistico, filtroCampo = "estadistico", filtroValor, formato = "numero", version = "" }) {
   const { render: crearMapa } = await import(`./comun/porcentaje_territorios.js${version ? `?v=${version}` : ""}`);
-  return crearMapa({ rows, campo, observaciones, estadistico, filtroCampo, filtroValor, geojson, nombres, campoCodigo: "codigo_departamento", normalizar, etiqueta: "por departamento", clase: "media_departamentos", modo: "media" });
+  const formatear = formato === "porcentaje" ? valor => `${valor.toLocaleString("es-BO", { maximumFractionDigits: 1 })}%` : formato === "moneda" ? valor => `Bs. ${valor.toLocaleString("es-BO", { maximumFractionDigits: 0 })}` : valor => valor.toLocaleString("es-BO", { maximumFractionDigits: 1 });
+  return crearMapa({ rows, campo, observaciones, estadistico, filtroCampo, filtroValor, formatear, geojson, nombres, campoCodigo: "codigo_departamento", normalizar, etiqueta: "por departamento", clase: "media_departamentos", modo: "media" });
 }

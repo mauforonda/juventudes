@@ -5,7 +5,7 @@ const decimal = valor => valor.toLocaleString("es-BO", {
 
 export const layout = { minWidth: 375, minHeight: 175 };
 
-export async function render({ rows, dimension, campo, observaciones, estadistico, filtroCampo = "estadistico", filtroValor, version = "" }) {
+export async function render({ rows, dimension, campo, observaciones, estadistico, filtroCampo = "estadistico", filtroValor, formato = "numero", version = "" }) {
   const { crearGraficoEdad } = await import(`./comun/grafico_edad.js${version ? `?v=${version}` : ""}`);
   const filtro = filtroValor ?? estadistico;
   const datos = filtro ? rows.filter(row => row[filtroCampo] === filtro) : rows;
@@ -22,5 +22,6 @@ export async function render({ rows, dimension, campo, observaciones, estadistic
     edad,
     valor: total.cantidad ? total.suma / total.cantidad : 0,
   })).sort((a, b) => a.edad - b.edad);
-  return crearGraficoEdad({ datos: valores, formatear: decimal });
+  const formatear = formato === "porcentaje" ? v => `${decimal(v)}%` : formato === "moneda" ? v => `Bs. ${decimal(v)}` : decimal;
+  return crearGraficoEdad({ datos: valores, formatear });
 }

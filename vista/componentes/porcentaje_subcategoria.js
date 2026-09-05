@@ -100,6 +100,7 @@ export function render({
   subdimension,
   numerador,
   denominador,
+  formatear = porcentaje,
 }) {
   cargarEstilo();
   const tarjeta = html(plantilla());
@@ -128,6 +129,9 @@ export function render({
     if (!subcategorias.has(subcategoria))
       subcategorias.set(subcategoria, subcategorias.size);
   });
+  const ordenSubcategorias = [...subcategorias.keys()].sort((a, b) => a.localeCompare(b, "es"));
+  subcategorias.clear();
+  ordenSubcategorias.forEach((valor, indice) => subcategorias.set(valor, indice));
   const leyenda = tarjeta.querySelector(".leyenda");
   [...subcategorias].forEach(([subcategoria, indice]) => {
     const item = html(
@@ -176,6 +180,7 @@ export function render({
     ordenY.push(dato.filaEtiqueta);
     datos
       .filter((fila) => fila.categoria === dato.categoria)
+      .sort((a, b) => subcategorias.get(a.subcategoria) - subcategorias.get(b.subcategoria))
       .forEach((fila) => ordenY.push(fila.fila));
   });
 
@@ -223,7 +228,7 @@ export function render({
       style: { color: colores.muted },
       marks: [
         Plot.gridX({
-          ticks: 4,
+          ticks: 3,
           strokeOpacity: 0.8,
           strokeDasharray: "1,2",
           strokeWidth: 0.5,
@@ -232,8 +237,8 @@ export function render({
           anchor: "top",
           tickSize: 0,
           label: null,
-          ticks: 4,
-          tickFormat: (d) => (d == 0 ? "" : porcentaje(d)),
+          ticks: 3,
+          tickFormat: (d) => (d == 0 ? "" : formatear(d)),
         }),
         ...barras,
         Plot.text(etiquetas, {
@@ -250,7 +255,7 @@ export function render({
           Plot.pointerY({
             x: "valor",
             y: "fila",
-            text: (d) => porcentaje(d.valor),
+            text: (d) => formatear(d.valor),
             textAnchor: "start",
             dx: 5,
             fill: colores.muted,

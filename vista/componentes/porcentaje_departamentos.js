@@ -16,7 +16,7 @@ const nombres = await fetch("https://raw.githubusercontent.com/mauforonda/juvent
     return new Map(filas.map(fila => { const valores = fila.split(","); return [normalizar(valores[codigo]), valores[nombre]]; }));
   });
 export const layout = { minWidth: 360, minHeight: 310 };
-export async function render({ rows, numerador, denominador, version = "" }) {
+export async function render({ rows, numerador, denominador, formatear, version = "" }) {
   const { render: crearMapa } = await import(`./comun/porcentaje_territorios.js${version ? `?v=${version}` : ""}`);
-  return crearMapa({ rows, numerador, denominador, geojson, nombres, campoCodigo: "codigo_departamento", normalizar, etiqueta: "por departamento", clase: "porcentaje_departamentos" });
+  return crearMapa({ rows, numerador, denominador, formatear, geojson, nombres, campoCodigo: "codigo_departamento", normalizar, etiqueta: "por departamento", clase: "porcentaje_departamentos" });
 }

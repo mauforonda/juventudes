@@ -69,6 +69,7 @@ export function crearGraficoEdad({
   datos,
   formatear,
   formatearEje = formatear,
+  regla,
 }) {
   cargarEstilo();
   const tarjeta = html(plantilla());
@@ -95,6 +96,7 @@ export function crearGraficoEdad({
       y: { axis: null },
       style: { color },
       marks: [
+        ...(regla == null ? [] : [Plot.ruleY([regla], { stroke: color, strokeOpacity: 0.45, strokeDasharray: "3,3" })]),
         Plot.ruleY([0], {
           x1: 16,
           x2: 29,
