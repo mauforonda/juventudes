@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 from comun import escribir_resultados, validar_ficha
 from ece import DIMENSIONES_JOVENES, GESTION, cargar_personas
-from encuestas import estimar_media, estimar_mediana
+from encuestas import estimar_media, estimar_mediana, sumar_ponderadores
 
 BASE_INDICADOR = Path(__file__).resolve().parent
 FICHA_PATH = BASE_INDICADOR / "ficha.json"
@@ -18,6 +18,7 @@ COLUMNAS_RESULTADO = [
     *DIMENSIONES_JOVENES,
     "estadistico",
     "observaciones",
+    "poblacion_estimada",
     "valor",
     "cv",
 ]
@@ -33,8 +34,8 @@ def calcular():
         ]
         .assign(ingreso_hora=lambda d: d[INGRESO] / (d[HORAS] * 52 / 12))
     )
-    return pd.concat(
-        [
+    return (
+        pd.concat([
             estimar_media(
                 datos,
                 variable=INGRESO_HORA,
@@ -47,9 +48,14 @@ def calcular():
                 dimensiones=DIMENSIONES_JOVENES,
                 gestion=GESTION,
             ).assign(estadistico="mediana"),
-        ],
-        ignore_index=True,
-    ).loc[:, COLUMNAS_RESULTADO]
+        ], ignore_index=True)
+        .merge(
+            sumar_ponderadores(datos, dimensiones=DIMENSIONES_JOVENES),
+            on=DIMENSIONES_JOVENES,
+            validate="many_to_one",
+        )
+        .loc[:, COLUMNAS_RESULTADO]
+    )
 
 
 def main() -> None:

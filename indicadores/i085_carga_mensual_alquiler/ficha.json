@@ -28,8 +28,9 @@
     "sexo": "Sexo de la jefa o jefe.",
     "estadistico": "Media o mediana.",
     "observaciones": "Hogares de la muestra incluidos.",
+    "hogares_estimados": "Hogares expandidos representados por la estimación.",
     "valor": "Porcentaje estimado del ingreso destinado al alquiler.",
     "cv": "Error estándar dividido entre el valor estimado."
   },
-  "metodo": "S01A_05 igual a 1 identifica a la jefatura y S06A_02 igual a 3 a hogares alquilados. La carga es 100 por S06A_02B dividido entre YHOG. Se usa el factor de expansión y un CV que considera estrato y UPM."
+  "metodo": "S01A_05 igual a 1 identifica a la jefatura y S06A_02 igual a 3 a hogares alquilados. La carga es 100 por S06A_02B dividido entre YHOG. Se usa el factor de expansión y un CV que considera estrato y UPM. Para agregar celdas, la media se pondera por HOGARES_ESTIMADOS."
 }

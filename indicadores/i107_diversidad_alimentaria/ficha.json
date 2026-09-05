@@ -24,8 +24,9 @@
     "edad": "Edad cumplida.",
     "sexo": "Sexo declarado.",
     "observaciones": "Jóvenes de la muestra incluidos.",
+    "poblacion_estimada": "Población expandida representada por la estimación.",
     "valor": "Promedio estimado de grupos consumidos.",
     "cv": "Error estándar dividido entre el promedio estimado."
   },
-  "metodo": "Las respuestas afirmativas de MS05_0502_A a S y VS01_0130_A a S se reúnen en ocho grupos. El promedio usa el ponderador individual y un CV que considera estrato y UPM."
+  "metodo": "Las respuestas afirmativas de MS05_0502_A a S y VS01_0130_A a S se reúnen en ocho grupos. Los ponderadores individuales de mujeres y hombres se llevan a una escala común con la población juvenil estimada por la tabla de hogar. El promedio y su CV consideran el diseño muestral. Para agregar celdas, la media se pondera por POBLACION_ESTIMADA."
 }

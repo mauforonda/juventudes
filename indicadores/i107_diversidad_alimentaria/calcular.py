@@ -2,8 +2,13 @@
 
 from pathlib import Path
 from comun import escribir_resultados, validar_ficha
-from edsa import DIMENSIONES_JOVENES, GESTION, cargar_individuales
-from encuestas import estimar_media
+from edsa import (
+    DIMENSIONES_JOVENES,
+    GESTION,
+    armonizar_ponderadores_individuales,
+    cargar_individuales,
+)
+from encuestas import estimar_media, sumar_ponderadores
 
 BASE_INDICADOR = Path(__file__).resolve().parent
 FICHA_PATH = BASE_INDICADOR / "ficha.json"
@@ -23,13 +28,20 @@ GRUPOS = [
     list("RS"),
 ]
 DIVERSIDAD = "grupos_consumidos"
-COLUMNAS_RESULTADO = ["gestion", *DIMENSIONES_JOVENES, "observaciones", "valor", "cv"]
+COLUMNAS_RESULTADO = [
+    "gestion",
+    *DIMENSIONES_JOVENES,
+    "observaciones",
+    "poblacion_estimada",
+    "valor",
+    "cv",
+]
 
 
 def calcular():
-    datos = cargar_individuales(MAPA_MUJER, MAPA_HOMBRE).loc[
-        lambda d: d[VARIABLES].isin([1, 2]).all(axis=1)
-    ]
+    datos = armonizar_ponderadores_individuales(
+        cargar_individuales(MAPA_MUJER, MAPA_HOMBRE)
+    ).loc[lambda d: d[VARIABLES].isin([1, 2]).all(axis=1)]
     consumo = [
         datos[[f"alimento_{letra.lower()}" for letra in grupo]].eq(1).any(axis=1)
         for grupo in GRUPOS
@@ -39,6 +51,10 @@ def calcular():
     )
     return estimar_media(
         datos, variable=DIVERSIDAD, dimensiones=DIMENSIONES_JOVENES, gestion=GESTION
+    ).merge(
+        sumar_ponderadores(datos, dimensiones=DIMENSIONES_JOVENES),
+        on=DIMENSIONES_JOVENES,
+        validate="one_to_one",
     )
 
 

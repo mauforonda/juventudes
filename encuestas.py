@@ -6,6 +6,21 @@ from math import sqrt
 import pandas as pd
 
 
+def sumar_ponderadores(
+    datos: pd.DataFrame,
+    *,
+    dimensiones: Iterable[str],
+    nombre: str = "poblacion_estimada",
+    peso: str = "factor",
+) -> pd.DataFrame:
+    """Suma los ponderadores de cada celda para agregar medias después."""
+
+    return (
+        datos.groupby(list(dimensiones), as_index=False, dropna=False, observed=True)
+        .agg(**{nombre: (peso, "sum")})
+    )
+
+
 def _varianza_proporcion(
     grupo: pd.DataFrame,
     diseno: pd.DataFrame,

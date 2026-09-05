@@ -119,6 +119,15 @@ def cargar_individuales(
     return pd.concat([mujeres[comunes], hombres[comunes]], ignore_index=True)
 
 
+def armonizar_ponderadores_individuales(datos: pd.DataFrame) -> pd.DataFrame:
+    """Lleva los ponderadores de mujeres y hombres a una escala poblacional común."""
+
+    poblacion_por_sexo = cargar_hogar().groupby("sexo")["factor"].sum()
+    ponderacion_por_sexo = datos.groupby("sexo")["factor"].sum()
+    escala = poblacion_por_sexo / ponderacion_por_sexo
+    return datos.assign(factor=lambda d: d["factor"] * d["sexo"].map(escala))
+
+
 def cargar_mujeres(columnas: dict[str, str]) -> pd.DataFrame:
     """Lee el cuestionario individual de mujeres jóvenes."""
 

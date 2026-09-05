@@ -29,8 +29,9 @@
     "sexo": "Sexo declarado.",
     "medida": "Promedio o mediana.",
     "observaciones": "Jóvenes de la muestra incluidos.",
+    "poblacion_estimada": "Población expandida representada por la estimación.",
     "valor": "Edad estimada al primer hijo, en años.",
     "cv": "Error estándar dividido entre la edad estimada."
   },
-  "metodo": "En mujeres se resta V011 de B3_01; ambas fechas están expresadas como un conteo de meses. En hombres se usa VS02_0216. Se conservan edades entre 10 años y la edad actual. Se estiman promedio y mediana con ponderadores individuales y un CV que considera estrato y UPM."
+  "metodo": "En mujeres se resta V011 de B3_01; ambas fechas están expresadas como un conteo de meses. En hombres se usa VS02_0216. Se conservan edades entre 10 años y la edad actual. Los ponderadores individuales de mujeres y hombres se llevan a una escala común con la población juvenil estimada por la tabla de hogar. El promedio, la mediana y sus CV consideran el diseño muestral. Para agregar celdas, el promedio se pondera por POBLACION_ESTIMADA."
 }

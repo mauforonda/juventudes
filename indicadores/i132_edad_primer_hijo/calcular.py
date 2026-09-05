@@ -3,8 +3,14 @@
 from pathlib import Path
 import pandas as pd
 from comun import escribir_resultados, validar_ficha
-from edsa import DIMENSIONES_JOVENES, GESTION, cargar_hombres, cargar_mujeres
-from encuestas import estimar_media, estimar_mediana
+from edsa import (
+    DIMENSIONES_JOVENES,
+    GESTION,
+    armonizar_ponderadores_individuales,
+    cargar_hombres,
+    cargar_mujeres,
+)
+from encuestas import estimar_media, estimar_mediana, sumar_ponderadores
 
 BASE_INDICADOR = Path(__file__).resolve().parent
 FICHA_PATH = BASE_INDICADOR / "ficha.json"
@@ -15,6 +21,7 @@ COLUMNAS_RESULTADO = [
     *DIMENSIONES_JOVENES,
     "medida",
     "observaciones",
+    "poblacion_estimada",
     "valor",
     "cv",
 ]
@@ -35,15 +42,15 @@ def cargar_edades():
     )
     hombres = cargar_hombres({EDAD_PRIMER_HIJO: "vs02_0216"})
     columnas = [*DIMENSIONES_JOVENES, "factor", "estrato", "upm", EDAD_PRIMER_HIJO]
-    return pd.concat([mujeres[columnas], hombres[columnas]], ignore_index=True).loc[
-        lambda d: d[EDAD_PRIMER_HIJO].between(10, d["edad"])
-    ]
+    return armonizar_ponderadores_individuales(
+        pd.concat([mujeres[columnas], hombres[columnas]], ignore_index=True)
+    ).loc[lambda d: d[EDAD_PRIMER_HIJO].between(10, d["edad"])]
 
 
 def calcular():
     datos = cargar_edades()
-    return pd.concat(
-        [
+    return (
+        pd.concat([
             estimar_media(
                 datos,
                 variable=EDAD_PRIMER_HIJO,
@@ -56,8 +63,13 @@ def calcular():
                 dimensiones=DIMENSIONES_JOVENES,
                 gestion=GESTION,
             ).assign(medida="mediana"),
-        ],
-        ignore_index=True,
+        ], ignore_index=True)
+        .merge(
+            sumar_ponderadores(datos, dimensiones=DIMENSIONES_JOVENES),
+            on=DIMENSIONES_JOVENES,
+            validate="many_to_one",
+        )
+        .loc[:, COLUMNAS_RESULTADO]
     )
 
 
