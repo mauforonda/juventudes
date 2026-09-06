@@ -16,7 +16,7 @@
     --body-background: var(--background);
     --ink: #ededed;
     --line: rgba(255, 255, 255, 0.145);
-    --accent: #2488fa;
+    --accent: #dd8d3f;
     --hover: color-mix(in srgb, var(--accent) 12%, transparent);
   }
 }
