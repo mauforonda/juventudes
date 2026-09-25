@@ -3,27 +3,26 @@ import { cargarComponente } from "./componentes/registro.js";
 const RAW_ROOT = "https://raw.githubusercontent.com/mauforonda/juventudes/refs/heads/main/";
 const INDEX_URL = "indice.json";
 const MUNICIPALITIES_URL = `${RAW_ROOT}diccionarios/municipios.csv`;
+const COUNTER_URL = "https://juventudes-counter.josemauricioforonda.workers.dev/e";
 const BATCH_SIZE = 30;
 const TABLE_BATCH_SIZE = 60;
-const goatcounterEvents = [];
 
-function flushGoatCounterEvents() {
-  if (!window.goatcounter?.count) return;
-  while (goatcounterEvents.length) window.goatcounter.count(goatcounterEvents.shift());
+function count(path) {
+  fetch(COUNTER_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ path }),
+    keepalive: true,
+  }).catch(() => {});
 }
 
-document.querySelector("script[data-goatcounter]")?.addEventListener("load", flushGoatCounterEvents);
+count("/");
 
 function countIndicatorCsv(url) {
   const match = url.match(/\/indicadores\/([^/]+)\/resultados\.csv(?:[?#]|$)/);
   if (!match) return;
 
-  goatcounterEvents.push({
-    path: `csv-indicador-${match[1]}`,
-    title: `Carga de CSV: ${match[1]}`,
-    event: true,
-  });
-  flushGoatCounterEvents();
+  count(`/indicador/${match[1]}`);
 }
 
 const input = document.querySelector("#search input");
@@ -96,8 +95,9 @@ function formatValue(value, column) {
 async function fetchChecked(url, type = "text") {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`No se pudo cargar ${url} (${response.status})`);
+  const data = type === "json" ? await response.json() : await response.text();
   countIndicatorCsv(url);
-  return type === "json" ? response.json() : response.text();
+  return data;
 }
 
 async function loadMunicipalityMaps() {
