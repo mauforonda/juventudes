@@ -5,6 +5,26 @@ const INDEX_URL = "indice.json";
 const MUNICIPALITIES_URL = `${RAW_ROOT}diccionarios/municipios.csv`;
 const BATCH_SIZE = 30;
 const TABLE_BATCH_SIZE = 60;
+const goatcounterEvents = [];
+
+function flushGoatCounterEvents() {
+  if (!window.goatcounter?.count) return;
+  while (goatcounterEvents.length) window.goatcounter.count(goatcounterEvents.shift());
+}
+
+document.querySelector("script[data-goatcounter]")?.addEventListener("load", flushGoatCounterEvents);
+
+function countIndicatorCsv(url) {
+  const match = url.match(/\/indicadores\/([^/]+)\/resultados\.csv(?:[?#]|$)/);
+  if (!match) return;
+
+  goatcounterEvents.push({
+    path: `csv-indicador-${match[1]}`,
+    title: `Carga de CSV: ${match[1]}`,
+    event: true,
+  });
+  flushGoatCounterEvents();
+}
 
 const input = document.querySelector("#search input");
 const clearButton = document.querySelector("#search button");
@@ -76,6 +96,7 @@ function formatValue(value, column) {
 async function fetchChecked(url, type = "text") {
   const response = await fetch(url);
   if (!response.ok) throw new Error(`No se pudo cargar ${url} (${response.status})`);
+  countIndicatorCsv(url);
   return type === "json" ? response.json() : response.text();
 }
 
